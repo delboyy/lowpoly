@@ -1,0 +1,54 @@
+{
+ "template": "coke3d",
+ "id": "coke-nickel-lowpoly",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Coke cost 5\u00a2 for 73 years. Here's why.",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "vo": "[calm, curious] For seventy-three years, a Coke cost exactly one nickel.",
+   "state": "hero",
+   "num": "5\u00a2",
+   "label": "a bottle of Coke, 1886\u20131959",
+   "at": "^nickel"
+  },
+  {
+   "vo": "Wars. The Great Depression. Still five cents.",
+   "state": "shelf"
+  },
+  {
+   "vo": "Why? Coca-Cola's vending machines only took one coin.",
+   "state": "machine"
+  },
+  {
+   "vo": "[lowered] So when costs went up, what could Coke do?",
+   "state": "question"
+  },
+  {
+   "vo": "In 1953, it asked the US Treasury to make a new coin. Seven and a half cents.",
+   "state": "coin",
+   "num": "7\u00bd\u00a2",
+   "label": "the coin Coca-Cola asked for",
+   "at": "^seven"
+  },
+  {
+   "vo": "The Treasury said no.",
+   "state": "rejected"
+  },
+  {
+   "vo": "So Coke planned something stranger. One in every nine bottles from its machines would come out empty.",
+   "state": "empty",
+   "num": "1 in 9",
+   "label": "bottles planned to be empty",
+   "at": "^one"
+  },
+  {
+   "vo": "[quiet, knowing] Seventy-three years, decided by the size of one coin. Which is why",
+   "state": "payoff"
+  }
+ ]
+}

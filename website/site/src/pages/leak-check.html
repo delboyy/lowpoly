@@ -1,0 +1,80 @@
+---
+title: Free leak check · Sacred Scaling
+description: A free one-page report on where your business is losing inquiries, calls and sales, built from your public reviews and website. Within 48 hours. No call needed.
+nav: check
+dock: no
+---
+<section class="hero">
+  <div class="wrap check-grid">
+    <div class="check-intro">
+      <h1>Your free leak check.</h1>
+      <p>Two quick steps. Within 48 hours you get one page showing where your business is losing inquiries, calls or sales, and what would stop it.</p>
+    </div>
+
+    <form class="form" name="leak-check" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_site" data-attr data-check novalidate>
+      <input type="hidden" name="form-name" value="leak-check">
+      <p class="visually-hidden"><label>Leave this empty <input name="company_site" tabindex="-1" autocomplete="off"></label></p>
+
+      <div class="steps-bar" aria-hidden="true"><i class="on"></i><i data-bar2></i><span data-step-label>Step 1 of 2</span></div>
+
+      <div class="step" data-step="1">
+        <div class="field">
+          <label for="f-link">Website or Google Maps link</label>
+          <input id="f-link" name="link" inputmode="url" autocomplete="url" required maxlength="300" placeholder="yourbusiness.com" aria-describedby="f-link-hint f-link-err">
+          <span class="hint" id="f-link-hint">Whichever shows your reviews best. Got both? Paste one, a space, then the other.</span>
+          <span class="err" id="f-link-err" role="alert"></span>
+        </div>
+        <fieldset class="field">
+          <legend>What kind of business?</legend>
+          <div class="types">
+            <label><input type="radio" name="type" value="Real estate" required><span>Real estate</span></label>
+            <label><input type="radio" name="type" value="Clinic"><span>Clinic</span></label>
+            <label><input type="radio" name="type" value="Trades / home services"><span>Trades</span></label>
+            <label><input type="radio" name="type" value="Online store"><span>Online store</span></label>
+            <label><input type="radio" name="type" value="Other"><span>Something else</span></label>
+          </div>
+          <span class="err" id="f-type-err" role="alert"></span>
+        </fieldset>
+        <div class="form-actions"><button class="btn step-next" type="button" data-next>Next: where to send it</button></div>
+      </div>
+
+      <div class="step" data-step="2">
+        <div class="field">
+          <label for="f-contact">Where should we send your report?</label>
+          <input id="f-contact" name="contact" required maxlength="120" placeholder="+44 7700 900123 or you@business.com" aria-describedby="f-contact-hint f-contact-err">
+          <span class="hint" id="f-contact-hint">A WhatsApp number with country code, or an email address.</span>
+          <span class="err" id="f-contact-err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="f-name">Your first name</label>
+          <input id="f-name" name="name" autocomplete="given-name" required maxlength="80" aria-describedby="f-name-err">
+          <span class="err" id="f-name-err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="f-biz">Business name</label>
+          <input id="f-biz" name="business" autocomplete="organization" required maxlength="120" aria-describedby="f-biz-err">
+          <span class="err" id="f-biz-err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="f-note">Anything you already suspect? <span class="muted" style="font-weight:400">Optional</span></label>
+          <textarea id="f-note" name="note" maxlength="600" placeholder="e.g. lots of inquiries, not many bookings"></textarea>
+        </div>
+
+        <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="landing_page"><input type="hidden" name="referrer">
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Send me my free report</button>
+          <button class="back" type="button" data-back>Back</button>
+        </div>
+        <p class="fine">We use these details only for your report. <a href="/privacy/">Privacy policy</a>.</p>
+      </div>
+    </form>
+
+    <ul class="assure">
+        <li><b>Public info only.</b> We read your reviews and your website. We never contact your business, staff or customers.</li>
+        <li><b>Real evidence.</b> Each finding comes with the review quote or page it's based on.</li>
+        <li><b>No call, no card.</b> If you want help after, you ask. If not, that's the end of it.</li>
+        <li><b>Read by a person.</b> Nathan checks every report before it's sent.</li>
+      </ul>
+  </div>
+</section>

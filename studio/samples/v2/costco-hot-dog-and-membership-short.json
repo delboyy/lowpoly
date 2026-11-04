@@ -1,0 +1,261 @@
+{
+ "title": "Why Costco never raises the $1.50 hot dog",
+ "hook": {
+  "a": "Costco makes half its profit before you buy anything.",
+  "b": "Why does Costco's hot dog still cost what it did in 1985?",
+  "onScreen": "HALF ITS PROFIT"
+ },
+ "numbers": [
+  {
+   "label": "Hot dog + soda combo price",
+   "value": "$1.50 unchanged since 1985; ~$4.50 if inflation-adjusted",
+   "source": "CNN via ABC7: CFO Gary Millerchip on earnings call, 'the $1.50 hot dog price is safe'",
+   "url": "https://abc7.com/post/costcos-150-hot-dog-price-safe/14895838/",
+   "date": "2024-05-31",
+   "status": "verified (high-trust secondary). Check it is still $1.50 on posting day."
+  },
+  {
+   "label": "Net sales FY2026",
+   "value": "$297,247M",
+   "source": "Costco FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)",
+   "formula": "Margin on goods is not stated in the script."
+  },
+  {
+   "label": "Membership fees FY2026",
+   "value": "$5,907M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Operating income FY2026 and membership share",
+   "value": "$11,685M; fees = 50.6% of it (computed)",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary); ratio computed from primary figures",
+   "formula": "50.6% = $5,907M membership fees / $11,685M operating income. 1 renewal point = 1% x $5,907M = ~$59M. Scenarios: fees(t+1) = fees(t) x r + N, base $5,907M, r = 89.8% worldwide renewal (fees are worldwide), N = $5,907M x (1 - 0.898) = ~$602M of new-member fees a year held flat. At r = 85.8% (-4 pts) year-5 fees = $5,017M, i.e. -$890M = 7.6% of operating income; -7 pts: -$1,468M = 12.6%. Assumes fee revenue drops through at ~100% margin and ignores fee increases and upgrades."
+  },
+  {
+   "label": "Renewal rate",
+   "value": "92.3% US & Canada, 89.8% worldwide",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)"
+  }
+ ],
+ "analysis": {
+  "title": "What happens to Costco's profit if renewals slip",
+  "finding": "Membership fees ($5.9B) are ~50.6% of operating income, so every point of renewal rate is worth ~$59M a year on day one and compounds if lower renewal persists. At -4 pts of renewal, fee revenue ends year 5 about $890M lower (7.6% of today's operating income)."
+ },
+ "template": "world",
+ "id": "costco-hot-dog-and-membership-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Costco makes half its profit",
+   "take": "hook",
+   "type": "bignum",
+   "value": 50.6,
+   "suffix": "%",
+   "decimals": 1,
+   "sub": "of operating income is membership fees",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "before you buy anything.",
+   "take": "hook",
+   "type": "lib",
+   "object": "membership",
+   "props": {
+    "label": "COSTCO",
+    "tier": "GOLD STAR"
+   },
+   "text": "Before you buy anything",
+   "emphasis": [
+    "anything"
+   ]
+  },
+  {
+   "vo": "[matter-of-fact] From the membership card:",
+   "take": "proof",
+   "type": "stamp",
+   "text": "MEMBERSHIP CARD",
+   "tone": "gain"
+  },
+  {
+   "vo": "five point nine billion dollars a year.",
+   "take": "proof",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 5.9,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "membership fees, FY2026",
+   "source": "Costco 10-K FY26 · fees"
+  },
+  {
+   "vo": "[steady] Costco's hot dog",
+   "take": "stake",
+   "type": "lib",
+   "object": "hotdogcombo",
+   "text": "Costco's hot dog"
+  },
+  {
+   "vo": "has cost the same since 1985.",
+   "take": "stake",
+   "type": "object",
+   "illus": "hotdog",
+   "text": "The same price since 1985",
+   "emphasis": [
+    "1985"
+   ]
+  },
+  {
+   "vo": "[lowered voice, teasing] So what's it for?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "So what's it for?"
+  },
+  {
+   "vo": "[excited, sharing a find] Every point of renewal rate",
+   "take": "calc",
+   "type": "title",
+   "text": "Every point of renewal",
+   "emphasis": [
+    "renewal"
+   ],
+   "clip": "store-carts-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "is worth fifty-nine million dollars a year.",
+   "take": "calc",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 59,
+   "suffix": "M",
+   "sub": "a year per renewal point",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "[emphatic] Lose four points for good,",
+   "take": "calc",
+   "type": "title",
+   "text": "Lose four points for good",
+   "emphasis": [
+    "four"
+   ],
+   "clip": "costco-tall-racks-02",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "and fees end year five lower.",
+   "take": "calc",
+   "type": "sensitivity",
+   "title": "Fees if renewal slips ($B)",
+   "series": [
+    {
+     "label": "Today",
+     "points": [
+      5.91,
+      5.91,
+      5.91,
+      5.91,
+      5.91
+     ],
+     "tone": "hl",
+     "endLabel": ""
+    },
+    {
+     "label": "-4 pts",
+     "points": [
+      5.67,
+      5.47,
+      5.29,
+      5.15,
+      5.02
+     ],
+     "tone": "loss",
+     "endLabel": "-4 pts"
+    }
+   ],
+   "xLabels": [
+    "Y1",
+    "Y2",
+    "Y3",
+    "Y4",
+    "Y5"
+   ],
+   "yFloor": 4,
+   "takeaway": "Flat new sign-ups assumed",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "[calm, sure] The hot dog isn't the product.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "hotdog",
+   "text": "Not the product",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "It's part of the reason you renew.",
+   "take": "payoff",
+   "type": "lib",
+   "object": "membership",
+   "props": {
+    "label": "COSTCO",
+    "tier": "GOLD STAR"
+   },
+   "text": "Part of the reason you renew",
+   "emphasis": [
+    "renew"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's how Costco makes half its profit",
+   "take": "button",
+   "type": "lib",
+   "object": "membership",
+   "props": {
+    "label": "COSTCO",
+    "tier": "GOLD STAR"
+   },
+   "text": "Half its profit",
+   "emphasis": [
+    "Half"
+   ],
+   "sfx": null
+  },
+  {
+   "vo": "before you buy anything.",
+   "take": "button",
+   "type": "title",
+   "text": "Before you buy anything",
+   "emphasis": [
+    "anything"
+   ]
+  }
+ ]
+}

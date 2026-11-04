@@ -1,0 +1,73 @@
+{
+ "template": "trades3d",
+ "id": "bl-trades-burst-pipe-cta",
+ "topHook": "POV: your pipe burst. Their phone rings.",
+ "captionStyle": "hormozi",
+ "targetSec": [
+  32,
+  40
+ ],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md). Do NOT change VO wording or figures without the lead. Template and state names are the editor's call; 'visual' is the writer's idea.",
+ "tags": {
+  "topic": "trades",
+  "hook_style": "C-witty",
+  "script_style": "pov",
+  "variable_tested": "script_style"
+ },
+ "scenes": [
+  {
+   "vo": "[urgent, curious] POV: water's coming through your ceiling. And by Invoca's data, twenty-seven percent of calls to home-services businesses go unanswered.",
+   "state": "ceiling",
+   "num": "27%",
+   "label": "of home-services calls unanswered (Invoca)",
+   "at": "^twenty",
+   "visual": "Drip from the ceiling; phone in hand"
+  },
+  {
+   "vo": "So you grab your phone and call the first plumber you can find.",
+   "state": "dial",
+   "visual": "Dial screen"
+  },
+  {
+   "vo": "Ring. Ring. Ring.",
+   "state": "van",
+   "visual": "Phone rings in an empty van across town"
+  },
+  {
+   "vo": "[lowered] Voicemail.",
+   "state": "voicemail",
+   "visual": "Voicemail icon"
+  },
+  {
+   "vo": "You stand there, holding a bucket, listening to a recording.",
+   "state": "bucket",
+   "visual": "Bucket fills under the drip"
+  },
+  {
+   "vo": "That's more than one in four calls.",
+   "state": "phones",
+   "visual": "4 phones; 1 stays dark"
+  },
+  {
+   "vo": "[quiet] And maybe they weren't ignoring you. Maybe they were under someone else's sink.",
+   "state": "sink",
+   "visual": "Plumber's legs under a sink; phone buzzing on the floor"
+  },
+  {
+   "vo": "[quiet] A text back, right away, would have told you they'd seen your call and would ring you back.",
+   "state": "text",
+   "visual": "Text bubble appears, then pops"
+  },
+  {
+   "vo": "[quiet] Instead? The water's still coming. Got a leak like this in your business? Comment LEAK and I'll find it, free. So:",
+   "state": "payoff",
+   "visual": "Drip again (loop)"
+  }
+ ],
+ "_cta": "Variant B spoken CTA (lead-approved 2026-10-31). Only the last line changed vs samples/v3/trades-leaks.json."
+}

@@ -1,0 +1,116 @@
+{
+ "_note": "PLACEHOLDER copy for a format test. Real script comes from the writer via the lead after Red Team.",
+ "durationSec": 20,
+ "test": true,
+ "hook": "Seen 14:02. Still waiting.",
+ "threads": [
+  {
+   "name": "Agent \u00b7 Marina Realty",
+   "initials": "MR",
+   "color": "#E07A5F",
+   "status": "last seen today at 14:03",
+   "msgs": [
+    {
+     "from": "me",
+     "text": "Hi! Is the 2-bed in JVC still available?",
+     "at": 0.9,
+     "time": "14:01",
+     "seenAt": 2.0,
+     "seen": "Seen 14:02"
+    },
+    {
+     "from": "me",
+     "text": "Could I view it this weekend?",
+     "at": 3.6,
+     "time": "14:05",
+     "seenAt": 4.5,
+     "seen": "Seen 14:05"
+    },
+    {
+     "from": "them",
+     "text": "Hi, sorry for the late reply! Still interested?",
+     "at": 10.2,
+     "time": "09:21"
+    },
+    {
+     "from": "me",
+     "text": "Booked a viewing elsewhere yesterday.",
+     "at": 11.6,
+     "time": "09:22",
+     "seenAt": 12.2
+    }
+   ],
+   "typing": [
+    [
+     4.7,
+     5.6
+    ],
+    [
+     8.9,
+     10.2
+    ]
+   ]
+  },
+  {
+   "name": "Agent \u00b7 Creek Homes",
+   "initials": "CH",
+   "color": "#2EC4B6",
+   "status": "online",
+   "msgs": [
+    {
+     "from": "me",
+     "text": "Hi! Is the 2-bed in JVC still available?",
+     "at": 13.0,
+     "time": "14:01",
+     "seenAt": 13.6
+    },
+    {
+     "from": "them",
+     "text": "Yes! Free Saturday 11am or 4pm?",
+     "at": 15.4,
+     "time": "14:03"
+    },
+    {
+     "from": "me",
+     "text": "11am, perfect. See you there.",
+     "at": 17.6,
+     "time": "14:04",
+     "seenAt": 18.2
+    }
+   ],
+   "typing": [
+    [
+     14.2,
+     15.4
+    ]
+   ],
+   "badge": {
+    "at": 16.3,
+    "text": "REPLIED IN 2 MIN"
+   }
+  }
+ ],
+ "show": [
+  {
+   "at": 0,
+   "thread": 0
+  },
+  {
+   "at": 12.9,
+   "thread": 1
+  },
+  {
+   "at": 19.4,
+   "thread": 0,
+   "reset": true
+  }
+ ],
+ "cards": [
+  {
+   "at": 6.0,
+   "dur": 2.6,
+   "text": "19 HOURS LATER",
+   "sub": "Seen. Not answered."
+  }
+ ]
+}

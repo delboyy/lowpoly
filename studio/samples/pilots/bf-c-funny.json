@@ -1,0 +1,81 @@
+{
+ "template": "carts3d",
+ "id": "bl-bf-c-funny",
+ "_note": "BF tone test (c-funny), locked script plan/scripts/2026-11-12-bf-tone-c-funny.approved.md + Red Team fixes. Same voice, speed and visuals across a/b/c; only the tone changes, so no targetSec re-speed. Line 2 ('And the crowd is not happy.') cut for length per the Red Team (43.0 s with it). Voice at 1.03x (40.6 s at 1.0) to stay inside 40 s; a and b are at 1.0.",
+ "title": "BF tone C: funny",
+ "topHook": "Your ad got the click. Your checkout lost the sale.",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.03
+ },
+ "tags": {
+  "topic": "ecom-black-friday",
+  "hook_style": "A",
+  "script_style": "c-funny",
+  "variable_tested": "tone"
+ },
+ "numbers": [
+  {
+   "label": "Online carts abandoned before checkout (average of 50 studies, 70.22%)",
+   "value": "7 in 10",
+   "source": "Baymard Institute, Cart & Checkout Abandonment Rate Statistics",
+   "url": "https://baymard.com/lists/cart-abandonment-rate",
+   "date": "updated Sep 2025"
+  },
+  {
+   "label": "Top reason shoppers ready to buy left (40% of those not just browsing): extra costs (shipping, tax, fees)",
+   "value": "#1 reason",
+   "source": "same as above"
+  },
+  {
+   "label": "Shoppers ready to buy who left a cart because the site made them create an account (18%)",
+   "value": "nearly 1 in 5",
+   "source": "same as above"
+  }
+ ],
+ "disclaimer": "Receipt prices are illustrative, not data. No Black-Friday-specific figure: 70% is Baymard's general average.",
+ "scenes": [
+  {
+   "vo": "[excited sports commentator] Your ad got the click! Your checkout lost the sale! Seven in ten online carts are abandoned before checkout, folks!",
+   "state": "shop",
+   "num": "7 in 10",
+   "label": "online carts abandoned (Baymard)",
+   "at": "^seven"
+  },
+  {
+   "vo": "The shopper's sprinting for the finish… and OH! Extra costs at checkout! Shipping, taxes, fees! For shoppers ready to buy, that's the number one reason they left!",
+   "state": "receipt",
+   "num": "#1 reason",
+   "label": "extra costs",
+   "at": "^number"
+  },
+  {
+   "vo": "[even louder] And a wild account form appears! Nearly one in five shoppers ready to buy have left a cart because the site made them create an account!",
+   "state": "account",
+   "num": "Nearly 1 in 5",
+   "label": "account required",
+   "at": "^nearly",
+   "plateTop": 320
+  },
+  {
+   "vo": "[replay voice] Let's go to the replay. Two fixes: show the full price early, and let them check out as a guest.",
+   "state": "payoff",
+   "ticks": [
+    {
+     "text": "Full price visible before checkout",
+     "at": "^full"
+    },
+    {
+     "text": "Guest checkout",
+     "at": "^guest"
+    }
+   ]
+  },
+  {
+   "vo": "[excited] Comment LEAK and we'll check your checkout before the big day! Because on Black Friday,",
+   "state": "payoff"
+  }
+ ]
+}

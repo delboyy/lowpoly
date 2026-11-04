@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /thanks/
+Sitemap: https://sacredscaling.com/sitemap.xml

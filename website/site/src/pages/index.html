@@ -1,0 +1,112 @@
+---
+title: Sacred Scaling · Find where your business leaks customers
+description: Paste your website. In 48 hours you get a free one-page report, built from your own reviews and site, showing where inquiries, calls and sales slip away. No call needed.
+nav: home
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Find where your business leaks customers.</h1>
+      <p class="hero-sub">Paste your website. Within 48 hours you get a one-page report, built from your own reviews and site, showing where inquiries, calls and sales slip away. Free, and no sales call.</p>
+
+      <form class="link-form" action="/leak-check/" method="get" data-start>
+        <label for="hero-link">Your website or Google Maps link</label>
+        <div class="link-row">
+          <input id="hero-link" name="link" inputmode="url" autocomplete="url" placeholder="yourbusiness.com" required maxlength="300">
+          <button class="btn" type="submit">Check my business</button>
+        </div>
+        <input type="hidden" name="type" value="" data-start-type disabled>
+      </form>
+      <p class="hero-note"><strong>Free.</strong> Report within 48 hours. We never contact your staff or customers to make it.</p>
+      <p class="hero-show"><img src="/img/leak-mark.webp" width="28" height="28" alt="">Came from <a href="{{instagram}}" rel="noopener">Business Leaks</a>? You're in the right place. It's our show.</p>
+    </div>
+
+    <div class="panel" data-leak-panel>
+      <fieldset class="panel-pick">
+        <legend>What kind of business do you run?</legend>
+        <div class="chips">
+          <label><input type="radio" name="leak" value="realestate" checked><span>Real estate</span></label>
+          <label><input type="radio" name="leak" value="clinic"><span>Clinic</span></label>
+          <label><input type="radio" name="leak" value="trades"><span>Trades</span></label>
+          <label><input type="radio" name="leak" value="store"><span>Online store</span></label>
+        </div>
+      </fieldset>
+      <div data-leak-body aria-live="polite">
+        <p class="panel-figure tnum" data-leak="figure">48<span class="unit">%</span></p>
+        <p class="panel-text" data-leak="text">of home-buyer inquiries in one study never got a reply from an agent.</p>
+        <p class="panel-src" data-leak="src">WAV Group for Weichert, 384 inquiries in 11 US states, 2014. <a href="https://www.wavgroup.com/wp-content/uploads/2014/01/AgentResponsivenessStudy2013Final.pdf" rel="noopener">Source</a></p>
+        <p class="panel-fix" data-leak="fix">The fix: <a href="/fixes/#first-reply">First Reply</a></p>
+      </div>
+      <figure class="short" style="margin:0">
+        <video muted loop playsinline preload="none" poster="/media/inquiries.webp" data-src="/media/inquiries.mp4" aria-label="Business Leaks short about this leak"></video>
+        <button class="short-toggle" type="button" aria-label="Play video"></button>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="leak-data">
+{
+  "realestate": { "type": "Real estate", "figure": "48<span class=\"unit\">%</span>", "text": "of home-buyer inquiries in one study never got a reply from an agent.", "src": "WAV Group for Weichert, 384 inquiries in 11 US states, 2014. <a href=\"https://www.wavgroup.com/wp-content/uploads/2014/01/AgentResponsivenessStudy2013Final.pdf\" rel=\"noopener\">Source</a>", "fix": "The fix: <a href=\"/fixes/#first-reply\">First Reply</a>", "video": "inquiries" },
+  "clinic": { "type": "Clinic", "figure": "38<span class=\"unit\">%</span>", "text": "of calls to one 26-practice dental group went unanswered in a month.", "src": "Peerlogic case study (vendor data), 4,280 calls, February 2026. <a href=\"https://www.peerlogic.com/post/peerlogic-dso-case-study\" rel=\"noopener\">Source</a>", "fix": "The fix: <a href=\"/fixes/#first-reply\">First Reply</a>, a text back to every missed call", "video": "clinic-calls" },
+  "trades": { "type": "Trades / home services", "figure": "27<span class=\"unit\">%</span>", "text": "of calls to home-services businesses go unanswered.", "src": "Invoca (vendor data; its customers are mostly larger firms). <a href=\"https://invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses\" rel=\"noopener\">Source</a>", "fix": "The fix: <a href=\"/fixes/#first-reply\">First Reply</a>, a text back to every missed call", "video": "trades" },
+  "store": { "type": "Online store", "figure": "70<span class=\"unit\">%</span>", "text": "of online shopping carts are abandoned. Surprise extra costs are the top reason.", "src": "Baymard Institute, average of 50 studies, updated September 2025. <a href=\"https://baymard.com/lists/cart-abandonment-rate\" rel=\"noopener\">Source</a>", "fix": "The fix: a <a href=\"/fixes/#shopify-sprint\">Shopify sprint</a>", "video": "carts" }
+}
+</script>
+
+<section class="band band-paper">
+  <div class="wrap report-grid">
+    <div>
+      <div class="head" style="margin-bottom:var(--space-xl)">
+        <h2>This is what lands in your WhatsApp.</h2>
+        <p>One page about your business. No login, no slides, no pitch deck.</p>
+      </div>
+      <ol class="notes">
+        <li><div><b>Built from what's already public</b><p>Your Google and portal reviews, and your website. We read them; we never call or message your business to test it.</p></div></li>
+        <li><div><b>Up to three findings, each with proof</b><p>A review quote with its date and star rating, or what your site shows. If we can only back up two, you get two.</p></div></li>
+        <li><div><b>The fix, in plain words</b><p>What we'd build to stop the leak. Use it with us, with someone else, or on your own.</p></div></li>
+      </ol>
+      <p style="margin-top:var(--space-2xl)"><a class="btn" href="/leak-check/">Get my free leak check</a></p>
+    </div>
+
+    <figure class="doc" style="margin:0" aria-label="Example of the report layout, with placeholders where your details go">
+      <div class="doc-head"><b><span class="ph">Your business</span>: what your customers already say</b><span>Example layout · public sources only</span></div>
+      <div class="doc-item"><span class="doc-n">1</span><div><b>Reviewers say calls go unanswered</b><p class="doc-quote">"<span class="ph">exact review quote</span>". Google review, 1 star, <span class="ph">month year</span></p></div></div>
+      <div class="doc-item"><span class="doc-n">2</span><div><b>No reply time and no WhatsApp on your contact page</b><p>Checked <span class="ph">date</span> at <span class="ph">yourbusiness.com/contact</span>: phone and form only, nothing after 6 pm.</p></div></div>
+      <div class="doc-item"><span class="doc-n">3</span><div><b><span class="ph">Third finding, if the evidence supports one</span></b></div></div>
+      <div class="doc-item doc-fix"><span class="doc-n">→</span><div><b>The fix we'd build</b><p>Every inquiry gets an instant WhatsApp reply, lands in your CRM, and gets a polite chase until it's answered.</p></div></div>
+    </figure>
+  </div>
+</section>
+
+<section class="band" id="leaks">
+  <div class="wrap">
+    <div class="head">
+      <h2>The leaks we check for.</h2>
+      <p>Each number comes from a named study, with its limits. They're general findings, not facts about your business. The report tells you which ones apply to you.</p>
+    </div>
+    <div class="ledger">
+      <div class="ledger-row"><span class="ledger-fig tnum">~7×</span><div class="ledger-what"><b>Firms that tried to reach a web lead within an hour were nearly 7 times as likely to qualify it as firms that waited longer.</b><small>Harvard Business Review, 2011: 1.25 million leads at 42 US firms. <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#first-reply">First Reply</a><span>Any business with inquiries</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">48%</span><div class="ledger-what"><b>of home-buyer inquiries in one study never got a reply from an agent.</b><small>WAV Group for Weichert, 2014: 384 inquiries, 11 US states. <a href="https://www.wavgroup.com/wp-content/uploads/2014/01/AgentResponsivenessStudy2013Final.pdf" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#first-reply">First Reply</a><span>Real estate</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">38%</span><div class="ledger-what"><b>of calls to one 26-practice dental group went unanswered in a month.</b><small>Peerlogic case study (vendor data), February 2026. <a href="https://www.peerlogic.com/post/peerlogic-dso-case-study" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#first-reply">First Reply</a><span>Clinics</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">27%</span><div class="ledger-what"><b>of calls to home-services businesses go unanswered.</b><small>Invoca (vendor data, mostly larger firms). <a href="https://invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#first-reply">First Reply</a><span>Trades and home services</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">18.8%</span><div class="ledger-what"><b>average no-show rate across 10 outpatient clinics at one US medical centre. Reminder letters only modestly reduced it.</b><small>Hamid et al., VA Medical Center, Houston, 1997–2008. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4714455/" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#show-up">Show Up</a><span>Anyone who takes bookings</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">70%</span><div class="ledger-what"><b>of online carts are abandoned. Surprise extra costs are the top reason; nearly 1 in 5 left over a forced account.</b><small>Baymard Institute, average of 50 studies, September 2025. <a href="https://baymard.com/lists/cart-abandonment-rate" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#shopify-sprint">Shopify sprint</a><span>Online stores</span></p></div>
+      <div class="ledger-row"><span class="ledger-fig tnum">0.1s</span><div class="ledger-what"><b>faster on mobile went with 8.4% more retail conversions across 37 brands.</b><small>Deloitte Digital for Google, 2020. Observational: a link, not proof. <a href="https://web.dev/case-studies/milliseconds-make-millions" rel="noopener">Source</a></small></div><p class="ledger-fix"><a href="/fixes/#fast-site">Fast Site</a><span>Any business with a website</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-paper">
+  <div class="wrap">
+    <div class="head"><h2>Fair questions.</h2></div>
+    <div class="faq">
+      <details><summary>Why is it free?</summary><div><p>Because it's the most honest way to show what we do. Seeing your own leak written down, with the evidence, is the easiest way to judge whether it's worth fixing. Some people fix it themselves, and that's fine too.</p></div></details>
+      <details><summary>Is there a catch?</summary><div><p>No card, no contract, no call booked for you. After the report we'll ask once if you'd like help. If you say no, that's the end of it.</p></div></details>
+      <details><summary>Will you contact my business or customers?</summary><div><p>No. We only read public pages: your reviews and your website. The only person we contact is you, about your report.</p></div></details>
+      <details><summary>Do you need my logins or data?</summary><div><p>No. The report only uses what anyone can see online. You never hand over a password for it.</p></div></details>
+      <details><summary>I'm not in the UAE. Does that matter?</summary><div><p>No. We're based in the UAE and work with businesses anywhere. Everything is remote, over WhatsApp or email.</p></div></details>
+      <details><summary>What if you don't find anything?</summary><div><p>Then we'll tell you, and you'll know your front door is in good shape. A short honest report beats a padded one.</p></div></details>
+    </div>
+  </div>
+</section>

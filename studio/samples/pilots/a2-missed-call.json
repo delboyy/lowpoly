@@ -1,0 +1,143 @@
+{
+ "template": "missedcall",
+ "id": "bl-a2-missed-call",
+ "_note": "Pilot A2, locked script plan/scripts/2026-11-10-pilot-a2-missed-call-roleplay.approved.md + Red Team fixes (plan/BL-PILOTS-factcheck.md): Illustrative call label from frame 1; caller hangs up before the beep; counter Missed calls 1 -> 2 -> 3, then 'Missed calls: 1 · Callers left waiting: 0'; no AED; optional <3% line NOT used. Global version: 'Al Barsha' -> 'on Elm Street'.",
+ "title": "Pilot A2: Take two",
+ "topHook": "27% of home-services calls go unanswered",
+ "label": "ILLUSTRATIVE CALL",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.25
+ },
+ "voices": {
+  "CALLER": "57d4a7fa3d944ca5b2407f916ce5f4d5",
+  "RECORDING": "a1cacb329332495ea3a9f4511587f946"
+ },
+ "tags": {
+  "topic": "trades-missed-calls",
+  "hook_style": "A",
+  "script_style": "dry-lite",
+  "variable_tested": "format"
+ },
+ "numbers": [
+  {
+   "label": "Calls to home-services businesses that go unanswered (vendor call data, large multi-location firms)",
+   "value": "27%",
+   "source": "Invoca blog",
+   "url": "https://invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses"
+  }
+ ],
+ "disclaimer": "The call, times and messages are illustrative, not data.",
+ "scenes": [
+  {
+   "vo": "[dry, calm] Twenty-seven percent of calls to home-services businesses go unanswered, according to Invoca's call data. Here's one.",
+   "state": "stat",
+   "num": "27%",
+   "label": "of home-services calls unanswered (Invoca)",
+   "at": "^twenty"
+  },
+  {
+   "vo": "[stressed] Come on, come on…",
+   "voice": "CALLER",
+   "state": "ringing",
+   "padMs": 450
+  },
+  {
+   "vo": "[cheerful, slightly tinny] Hi! You've reached the team. We're closed right now. Please leave a message after the beep.",
+   "voice": "RECORDING",
+   "fx": "phone",
+   "state": "voicemail"
+  },
+  {
+   "vo": "[sighs] It's my water heater. It's… leaking.",
+   "voice": "CALLER",
+   "state": "hangup",
+   "padMs": 250
+  },
+  {
+   "vo": "[flat] One missed call. Then the next. Then the next.",
+   "state": "missed",
+   "padMs": 150
+  },
+  {
+   "vo": "Now, same call. Take two.",
+   "state": "rewind",
+   "padMs": 1100
+  },
+  {
+   "vo": "[relieved] Oh. Okay. Water heater, on Elm Street.",
+   "voice": "CALLER",
+   "state": "relief"
+  },
+  {
+   "vo": "[dry] Same missed call. But this time, the customer still has someone.",
+   "state": "after"
+  },
+  {
+   "vo": "[quiet] An instant text back for every call you can't pick up. Comment LEAK and we'll check yours. Because",
+   "state": "payoff"
+  }
+ ],
+ "x": {
+  "contact": {
+   "name": "Plumber",
+   "initials": "P"
+  },
+  "clock": "21:47",
+  "ended": "Call ended · 0:21",
+  "missed": [
+   {
+    "at": "W5:one",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "21:47"
+   },
+   {
+    "at": "W5:next",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "21:52"
+   },
+   {
+    "at": "E5-0.75",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "22:06"
+   }
+  ],
+  "counts": [
+   {
+    "at": "W5:one",
+    "n": 1
+   },
+   {
+    "at": "W5:next",
+    "n": 2
+   },
+   {
+    "at": "E5-0.75",
+    "n": 3
+   }
+  ],
+  "sms": {
+   "at": "E6-0.6",
+   "missed": "Missed call · 21:47",
+   "text": "Sorry we missed you! Reply with the problem and your area, and we'll call first thing tomorrow.",
+   "time": "21:48"
+  },
+  "reply": {
+   "at": "W7:water",
+   "text": "Water heater, on Elm Street.",
+   "time": "21:49"
+  },
+  "after": {
+   "at": "S8+0.2",
+   "lines": [
+    "MISSED CALLS: 1",
+    "CALLERS LEFT WAITING: 0"
+   ]
+  }
+ }
+}

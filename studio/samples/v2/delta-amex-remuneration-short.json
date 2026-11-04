@@ -1,0 +1,165 @@
+{
+ "title": "American Express paid Delta more than Delta's whole pre-tax profit",
+ "hook": {
+  "a": "American Express paid Delta more last year than Delta made in pre-tax profit.",
+  "b": "Delta's best customer might be a credit card.",
+  "onScreen": "AMEX PAID DELTA $8.2B"
+ },
+ "numbers": [
+  {
+   "label": "American Express remuneration 2025",
+   "value": "$8.2 billion, up ~11% on 2024; Delta expects $10 billion over the next few years",
+   "source": "Delta 2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+   "date": "filed 2026-02",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Income before income taxes 2025",
+   "value": "$6,185M (2024: $4,658M); operating revenue $63,364M; operating income $5,822M; total passenger revenue $51,768M vs $50,894M in 2024 (+2%)",
+   "source": "Delta 2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+   "date": "filed 2026-02",
+   "status": "verified (primary)",
+   "formula": "8.2 / 63.364 = 12.9% of operating revenue; 8.2 > 6.185"
+  },
+  {
+   "label": "Award tickets 2025",
+   "value": "about 35 million award tickets redeemed",
+   "source": "Delta 2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+   "date": "filed 2026-02",
+   "status": "verified (primary)"
+  }
+ ],
+ "template": "world",
+ "id": "delta-amex-remuneration-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.01
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] American Express paid Delta eight point two billion dollars last year.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 8.2,
+   "prefix": "$",
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "paid by American Express to Delta, 2025",
+   "source": "Delta 2025 10-K · American Express remuneration 2025"
+  },
+  {
+   "vo": "Delta's whole pre-tax profit was six point two.",
+   "take": "hook",
+   "type": "bars",
+   "title": "Delta, 2025, $B",
+   "prefix": "$",
+   "unit": "B",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "Amex payments",
+     "value": 8.2,
+     "kind": "hl"
+    },
+    {
+     "label": "Pre-tax profit",
+     "value": 6.2,
+     "kind": "ink"
+    }
+   ],
+   "source": "Delta 2025 10-K · Income before income taxes 2025"
+  },
+  {
+   "vo": "[matter-of-fact] Amex buys SkyMiles to hand out on its Delta cards.",
+   "take": "proof",
+   "type": "object",
+   "illus": "card",
+   "text": "Amex buys the miles",
+   "emphasis": [
+    "buys"
+   ]
+  },
+  {
+   "vo": "[lowered, teasing] So is Delta really an airline or a bank partner?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Airline or bank partner?",
+   "emphasis": [
+    "bank"
+   ]
+  },
+  {
+   "vo": "Every swipe on a Delta card earns miles,",
+   "take": "proof",
+   "type": "object",
+   "illus": "card",
+   "text": "Every swipe earns miles",
+   "emphasis": [
+    "swipe"
+   ]
+  },
+  {
+   "vo": "and Amex pays Delta for them.",
+   "take": "proof",
+   "type": "title",
+   "text": "Amex pays for each mile",
+   "emphasis": [
+    "pays"
+   ]
+  },
+  {
+   "vo": "[steady] That's about thirteen percent of all Delta's revenue.",
+   "take": "numbers",
+   "type": "bignum",
+   "value": 13,
+   "suffix": "%",
+   "decimals": 0,
+   "sub": "of Delta's operating revenue, 2025",
+   "source": "Delta 2025 10-K · Income before income taxes 2025"
+  },
+  {
+   "vo": "Delta says it wants ten billion a year from Amex.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 10,
+   "prefix": "$",
+   "suffix": "B",
+   "decimals": 0,
+   "sub": "Delta's goal for Amex payments",
+   "source": "Delta 2025 10-K · American Express remuneration 2025"
+  },
+  {
+   "vo": "[calm, sure] The seat is the product you see.",
+   "take": "payoff",
+   "type": "title",
+   "text": "The seat is what you see",
+   "emphasis": [
+    "seat"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] The card is the one that pays.",
+   "take": "button",
+   "type": "object",
+   "illus": "card",
+   "text": "The card pays",
+   "emphasis": [
+    "pays"
+   ],
+   "sfx": null
+  }
+ ]
+}

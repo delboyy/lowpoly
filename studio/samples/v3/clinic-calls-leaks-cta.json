@@ -1,0 +1,64 @@
+{
+ "template": "noshows3d",
+ "id": "bl-clinic-missed-calls-cta",
+ "topHook": "The front desk is at lunch. The phone isn't.",
+ "captionStyle": "hormozi",
+ "targetSec": [
+  31,
+  40
+ ],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md). Do NOT change VO wording or figures without the lead. Template and state names are the editor's call; 'visual' is the writer's idea.",
+ "tags": {
+  "topic": "clinics",
+  "hook_style": "C-witty",
+  "script_style": "straight",
+  "variable_tested": "hook_style"
+ },
+ "scenes": [
+  {
+   "vo": "[calm] The front desk is at lunch, and the phone is ringing again. In one dental group of twenty-six practices, thirty-eight percent of incoming calls in one month went unanswered.",
+   "state": "desk",
+   "num": "38%",
+   "label": "of incoming calls unanswered (one 26-practice dental group, Feb 2026)",
+   "at": "^thirty",
+   "visual": "Empty reception desk, ringing phone, sandwich on the counter"
+  },
+  {
+   "vo": "That's vendor data, from a case study by Peerlogic.",
+   "state": "clipboard",
+   "label": "Vendor case study (Peerlogic)",
+   "visual": "Clipboard"
+  },
+  {
+   "vo": "More than one in three calls.",
+   "state": "phones",
+   "visual": "3 phones; 1 goes dark"
+  },
+  {
+   "vo": "[lowered] And a missed call doesn't always get a call back.",
+   "state": "missed",
+   "visual": "Missed-call icons pile up"
+  },
+  {
+   "vo": "Maybe nobody was ignoring the phone. Maybe the front desk was checking someone in.",
+   "state": "busy",
+   "visual": "Receptionist busy with a patient"
+  },
+  {
+   "vo": "But a caller who can't get through might book somewhere else.",
+   "state": "diary",
+   "visual": "Empty diary slot"
+  },
+  {
+   "vo": "[quiet] An instant text back to every missed call means every caller hears back. Want your missed calls checked? Comment LEAK, it's free. Because",
+   "state": "payoff",
+   "visual": "Text bubble pops; back to the lunch scene (loop)"
+  }
+ ],
+ "_cta": "Variant B spoken CTA (lead-approved 2026-10-31). Only the last line changed vs samples/v3/clinic-calls-leaks.json."
+}

@@ -1,0 +1,5 @@
+Same Big Mac. Very different price.
+
+Big Mac price in US dollars, July 2026: Indonesia $2.38 · Japan $3.08 · UAE $5.17 · USA $6.22 · Britain $7.40 · Switzerland $9.04. Switzerland pays about 3.8× Indonesia.
+
+Source: The Economist, Big Mac Index (July 2026 release, open data on GitHub: TheEconomist/big-mac-data). Prices converted at that date's exchange rates.

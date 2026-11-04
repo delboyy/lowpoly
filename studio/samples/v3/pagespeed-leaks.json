@@ -1,0 +1,60 @@
+{
+ "template": "pagespeed3d",
+ "id": "bl-pagespeed-spinner",
+ "topHook": "The loading spinner fears 0.1 seconds",
+ "captionStyle": "hormozi",
+ "targetSec": [32, 40],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md). Do NOT change VO wording or figures without the lead. Template and state names are the editor's call; 'visual' is the writer's idea.",
+ "tags": {
+  "topic": "stores",
+  "hook_style": "C-witty",
+  "script_style": "villain",
+  "variable_tested": "script_style"
+ },
+ "scenes": [
+  {
+   "vo": "[smug, theatrical] When mobile sites got a tenth of a second faster, retail conversion rates rose eight point four percent. I'm the loading spinner, and I find that deeply upsetting.",
+   "state": "spinner",
+   "num": "+8.4%",
+   "label": "retail conversion rate when 0.1 s faster",
+   "at": "^eight",
+   "visual": "Giant low-poly spinner over a phone-shaped shop"
+  },
+  {
+   "vo": "A tenth of a second. That's not even one full spin.",
+   "state": "stop",
+   "visual": "Spinner stops mid-turn, offended"
+  },
+  {
+   "vo": "That's from Deloitte, for Google. Thirty-seven big brands, tracked for thirty days.",
+   "state": "shelf",
+   "label": "Deloitte study for Google, 2020",
+   "visual": "37 tiny shop fronts on a shelf"
+  },
+  {
+   "vo": "[delighted] But give me a slow page, and I get to stay. And spin. And spin.",
+   "state": "grow",
+   "visual": "Spinner grows and casts a shadow over the cart"
+  },
+  {
+   "vo": "The shopper's thumb drifts toward the back button. My favourite moment.",
+   "state": "thumb",
+   "visual": "Thumb hovers; cart wobbles"
+  },
+  {
+   "vo": "[nervous] Things I hate: smaller images. Fewer apps. Less code on the page.",
+   "state": "shrink",
+   "visual": "Three props knock the spinner smaller"
+  },
+  {
+   "vo": "[smug] But you're busy. I'll just keep spinning. And remember:",
+   "state": "payoff",
+   "visual": "Back to first frame (loop)"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+/* Hallmark · design-system tokens for sacredscaling.com
+ * theme: custom · vibe: "cream ledger, deep teal, one hot orange"
+ * paper oklch(93.8% 0.026 79) · accent oklch(55% 0.18 33) · Bricolage Grotesque + Geist
+ * axes: light / grotesk-sans / warm
+ * Brand source: brand/logo (teal #0E4F4C, orange-red #E2553B, cream #F4E9D8)
+ */
+@font-face { font-family: "Bricolage Grotesque"; src: url(/fonts/bricolage.woff2) format("woff2"); font-weight: 400 800; font-stretch: 75% 100%; font-display: swap; }
+@font-face { font-family: "Geist"; src: url(/fonts/geist.woff2) format("woff2"); font-weight: 400 700; font-display: swap; }
+
+:root {
+  --color-paper:    oklch(93.8% 0.026 79);
+  --color-paper-2:  oklch(97.4% 0.014 83);
+  --color-paper-3:  oklch(89.6% 0.032 78);
+  --color-ink:      oklch(26.5% 0.037 189);
+  --color-ink-2:    oklch(41% 0.032 189);
+  --color-rule:     oklch(81% 0.032 79);
+  --color-brand:    oklch(38.8% 0.062 190);
+  --color-brand-2:  oklch(88% 0.05 186);
+  --color-accent:   oklch(55% 0.18 33);
+  --color-accent-2: oklch(63.3% 0.181 33);
+  --color-accent-ink: oklch(46% 0.16 33);
+  --color-on-accent: oklch(99% 0.005 80);
+  --color-on-brand: oklch(95% 0.02 80);
+  --color-on-brand-2: oklch(80% 0.04 186);
+  --color-focus:    oklch(38.8% 0.062 190);
+  --color-ok:       oklch(48% 0.09 165);
+  --color-error:    oklch(50% 0.17 28);
+  --color-white:    oklch(99.5% 0.004 80);
+  --color-shade:    oklch(26.5% 0.037 189 / 0.12);
+
+  --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --font-body: "Geist", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(1.75rem, 3.6vw, 2.4rem);
+  --text-3xl: clamp(2.1rem, 5vw, 3.4rem);
+  --text-display: clamp(2.5rem, 7.2vw, 5rem);
+  --text-figure: clamp(5rem, 15vw, 9.5rem);
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 7rem;
+  --gutter: 1rem;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+  --rule: 1px solid var(--color-rule);
+  --rule-ink: 1.5px solid var(--color-ink);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-med: 220ms;
+}
+@media (min-width: 720px) { :root { --gutter: 2rem; } }

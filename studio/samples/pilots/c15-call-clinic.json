@@ -1,0 +1,144 @@
+{
+ "template": "missedcall",
+ "id": "bl-15-call-clinic",
+ "_note": "15 Nov Short, locked script plan/scripts/2026-11-15-call-clinic-missed.approved.md + Red Team round-2 fix (hook bar 'One dental group missed 38% of its calls'). 38% wording copied from the locked #8 JSON. Worldwide wording.",
+ "title": "Take two: clinic missed call",
+ "topHook": "One dental group missed 38% of its calls",
+ "label": "ILLUSTRATIVE CALL",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.15
+ },
+ "voices": {
+  "CALLER": "57d4a7fa3d944ca5b2407f916ce5f4d5"
+ },
+ "tags": {
+  "topic": "clinics",
+  "hook_style": "A",
+  "script_style": "plain",
+  "variable_tested": "script_style"
+ },
+ "numbers": [
+  {
+   "label": "Inbound calls unanswered, one 26-practice dental group, February 2026 (4,280 calls; vendor case study)",
+   "value": "38%",
+   "source": "Peerlogic DSO case study",
+   "url": "https://www.peerlogic.com/post/peerlogic-dso-case-study",
+   "date": "Feb 2026"
+  }
+ ],
+ "disclaimer": "The call, times and messages are illustrative, not data.",
+ "scenes": [
+  {
+   "vo": "[calm, clear] In one dental group of twenty-six practices, thirty-eight percent of incoming calls in one month went unanswered. Here's one.",
+   "state": "stat",
+   "num": "38%",
+   "label": "of incoming calls unanswered (one 26-practice dental group, Feb 2026)",
+   "at": "^thirty"
+  },
+  {
+   "vo": "That's vendor data, from a case study by Peerlogic.",
+   "state": "ringing",
+   "chip": "Vendor case study (Peerlogic)",
+   "padMs": 500
+  },
+  {
+   "vo": "[polite, slightly tinny] Thanks for calling. We're with patients. Please leave a message.",
+   "fx": "phone",
+   "state": "voicemail"
+  },
+  {
+   "vo": "[polite] Hi, I was hoping to book a…",
+   "voice": "CALLER",
+   "state": "hangup",
+   "padMs": 250
+  },
+  {
+   "vo": "[flat] One missed call. Then the next. Then the next.",
+   "state": "missed",
+   "padMs": 150
+  },
+  {
+   "vo": "Now, the same call, with one change.",
+   "state": "rewind",
+   "padMs": 1100
+  },
+  {
+   "vo": "[relieved] Oh, great. A check-up, Thursday morning?",
+   "voice": "CALLER",
+   "state": "relief"
+  },
+  {
+   "vo": "The front desk was still busy. But this time, the caller heard back.",
+   "state": "after"
+  },
+  {
+   "vo": "[quiet] An instant text back for every missed call. Comment LEAK and we'll check how your clinic handles them. Because",
+   "state": "payoff"
+  }
+ ],
+ "x": {
+  "contact": {
+   "name": "Clinic",
+   "initials": "C"
+  },
+  "backdrop": "home",
+  "rewindText": "ONE CHANGE",
+  "clock": "12:40",
+  "ended": "Call ended · 0:14",
+  "missed": [
+   {
+    "at": "W5:one",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "12:40"
+   },
+   {
+    "at": "W5:next",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "12:46"
+   },
+   {
+    "at": "E5-0.75",
+    "title": "Missed call",
+    "body": "New number",
+    "time": "12:58"
+   }
+  ],
+  "counts": [
+   {
+    "at": "W5:one",
+    "n": 1
+   },
+   {
+    "at": "W5:next",
+    "n": 2
+   },
+   {
+    "at": "E5-0.75",
+    "n": 3
+   }
+  ],
+  "sms": {
+   "at": "E6-0.6",
+   "missed": "Missed call · 12:40",
+   "text": "Sorry we missed your call. Reply here and we'll find you a time.",
+   "time": "12:41"
+  },
+  "reply": {
+   "at": "W7:check-0.25",
+   "text": "A check-up, Thursday morning?",
+   "time": "12:42"
+  },
+  "after": {
+   "at": "S8+0.2",
+   "lines": [
+    "MISSED CALLS: 1",
+    "CALLERS LEFT WAITING: 0"
+   ]
+  }
+ }
+}

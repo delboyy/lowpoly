@@ -1,0 +1,250 @@
+{
+ "title": "The AI behind Netflix: what to watch",
+ "hook": {
+  "a": "Netflix says its algorithm saves a billion a year.",
+  "b": "Netflix's algorithm isn't built to help you. It's built to keep you.",
+  "onScreen": "NETFLIX: A $1B ALGORITHM"
+ },
+ "numbers": [
+  {
+   "label": "Hours streamed influenced by the recommender",
+   "value": "~80%; remaining 20% from search",
+   "source": "Gomez-Uribe & Hunt, 'The Netflix Recommender System', ACM TMIS 6(4)",
+   "url": "https://gwern.net/doc/reinforcement-learning/exploration/2015-gomezuribe.pdf",
+   "date": "Dec 2015",
+   "status": "verified (primary) (company authors, 2015)"
+  },
+  {
+   "label": "Value of personalisation + recommendations",
+   "value": "'more than $1B per year' from reduced churn (authors' own estimate)",
+   "source": "same paper",
+   "url": "https://gwern.net/doc/reinforcement-learning/exploration/2015-gomezuribe.pdf",
+   "date": "Dec 2015",
+   "status": "verified (primary) as a claim; it's Netflix's estimate, not audited",
+   "formula": "$1B / $6,779.5M (FY2015 revenue) = 14.75%; $1B / $45,183M (FY2025 streaming revenue) = 2.2%. The $1B is Netflix's own 2015 estimate, not audited."
+  },
+  {
+   "label": "Churn reduction",
+   "value": "'reduced churn by several percentage points'",
+   "source": "same paper",
+   "url": "https://gwern.net/doc/reinforcement-learning/exploration/2015-gomezuribe.pdf",
+   "date": "Dec 2015",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Monthly churn level",
+   "value": "'low single-digits'",
+   "source": "same paper",
+   "url": "https://gwern.net/doc/reinforcement-learning/exploration/2015-gomezuribe.pdf",
+   "date": "Dec 2015",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Streaming revenue 2025",
+   "value": "$45,183M",
+   "source": "Netflix FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
+   "date": "filed 2026-01-23",
+   "status": "verified (primary)"
+  }
+ ],
+ "analysis": {
+  "title": "How big is Netflix's $1 billion claim?",
+  "finding": "Netflix said recommendations save it more than $1B a year. Against its 2015 revenue ($6.78B) that is ~14.8%; against 2025 streaming revenue ($45.18B) it would be ~2.2%."
+ },
+ "template": "world",
+ "id": "netflix-recommendation-ai-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.19
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Netflix says its algorithm",
+   "take": "hook",
+   "type": "object",
+   "illus": "phone",
+   "text": "Netflix's algorithm",
+   "emphasis": [
+    "algorithm"
+   ]
+  },
+  {
+   "vo": "saves a billion a year.",
+   "take": "hook",
+   "type": "redact",
+   "label": "VALUE CLAIMED, PER YEAR",
+   "value": "$1B+",
+   "sub": "Netflix's own 2015 estimate",
+   "source": "Netflix paper 2015 · $1B"
+  },
+  {
+   "vo": "[matter-of-fact] That's from a twenty fifteen research paper,",
+   "take": "proof",
+   "type": "doc",
+   "title": "The Netflix Recommender System",
+   "lines": [
+    "ACM Transactions on Management Information Systems",
+    "Gomez-Uribe & Hunt, Dec 2015",
+    "Saves \"more than $1B per year\""
+   ],
+   "highlight": 2,
+   "footer": "Netflix authors, 2015"
+  },
+  {
+   "vo": "not a rumour.",
+   "take": "proof",
+   "type": "stamp",
+   "text": "NOT A RUMOUR",
+   "tone": "gain"
+  },
+  {
+   "vo": "[steady] The algorithm influences about eighty percent",
+   "take": "proof",
+   "type": "ring",
+   "share": 0.8,
+   "sub": "of hours streamed come from recommendations",
+   "source": "Netflix paper 2015 · 80%"
+  },
+  {
+   "vo": "of hours streamed. The rest is search.",
+   "take": "proof",
+   "type": "title",
+   "text": "The rest is search",
+   "emphasis": [
+    "search"
+   ],
+   "clip": "netflix-phone-hands-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "[lowered voice, teasing] So how does a recommendation",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "One suggestion"
+  },
+  {
+   "vo": "turn into a billion dollars?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Into a billion dollars?",
+   "clip": "netflix-phone-hold-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "[matter-of-fact] Netflix says it cuts cancellations,",
+   "take": "proof",
+   "type": "title",
+   "text": "Fewer cancellations",
+   "emphasis": [
+    "Fewer"
+   ]
+  },
+  {
+   "vo": "so subscribers stay.",
+   "take": "proof",
+   "type": "object",
+   "illus": "phone",
+   "text": "Subscribers stay",
+   "emphasis": [
+    "stay"
+   ]
+  },
+  {
+   "vo": "[excited, sharing a find] Here's the check.",
+   "take": "calc",
+   "type": "title",
+   "text": "Here's the check",
+   "emphasis": [
+    "check"
+   ]
+  },
+  {
+   "vo": "A billion dollars was fifteen percent of Netflix's revenue in twenty fifteen.",
+   "take": "calc",
+   "type": "bars",
+   "title": "$1B as % of revenue",
+   "suffix": "%",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "2015 revenue",
+     "value": 14.8,
+     "kind": "hl"
+    },
+    {
+     "label": "2025 streaming revenue",
+     "value": 2.2,
+     "kind": "ink"
+    }
+   ],
+   "source": "Netflix paper 2015 · $1B"
+  },
+  {
+   "vo": "[surprised, building] Against last year's streaming revenue,",
+   "take": "calc",
+   "type": "title",
+   "text": "Against 2025's revenue"
+  },
+  {
+   "vo": "the same billion is two percent.",
+   "take": "calc",
+   "type": "title",
+   "text": "The same billion: two percent",
+   "emphasis": [
+    "two percent"
+   ],
+   "clip": "netflix-phone-street-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "[calm, sure] It isn't just built to help you find a show.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Not just built to help you",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "It's built to keep you.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Built to keep you",
+   "emphasis": [
+    "keep"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's the billion-dollar job",
+   "take": "button",
+   "type": "redact",
+   "label": "VALUE CLAIMED, PER YEAR",
+   "value": "$1B+",
+   "sub": "Netflix's own 2015 estimate",
+   "sfx": null,
+   "source": "Netflix paper 2015 · $1B"
+  },
+  {
+   "vo": "of a row of thumbnails.",
+   "take": "button",
+   "type": "object",
+   "illus": "phone",
+   "text": "A row of thumbnails",
+   "emphasis": [
+    "thumbnails"
+   ]
+  }
+ ]
+}

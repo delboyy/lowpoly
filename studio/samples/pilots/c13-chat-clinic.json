@@ -1,0 +1,199 @@
+{
+ "template": "chatmock",
+ "id": "bl-13-chat-clinic",
+ "_note": "13 Nov Short, locked script plan/scripts/2026-11-13-chat-clinic-booking.approved.md + Red Team round-2 fix (grey 'Seen' label, no ticks). Worldwide wording.",
+ "title": "Seen 09:16: clinic booking chat",
+ "topHook": "Seen 09:16. Replied the next morning.",
+ "label": "ILLUSTRATIVE CHAT",
+ "captionStyle": "hormozi",
+ "targetSec": [
+  30,
+  40
+ ],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "tags": {
+  "topic": "clinics",
+  "hook_style": "A",
+  "script_style": "witty-dry",
+  "variable_tested": "topic"
+ },
+ "numbers": [
+  {
+   "label": "Of 2,241 US firms audited, share that never responded to a web lead (all industries)",
+   "value": "23%",
+   "source": "HBR, \"The Short Life of Online Sales Leads\" (Oldroyd, McElheran, Elkington)",
+   "url": "https://hbr.org/2011/03/the-short-life-of-online-sales-leads",
+   "date": "Mar 2011"
+  }
+ ],
+ "disclaimer": "Chat and timestamps are illustrative, not data.",
+ "scenes": [
+  {
+   "vo": "[dry, calm] In a test of over two thousand US companies, almost one in four never replied to a web lead at all. Now watch one booking request.",
+   "state": "stat",
+   "num": "23%",
+   "label": "never replied to a web lead (HBR 2011, US)",
+   "at": "^almost"
+  },
+  {
+   "vo": "A patient asks for a check-up this week. Seen.",
+   "state": "ask"
+  },
+  {
+   "vo": "Meanwhile, another clinic replies in three minutes. Thursday, four p.m. Booked.",
+   "state": "rival"
+  },
+  {
+   "vo": "[flat] The first clinic? Nothing. All day.",
+   "state": "skip"
+  },
+  {
+   "vo": "[deadpan] Next morning: \"So sorry for the delay! Still looking for an appointment?\"",
+   "state": "late"
+  },
+  {
+   "vo": "They were not.",
+   "state": "booked"
+  },
+  {
+   "vo": "Maybe nobody ignored it. Maybe the front desk was with a patient.",
+   "state": "busy"
+  },
+  {
+   "vo": "[quiet] An instant first reply, then a person who follows up fast. Comment LEAK and we'll check how fast yours replies. Because",
+   "state": "payoff"
+  }
+ ],
+ "x": {
+  "threads": [
+   {
+    "name": "Clinic A",
+    "initials": "A",
+    "color": "#9C9790",
+    "status": "last seen today at 09:16",
+    "msgs": [
+     {
+      "from": "me",
+      "text": "Hi, do you have anything this week for a check-up?",
+      "at": "W2:patient",
+      "time": "09:15",
+      "seenAt": "W2:seen",
+      "seen": "Seen 09:16"
+     },
+     {
+      "from": "sys",
+      "text": "NEXT MORNING",
+      "at": "S5"
+     },
+     {
+      "from": "them",
+      "text": "So sorry for the delay! Still looking for an appointment?",
+      "at": "W5:so",
+      "time": "08:40"
+     },
+     {
+      "from": "me",
+      "text": "All sorted, thanks.",
+      "at": "S6+0.15",
+      "time": "08:41",
+      "seenAt": "S6+0.9"
+     }
+    ],
+    "typing": [
+     [
+      "S5+0.2",
+      "W5:so"
+     ]
+    ]
+   },
+   {
+    "name": "Clinic B",
+    "initials": "B",
+    "color": "#B4AFA8",
+    "status": "online",
+    "msgs": [
+     {
+      "from": "me",
+      "text": "Hi, do you have anything this week for a check-up?",
+      "at": "S3-0.5",
+      "time": "09:15",
+      "seenAt": "S3-0.4"
+     },
+     {
+      "from": "sys",
+      "text": "MEANWHILE · 09:18",
+      "at": "S3+0.15"
+     },
+     {
+      "from": "them",
+      "text": "Hi! Yes, Thursday at 4pm works. Shall I book it?",
+      "at": "W3:replies",
+      "time": "09:18"
+     },
+     {
+      "from": "me",
+      "text": "Yes please.",
+      "at": "W3:booked",
+      "time": "09:19",
+      "seenAt": "W3:booked+0.5"
+     }
+    ],
+    "typing": [
+     [
+      "S3+0.35",
+      "W3:replies"
+     ]
+    ],
+    "badge": {
+     "at": "W3:minutes",
+     "text": "REPLIED IN 3 MIN"
+    }
+   }
+  ],
+  "show": [
+   {
+    "at": 0,
+    "thread": 0
+   },
+   {
+    "at": "S3",
+    "thread": 1
+   },
+   {
+    "at": "S4",
+    "thread": 0
+   }
+  ],
+  "cards": [
+   {
+    "at": "W4:nothing",
+    "until": "E4",
+    "text": "NEXT MORNING"
+   }
+  ],
+  "notifs": [
+   {
+    "at": "S7+0.1",
+    "until": "E7",
+    "title": "New patient",
+    "body": "Do you take walk-ins?"
+   },
+   {
+    "at": "S7+0.7",
+    "until": "E7",
+    "title": "Booking request",
+    "body": "Anything Friday?"
+   },
+   {
+    "at": "W7:maybe-0.0",
+    "until": "E7",
+    "title": "Missed call",
+    "body": "Unknown number"
+   }
+  ]
+ }
+}

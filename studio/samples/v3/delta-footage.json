@@ -1,0 +1,138 @@
+{
+ "template": "footage",
+ "id": "delta-amex-footage-pilot",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Amex paid Delta more than Delta made in profit",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.15
+ },
+ "disclaimer": null,
+ "scenes": [
+  {
+   "vo": "[flat, confident] American Express paid Delta eight point two billion dollars last year.",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 43,
+     "archival": true
+    },
+    {
+     "media": "assets/stock/video/dl-card-pay.mp4"
+    },
+    {
+     "media": "assets/stock/video/dl-wing-takeoff.mp4",
+     "num": "$8.2B",
+     "numLabel": "paid by Amex to Delta, 2025"
+    }
+   ]
+  },
+  {
+   "vo": "That's more than Delta's entire pre-tax profit.",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 38,
+     "archival": true
+    },
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 34,
+     "archival": true,
+     "num": "$6.2B",
+     "numLabel": "Delta's pre-tax profit, 2025"
+    }
+   ]
+  },
+  {
+   "vo": "[lowered, curious] So what is Amex actually buying?",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 29,
+     "archival": true
+    },
+    {
+     "media": "assets/stock/video/dl-cabin.mp4"
+    }
+   ]
+  },
+  {
+   "vo": "Miles. Every swipe on a Delta card earns SkyMiles, and Amex pays Delta for them.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dl-card-pay.mp4",
+     "start": 2
+    },
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 32,
+     "archival": true
+    },
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 36,
+     "archival": true
+    },
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 48,
+     "archival": true
+    }
+   ]
+  },
+  {
+   "vo": "That's about thirteen percent of all Delta's revenue.",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 39,
+     "archival": true
+    },
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 34,
+     "archival": true,
+     "num": "13%",
+     "numLabel": "of Delta's revenue, 2025"
+    }
+   ]
+  },
+  {
+   "vo": "And Delta wants ten billion a year.",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 36,
+     "archival": true
+    },
+    {
+     "media": "assets/stock/video/dl-wing-takeoff.mp4",
+     "start": 2,
+     "num": "$10B",
+     "numLabel": "Delta's target from Amex"
+    }
+   ]
+  },
+  {
+   "vo": "[calm, sure] The seat is what you see.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dl-cabin.mp4",
+     "start": 2
+    }
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] The card is what pays.",
+   "shots": [
+    {
+     "media": "assets/archive/prelinger/flying-businessman-1953.mp4",
+     "start": 48,
+     "archival": true
+    }
+   ]
+  }
+ ]
+}

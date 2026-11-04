@@ -1,0 +1,132 @@
+{
+ "template": "world",
+ "id": "costco-v2",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "bgm-drive-108bpm",
+ "bgmVolume": 0.07,
+ "scenes": [
+  {
+   "vo": "[calm, matter-of-fact, curious] A one fifty hot dog combo hasn't changed since 1985.",
+   "type": "object",
+   "illus": "hotdog",
+   "text": "$1.50 since 1985",
+   "emphasis": [
+    "$1.50"
+   ],
+   "size": 800
+  },
+  {
+   "vo": "[building intrigue] Adjust for inflation and it would cost <emphasis>nearly four fifty</emphasis>.",
+   "type": "bars",
+   "title": "Hot dog + soda",
+   "prefix": "$",
+   "decimals": 2,
+   "items": [
+    {
+     "label": "Costco price",
+     "value": 1.5,
+     "kind": "hl"
+    },
+    {
+     "label": "With inflation",
+     "value": 4.5,
+     "kind": "ghost"
+    }
+   ],
+   "source": "CNN/ABC7 · Costco CFO, May 2024"
+  },
+  {
+   "vo": "[puzzled, leaning in] So why does Costco never touch it?",
+   "type": "title",
+   "dark": true,
+   "text": "So why won't Costco touch it?",
+   "emphasis": [
+    "touch"
+   ],
+   "illus": "hotdog"
+  },
+  {
+   "vo": "[conspiratorial, quick] Look at where Costco really makes its money.",
+   "type": "title",
+   "kicker": "FOLLOW THE RECEIPT",
+   "text": "Where does Costco really make its money?",
+   "emphasis": [
+    "really"
+   ]
+  },
+  {
+   "vo": "[confident, steady] Costco sold almost three hundred billion dollars of goods last year, at a margin around eleven percent.",
+   "type": "receipt",
+   "subtitle": "COSTCO · FY2026",
+   "lines": [
+    {
+     "label": "Net sales",
+     "value": "$297.2B",
+     "bold": true
+    },
+    {
+     "label": "Merchandise margin",
+     "value": "~11%"
+    },
+    {
+     "label": "Operating income",
+     "value": "$11.7B",
+     "hl": true
+    }
+   ],
+   "source": "Costco FY2026 10-K · Net sales"
+  },
+  {
+   "vo": "[pause] [excited reveal] But membership fees brought in five point nine billion, about <emphasis>half</emphasis> of its operating profit.",
+   "type": "redact",
+   "label": "MEMBERSHIP FEES",
+   "value": "$5.9B",
+   "sub": "50.6% of operating income",
+   "source": "Costco FY2026 10-K · Membership fees"
+  },
+  {
+   "vo": "[satisfied, matter-of-fact] And ninety-two percent of US and Canadian members renew.",
+   "type": "stat",
+   "value": 92.3,
+   "suffix": "%",
+   "decimals": 1,
+   "label": "of US & Canada members renew",
+   "source": "Costco FY2026 10-K · Renewal rate"
+  },
+  {
+   "vo": "[knowing, a little amused] The hot dog isn't a product. [pause] It's the reason you keep paying.",
+   "type": "montage",
+   "cuts": [
+    {
+     "illus": "hotdog",
+     "text": "The hot dog"
+    },
+    {
+     "illus": "card",
+     "text": "Isn't the product"
+    },
+    {
+     "illus": "cart",
+     "text": "It's the reason"
+    }
+   ]
+  },
+  {
+   "vo": "[calm, matter-of-fact, curious] A one fifty hot dog combo that hasn't changed since 1985.",
+   "type": "object",
+   "illus": "hotdog",
+   "tag": {
+    "from": "1985",
+    "to": "$1.50",
+    "label": "STILL THE PRICE"
+   }
+  }
+ ],
+ "fish": {
+  "model": "drama-3",
+  "voice": "bf322df2096a46f18c579d0baa36f41d",
+  "speed": 1.0
+ }
+}

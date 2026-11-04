@@ -1,0 +1,16 @@
+{
+ "template": "inquiry3d",
+ "id": "bl-property-inquiries",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Almost half of home-buyer inquiries never got a reply from an agent",
+ "fish": { "model": "drama-3", "speed": 1.0 },
+ "scenes": [
+  { "vo": "[calm, curious] Almost half of buyers who asked about a home online never heard back from an agent.", "state": "street" },
+  { "vo": "In one US study of three hundred and eighty-four agents, forty-eight percent of buyer inquiries never got a reply from a person.", "state": "study", "num": "48%", "label": "no reply from an agent", "at": "^forty" },
+  { "vo": "[lowered] So where did those buyers go?", "state": "question" },
+  { "vo": "Probably to the next agent who did.", "state": "rival" },
+  { "vo": "And a home is a big-ticket purchase.", "state": "house" },
+  { "vo": "[quiet] One unanswered message can cost a whole commission. Because", "state": "payoff" }
+ ]
+}

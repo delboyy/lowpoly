@@ -1,0 +1,221 @@
+{
+ "title": "What went wrong at Dollar General (and what one store keeps)",
+ "hook": {
+  "a": "Dollar General's operating margin fell by a third in fiscal twenty twenty-four.",
+  "b": "One point of overhead costs a Dollar General store a fifth of profit.",
+  "onScreen": "MARGIN FELL BY A THIRD"
+ },
+ "numbers": [
+  {
+   "label": "Stores",
+   "value": "20,959 in 48 US states and Mexico, as of 2026-02-27",
+   "source": "Dollar General FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "date": "filed 2026-03-20",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Share of stores in towns of 20,000 or fewer",
+   "value": "approximately 80%",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "date": "filed 2026-03-20",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Operating margin by fiscal year",
+   "value": "6.32% (2023), 4.22% (2024), 5.16% (2025)",
+   "source": "Dollar General FY2025 10-K (MD&A table)",
+   "url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "date": "filed 2026-03-20",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Net sales FY2025",
+   "value": "$42,724.4M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "date": "filed 2026-03-20",
+   "status": "verified (primary)",
+   "formula": "Per store = $42,724.4M / 20,959 stores = ~$2.04M (store count is Feb 2026, so slightly low). Gross 30.66% = $625K, overhead (SG&A) 25.50% = $520K, operating 5.16% = $105K. 1 point of SG&A = 1% x $2.04M = $20.4K = 19% of $105K."
+  },
+  {
+   "label": "Fiscal 2024 vs 2023: SG&A and sales growth",
+   "value": "SG&A +11.1%, net sales +5.0%; operating margin 6.32% -> 4.22%",
+   "source": "Dollar General FY2025 10-K (MD&A table)",
+   "url": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "date": "filed 2026-03-20",
+   "status": "verified (primary); read from the extracted table, re-check the filing page",
+   "formula": "Margin fall = (6.32% - 4.22%) / 6.32% = 33% (fiscal 2024 vs 2023). SG&A +11.1% / sales +5.0% = 2.2x as fast."
+  }
+ ],
+ "analysis": {
+  "title": "The average Dollar General store, line by line",
+  "finding": "An average store books ~$2.04M of sales a year and keeps ~$105K of operating profit; one point of overhead (SG&A) is ~$20K, or ~19% of that profit. And the company-level cause: fiscal 2024 SG&A grew 11.1% vs sales 5.0%, cutting operating margin from 6.32% to 4.22%."
+ },
+ "template": "world",
+ "id": "dollar-general-small-towns-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.99
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Dollar General's operating margin",
+   "take": "hook",
+   "type": "object",
+   "illus": "store",
+   "text": "Dollar General",
+   "emphasis": [
+    "Dollar General"
+   ]
+  },
+  {
+   "vo": "fell by a third in fiscal twenty twenty-four.",
+   "take": "hook",
+   "type": "bars",
+   "title": "Operating margin",
+   "suffix": "%",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "FY2023",
+     "value": 6.3,
+     "kind": "ink"
+    },
+    {
+     "label": "FY2024",
+     "value": 4.2,
+     "kind": "loss"
+    }
+   ],
+   "source": "DG 10-K FY25 · margins"
+  },
+  {
+   "vo": "[steady] Overhead grew more than twice as fast as sales.",
+   "take": "proof",
+   "type": "title",
+   "text": "Overhead outgrew sales",
+   "emphasis": [
+    "Overhead"
+   ]
+  },
+  {
+   "vo": "[matter-of-fact] Most of its stores are in small towns.",
+   "take": "proof",
+   "type": "map",
+   "region": "us",
+   "title": "Small-town stores",
+   "scatter": {
+    "count": 70,
+    "seed": 5
+   }
+  },
+  {
+   "vo": "[lowered voice, teasing] So what does an average Dollar General store",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "An average store"
+  },
+  {
+   "vo": "actually keep?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "actually keep?",
+   "clip": "dollar-straight-road-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[excited, sharing a find] An average store keeps about a hundred and five thousand dollars",
+   "take": "calc",
+   "type": "bignum",
+   "value": 105,
+   "sub": "operating profit, average store",
+   "prefix": "$",
+   "suffix": "K",
+   "decimals": 0,
+   "source": "DG 10-K FY25 · computed"
+  },
+  {
+   "vo": "of operating profit.",
+   "take": "calc",
+   "type": "title",
+   "text": "Of operating profit",
+   "emphasis": [
+    "profit"
+   ],
+   "clip": "dollar-forest-road-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "[surprised, building] One point of overhead",
+   "take": "calc",
+   "type": "title",
+   "text": "One point of overhead",
+   "emphasis": [
+    "overhead"
+   ]
+  },
+  {
+   "vo": "is about a fifth of that.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 20,
+   "sub": "per store, per point of overhead",
+   "prefix": "$",
+   "suffix": "K",
+   "decimals": 0,
+   "source": "DG 10-K FY25 · computed"
+  },
+  {
+   "vo": "[calm, sure] When margins are this thin,",
+   "take": "payoff",
+   "type": "title",
+   "text": "When margins are this thin",
+   "emphasis": [
+    "thin"
+   ]
+  },
+  {
+   "vo": "overhead is most of the story.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Overhead is most of it",
+   "emphasis": [
+    "Overhead"
+   ],
+   "clip": "dollar-mountain-road-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[quiet, knowing] That's what went wrong:",
+   "take": "button",
+   "type": "title",
+   "text": "What went wrong",
+   "emphasis": [
+    "wrong"
+   ],
+   "sfx": null
+  },
+  {
+   "vo": "costs grew faster than sales.",
+   "take": "button",
+   "type": "title",
+   "text": "Costs outgrew sales",
+   "emphasis": [
+    "Costs"
+   ]
+  }
+ ]
+}

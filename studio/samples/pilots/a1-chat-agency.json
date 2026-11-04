@@ -1,0 +1,199 @@
+{
+ "template": "chatmock",
+ "id": "bl-a1-chat-seen",
+ "_note": "Pilot A1, locked script plan/scripts/2026-11-09-pilot-a1-whatsapp-agency.approved.md + Red Team fixes (plan/BL-PILOTS-factcheck.md). VO wording locked. Agency B's bubbles carry a 'Meanwhile · 14:03' tag (Red Team option 2). Global version (lead 2026-10-31): line 1 = HBR ~7x, Marina -> Park Road, no Dubai/AED.",
+ "title": "Pilot A1: Seen 14:02",
+ "topHook": "Seen 14:02. Replied 19 hours later.",
+ "label": "ILLUSTRATIVE CHAT",
+ "captionStyle": "hormozi",
+ "targetSec": [
+  30,
+  40
+ ],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "tags": {
+  "topic": "real-estate",
+  "hook_style": "A",
+  "script_style": "witty-dry",
+  "variable_tested": "format"
+ },
+ "numbers": [
+  {
+   "label": "Leads contacted within an hour vs even an hour later: likelihood of qualifying the lead (1.25M web leads, 42 US firms)",
+   "value": "~7x",
+   "source": "HBR, \"The Short Life of Online Sales Leads\" (Oldroyd, McElheran, Elkington)",
+   "url": "https://hbr.org/2011/03/the-short-life-of-online-sales-leads",
+   "date": "Mar 2011"
+  }
+ ],
+ "disclaimer": "Chat and timestamps are illustrative, not data.",
+ "scenes": [
+  {
+   "vo": "[dry, calm] Reply within an hour, and you're about seven times likelier to qualify the lead than if you wait even an hour longer.",
+   "state": "stat",
+   "num": "~7×",
+   "label": "likelier to qualify (HBR, 2011)",
+   "at": "^seven"
+  },
+  {
+   "vo": "Two o'clock. A buyer asks about a two-bed. Seen at two-oh-two.",
+   "state": "ask"
+  },
+  {
+   "vo": "[flat] Then nothing. For nineteen hours.",
+   "state": "skip"
+  },
+  {
+   "vo": "Meanwhile, another agency replies in two minutes. Thursday, six p.m. Booked.",
+   "state": "rival"
+  },
+  {
+   "vo": "[deadpan] Next morning: \"So sorry for the late reply! Still interested?\"",
+   "state": "late"
+  },
+  {
+   "vo": "Reader, they were not.",
+   "state": "booked"
+  },
+  {
+   "vo": "Maybe nobody was lazy. Maybe it landed on a busy phone.",
+   "state": "busy"
+  },
+  {
+   "vo": "[quiet] An instant first reply, then a human follow-up. Comment LEAK and we'll check how fast yours replies. Because",
+   "state": "payoff"
+  }
+ ],
+ "x": {
+  "threads": [
+   {
+    "name": "Agency A",
+    "initials": "A",
+    "color": "#9C9790",
+    "status": "last seen today at 14:02",
+    "msgs": [
+     {
+      "from": "me",
+      "text": "Hi! Is the 2-bed on Park Road still available? I can view this week.",
+      "at": "W2:buyer",
+      "time": "14:01",
+      "seenAt": "W2:seen",
+      "seen": "Seen 14:02"
+     },
+     {
+      "from": "sys",
+      "text": "NEXT DAY",
+      "at": "S5"
+     },
+     {
+      "from": "them",
+      "text": "Hi, so sorry for the late reply! Still interested?",
+      "at": "W5:so",
+      "time": "09:14"
+     },
+     {
+      "from": "me",
+      "text": "Already booked a viewing with another agent. Thanks!",
+      "at": "S6+0.15",
+      "time": "09:20",
+      "seenAt": "S6+0.9"
+     }
+    ],
+    "typing": [
+     [
+      "S5+0.2",
+      "W5:so"
+     ]
+    ]
+   },
+   {
+    "name": "Agency B",
+    "initials": "B",
+    "color": "#B4AFA8",
+    "status": "online",
+    "msgs": [
+     {
+      "from": "me",
+      "text": "Hi! Is the 2-bed on Park Road still available? I can view this week.",
+      "at": "S4-0.5",
+      "time": "14:01",
+      "seenAt": "S4-0.4"
+     },
+     {
+      "from": "sys",
+      "text": "MEANWHILE · 14:03",
+      "at": "S4+0.15"
+     },
+     {
+      "from": "them",
+      "text": "Hi! Yes, still available. Thursday 6pm?",
+      "at": "W4:replies",
+      "time": "14:03"
+     },
+     {
+      "from": "me",
+      "text": "Perfect, booked.",
+      "at": "W4:booked",
+      "time": "14:04",
+      "seenAt": "W4:booked+0.5"
+     }
+    ],
+    "typing": [
+     [
+      "S4+0.35",
+      "W4:replies"
+     ]
+    ],
+    "badge": {
+     "at": "W4:minutes",
+     "text": "REPLIED IN 2 MIN"
+    }
+   }
+  ],
+  "show": [
+   {
+    "at": 0,
+    "thread": 0
+   },
+   {
+    "at": "S4",
+    "thread": 1
+   },
+   {
+    "at": "S5",
+    "thread": 0
+   }
+  ],
+  "cards": [
+   {
+    "at": "W3:then",
+    "until": "E3",
+    "text": "+19 HOURS"
+   }
+  ],
+  "notifs": [
+   {
+    "at": "S7+0.1",
+    "until": "E7",
+    "title": "New enquiry",
+    "body": "Is this still available?"
+   },
+   {
+    "at": "S7+0.7",
+    "until": "E7",
+    "title": "Viewing request",
+    "body": "Can I see it today?"
+   },
+   {
+    "at": "W7:maybe-0.0",
+    "until": "E7",
+    "title": "Missed call",
+    "body": "Unknown number"
+   }
+  ]
+ }
+}

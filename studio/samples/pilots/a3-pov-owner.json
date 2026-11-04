@@ -1,0 +1,67 @@
+{
+ "template": "pov3d",
+ "id": "bl-a3-pov-owner",
+ "_note": "Pilot A3, locked script plan/scripts/2026-11-11-pilot-a3-pov-agency-owner.approved.md + Red Team fixes (line 6 scoped to 'In this office'; line 7 adds 'and a person who follows up fast'). No spoken CTA (reach arm). Generic UIs only. Lead-approved trims 2026-10-31: dropped 'First stop,'; line 7 -> 'The fix: one place every enquiry lands…'; dropped 'Right.'. Global version: 'Dubai agency owner' -> 'agency owner'.",
+ "title": "Pilot A3: POV agency owner",
+ "topHook": "POV: you're finding out why your leads went cold",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.25
+ },
+ "tags": {
+  "topic": "real-estate",
+  "hook_style": "C-witty",
+  "script_style": "pov-skit",
+  "variable_tested": "format"
+ },
+ "numbers": [
+  {
+   "label": "Buyer inquiries never responded to by an agent (auto-replies not counted; 384 inquiries, 11 US states)",
+   "value": "48%",
+   "source": "WAV Group for Weichert, Agent Responsiveness Study",
+   "url": "https://www.wavgroup.com/wp-content/uploads/2014/01/AgentResponsivenessStudy2013Final.pdf",
+   "date": "2013, pub. Jan 2014"
+  }
+ ],
+ "disclaimer": "The office, inbox, form and group chat are fictional.",
+ "scenes": [
+  {
+   "vo": "[playful, conspiratorial] POV: you're an agency owner, finding out why your leads went cold. For context: in one US study, forty-eight percent of buyer inquiries never got a reply from an agent.",
+   "state": "desk",
+   "num": "48%",
+   "label": "no reply from an agent (US study, 2013–14)",
+   "at": "^forty"
+  },
+  {
+   "vo": "The shared inbox. The unread badge no longer shows a number. It just says \"yes\".",
+   "state": "inbox"
+  },
+  {
+   "vo": "Next, the website form. It's been emailing someone who left. Last spring.",
+   "state": "form"
+  },
+  {
+   "vo": "[delighted] Then the portal leads. Forwarded, every one, to a WhatsApp group called \"Leads FINAL final\".",
+   "state": "group"
+  },
+  {
+   "vo": "[beat] Muted.",
+   "state": "mute",
+   "padMs": 300
+  },
+  {
+   "vo": "Nobody's lazy. In this office, every lead just went somewhere nobody was looking.",
+   "state": "map"
+  },
+  {
+   "vo": "[playful] The fix: one place every enquiry lands, an instant first reply, and a person who follows up fast.",
+   "state": "fix"
+  },
+  {
+   "vo": "[sigh] Back to the case. POV:",
+   "state": "payoff"
+  }
+ ]
+}

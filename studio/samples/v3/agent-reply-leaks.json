@@ -1,0 +1,61 @@
+{
+ "template": "agentreply3d",
+ "id": "bl-agent-reply-time",
+ "topHook": "How long do agents take to reply?",
+ "captionStyle": "hormozi",
+ "targetSec": [31, 40],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md). Do NOT change VO wording or figures without the lead. Template and state names are the editor's call; 'visual' is the writer's idea.",
+ "tags": {
+  "topic": "real-estate",
+  "hook_style": "B-question",
+  "script_style": "straight",
+  "variable_tested": "hook_style"
+ },
+ "scenes": [
+  {
+   "vo": "[curious] When a buyer asks about a home online, how long until an agent writes back? In one US study, the agents who replied took five point three hours on average.",
+   "state": "ask",
+   "num": "5.3 h",
+   "label": "average reply time (agents who replied)",
+   "at": "^five",
+   "visual": "Message bubble flies to an agency; a big clock"
+  },
+  {
+   "vo": "And forty-eight percent of buyer inquiries never got a reply from an agent.",
+   "state": "tiles",
+   "num": "48%",
+   "label": "no reply from an agent",
+   "at": "^forty",
+   "visual": "Tiles turn red"
+  },
+  {
+   "vo": "That's from a study done for the brokerage Weichert.",
+   "state": "map",
+   "label": "US study, 2013–14 (WAV Group for Weichert)",
+   "visual": "Map of US states with pins"
+  },
+  {
+   "vo": "[lowered] Now compare that with research on sales leads in general.",
+   "state": "city",
+   "visual": "Camera pulls back to a city of shops"
+  },
+  {
+   "vo": "Reply within an hour, and you're nearly seven times likelier to qualify the lead than if you wait even an hour longer.",
+   "state": "hour",
+   "num": "~7×",
+   "label": "likelier to qualify the lead (HBR 2011)",
+   "at": "^seven",
+   "visual": "One shop lights up within the hour"
+  },
+  {
+   "vo": "[quiet] An instant first reply means buyers don't wait in silence. So next time someone asks you:",
+   "state": "payoff",
+   "visual": "Bubble flies out again (loop)"
+  }
+ ]
+}

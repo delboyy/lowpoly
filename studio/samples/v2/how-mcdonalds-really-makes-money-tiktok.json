@@ -1,0 +1,342 @@
+{
+ "title": "How McDonald's really makes money",
+ "numbers": [
+  {
+   "label": "Restaurants at year-end 2025",
+   "value": "45,356, about 95% franchised",
+   "source": "McDonald's FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Rent revenue from franchised restaurants, 2025",
+   "value": "$10,442M",
+   "source": "McDonald's FY2025 10-K (revenues from franchised restaurants note)",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Royalties, 2025",
+   "value": "$6,018M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Share of restaurant margin dollars from franchised restaurants",
+   "value": "approximately 90%",
+   "source": "same 10-K (MD&A)",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Total revenue 2025 / franchised revenue",
+   "value": "$26,885M total; $16,548M from franchised restaurants (61.6%, computed)",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary); the 61.6% is computed from primary figures"
+  }
+ ],
+ "template": "world",
+ "id": "how-mcdonalds-really-makes-money-tiktok",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "default",
+ "bgmVolume": 0.07,
+ "cut": "tiktok",
+ "targetSec": [
+  62,
+  75
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[punchy, matter-of-fact] Ninety-five percent of McDonald's",
+   "take": "hook",
+   "type": "ring",
+   "share": 0.95,
+   "sub": "of restaurants are franchised",
+   "source": "McDonald's 10-K 2025 · stores"
+  },
+  {
+   "vo": "aren't run by McDonald's.",
+   "take": "hook",
+   "type": "object",
+   "illus": "burger",
+   "text": "Not run by McDonald's",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "[dry] The owner flips the burgers.",
+   "take": "proof",
+   "type": "object",
+   "illus": "burger",
+   "text": "The owner flips the burgers",
+   "emphasis": [
+    "owner"
+   ]
+  },
+  {
+   "vo": "McDonald's collects the rent.",
+   "take": "proof",
+   "type": "object",
+   "illus": "contract",
+   "text": "McDonald's collects the rent",
+   "emphasis": [
+    "rent"
+   ]
+  },
+  {
+   "vo": "[steady] The owner pays McDonald's rent on the building,",
+   "take": "proof",
+   "type": "object",
+   "illus": "building",
+   "text": "Rent on the building",
+   "emphasis": [
+    "Rent"
+   ]
+  },
+  {
+   "vo": "and a royalty on every single sale.",
+   "take": "proof",
+   "type": "flow",
+   "label": "royalty on every sale",
+   "title": "Royalty"
+  },
+  {
+   "vo": "[steady, emphatic] Ten point four billion dollars in rent last year.",
+   "take": "numbers",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 10.4,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "rent from franchisees, 2025",
+   "source": "McDonald's 10-K 2025 · rent"
+  },
+  {
+   "vo": "Six billion more in royalties.",
+   "take": "numbers",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 6,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "royalties, 2025",
+   "source": "McDonald's 10-K 2025 · royalty"
+  },
+  {
+   "vo": "[steady] Add fees,",
+   "take": "numbers",
+   "type": "title",
+   "text": "Add the fees",
+   "emphasis": [
+    "fees"
+   ]
+  },
+  {
+   "vo": "and franchisees are sixty-two percent of all revenue.",
+   "take": "numbers",
+   "type": "bignum",
+   "value": 61.6,
+   "suffix": "%",
+   "decimals": 1,
+   "sub": "of revenue comes from franchisees",
+   "source": "McDonald's 10-K 2025 · revenue"
+  },
+  {
+   "vo": "[lowered voice, teasing] So what's one franchisee dollar",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "One franchisee dollar",
+   "emphasis": [
+    "dollar"
+   ]
+  },
+  {
+   "vo": "worth to McDonald's?",
+   "take": "rehook",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 1,
+   "decimals": 0,
+   "sub": "worth what to McDonald's?"
+  },
+  {
+   "vo": "[excited, sharing a find] Franchise dollar: eighty-four cents of restaurant margin.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 84.2,
+   "suffix": "¢",
+   "decimals": 1,
+   "sub": "margin per franchised $1",
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "Company-store dollar: fifteen cents.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 14.7,
+   "suffix": "¢",
+   "decimals": 1,
+   "sub": "margin per company-store $1",
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "That's five point seven times more margin per dollar.",
+   "take": "calc",
+   "type": "bars",
+   "title": "Margin per $1, 2025",
+   "suffix": "¢",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "Franchised",
+     "value": 84.2,
+     "kind": "hl"
+    },
+    {
+     "label": "Company-owned",
+     "value": 14.7,
+     "kind": "ink"
+    }
+   ],
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "[emphatic] Franchised margin alone is bigger than",
+   "take": "calc",
+   "type": "bars",
+   "title": "2025, $B",
+   "prefix": "$",
+   "unit": "B",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "Franchised margin",
+     "value": 13.9,
+     "kind": "hl"
+    },
+    {
+     "label": "Operating income",
+     "value": 12.4,
+     "kind": "ink"
+    }
+   ],
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "McDonald's entire operating income.",
+   "take": "calc",
+   "type": "stamp",
+   "text": "MORE THAN ALL",
+   "tone": "loss"
+  },
+  {
+   "vo": "[matter-of-fact] That's margin before overhead,",
+   "take": "calc",
+   "type": "title",
+   "text": "Margin before overhead",
+   "emphasis": [
+    "before"
+   ],
+   "clip": "mcd-patty-grill-01"
+  },
+  {
+   "vo": "not profit per store.",
+   "take": "calc",
+   "type": "stamp",
+   "text": "NOT PER STORE",
+   "tone": "loss"
+  },
+  {
+   "vo": "Franchised restaurants make about ninety percent of it.",
+   "take": "calc",
+   "type": "ring",
+   "share": 0.9,
+   "sub": "of restaurant margin is franchised",
+   "source": "McDonald's 10-K 2025 · margin"
+  },
+  {
+   "vo": "[plain, even] Every figure here is from McDonald's 2025 annual report.",
+   "take": "source",
+   "type": "doc",
+   "title": "McDonald's 2025 annual report",
+   "lines": [
+    "Rents: $10,442M",
+    "Royalties: $6,018M",
+    "Franchised margins: $13,930M",
+    "Company-operated margins: $1,422M"
+   ],
+   "highlight": 2,
+   "footer": "Comparison: Line Item"
+  },
+  {
+   "vo": "The comparison is my arithmetic.",
+   "take": "source",
+   "type": "stamp",
+   "text": "MY ARITHMETIC",
+   "tone": "gain"
+  },
+  {
+   "vo": "[calm, sure] The burger isn't the business.",
+   "take": "payoff",
+   "type": "title",
+   "text": "The burger isn't the business",
+   "emphasis": [
+    "isn't"
+   ]
+  },
+  {
+   "vo": "It's the reason",
+   "take": "payoff",
+   "type": "title",
+   "text": "It's the reason",
+   "emphasis": [
+    "reason"
+   ],
+   "clip": "mcd-flame-burger-01"
+  },
+  {
+   "vo": "people show up at the property.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "store",
+   "text": "People show up",
+   "emphasis": [
+    "show up"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's why ninety-five percent of them",
+   "take": "button",
+   "type": "ring",
+   "share": 0.95,
+   "sub": "of restaurants are franchised",
+   "sfx": null,
+   "source": "McDonald's 10-K 2025 · stores"
+  },
+  {
+   "vo": "aren't run by McDonald's.",
+   "take": "button",
+   "type": "object",
+   "illus": "burger",
+   "text": "Not run by McDonald's",
+   "emphasis": [
+    "Not"
+   ]
+  }
+ ]
+}

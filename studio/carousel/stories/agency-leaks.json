@@ -1,0 +1,61 @@
+{
+  "_note": "Slide wording is LOCKED: copied verbatim from the approved script (typographic quotes and splitting a headline 'Leak 1: X' into kicker + head are layout only). Caption/sources are read from the approved file at handoff.",
+  "id": "agency-leaks",
+  "approved": "../plan/scripts/2026-11-02-carousel-agency-leaks.approved.md",
+  "slides": [
+    {
+      "kind": "hook",
+      "head": "of buyer inquiries never got a reply from an agent",
+      "body": "In one US study. Here's where yours could be leaking.",
+      "scene": "a cosy little real-estate agency office with a pretty model house on the desk, a laptop and a desk phone surrounded by a cloud of floating blank message bubbles that nobody is reading, an empty office chair",
+      "num": "Almost half"
+    },
+    {
+      "kind": "beat",
+      "kicker": "Leak 1",
+      "head": "The inquiry nobody answers",
+      "body": "In one US study, **48%** of home-buyer inquiries never got a reply from an agent. They asked. No agent answered. Awkward.",
+      "source": "WAV Group for Weichert, 2013–14, 384 inquiries, 11 US states; auto-replies not counted",
+      "scene": "a hopeful home buyer waiting at the front door of a charming small house, holding a phone with a blank message bubble, nobody answering, a tiny cobweb on the doorbell"
+    },
+    {
+      "kind": "beat",
+      "kicker": "Leak 2",
+      "head": "The hour that slips away",
+      "body": "Reply within an hour and you're **~7×** likelier to qualify the lead than if you wait even an hour longer. The lead doesn't wait. The clock definitely doesn't.",
+      "source": "HBR 2011, 1.25M web leads at 42 US companies (all industries)",
+      "scene": "a giant hourglass with the sand almost run out standing outside a small real-estate office, while a home buyer walks away down the street"
+    },
+    {
+      "kind": "beat",
+      "kicker": "Leak 3",
+      "head": "“We’ll get back to you”",
+      "body": "In a test of US companies, **23%** never replied to a web lead at all. Not late. Never.",
+      "source": "HBR 2011, audit of 2,241 US firms (all industries)",
+      "scene": "an office in-tray piled high with unopened envelopes covered in dust and cobwebs on a desk in an empty office, a wilted plant beside it"
+    },
+    {
+      "kind": "beat",
+      "kicker": "Leak 4",
+      "head": "The contact form that writes to a ghost",
+      "body": "Where does your website form actually go? An old inbox? An ex-employee? Send yourself an inquiry tonight and time the reply.",
+      "scene": "a friendly little cartoon ghost sitting at a desk in a dusty abandoned office, paper letters flying in through a mail slot and piling up unread around it"
+    },
+    {
+      "kind": "beat",
+      "kicker": "Leak 5",
+      "head": "The 11 pm message",
+      "body": "A buyer messages after hours. What answers them before morning? If the answer is “nothing”, that's the leak.",
+      "scene": "night scene under a moon and stars: a home buyer on a sofa in a cosy lit house typing on a glowing phone, next door a small real-estate office completely dark with the lights off"
+    },
+    {
+      "kind": "fix",
+      "kicker": "The fix",
+      "body": "An instant first reply on WhatsApp or email, straight into your CRM, with an automatic follow-up. Your agents still close; no inquiry waits for a first reply.",
+      "ctaHead": "Want to know where your agency leaks?",
+      "cta": "Comment “LEAK”",
+      "ctaTail": "(or DM us) for a free check.",
+      "scene": "a cheerful real-estate agent and a friendly little robot assistant instantly sending a glowing chat bubble that flies straight to a happy home buyer holding house keys, sunny and bright Compose it so every character is small and sits entirely in the bottom 45% of the frame, with heads well below the middle."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+ "template": "footage",
+ "id": "chick-fil-a-B2",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Closed Sundays. Still sells more than twice a McDonald's.",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Chick-fil-A closes every Sunday.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-fried-chicken.mp4"
+    },
+    {
+     "media": "assets/stock/video/cfa-empty-restaurant.mp4",
+     "num": "SUNDAY",
+     "numLabel": "closed, every week"
+    }
+   ]
+  },
+  {
+   "vo": "Its average stand-alone restaurant still sold nine point two million dollars last year.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-chicken-sizzle.mp4"
+    },
+    {
+     "media": "assets/stock/video/cfa-chicken-tear.mp4"
+    },
+    {
+     "media": "assets/stock/video/cfa-counting-cash.mp4",
+     "num": "$9.2M",
+     "numLabel": "avg stand-alone Chick-fil-A, 2025 (FDD)"
+    }
+   ]
+  },
+  {
+   "vo": "An average US McDonald's sells about four million.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-drivethru-order.mp4",
+     "start": 1.5
+    },
+    {
+     "media": "assets/stock/video/cfa-fries.mp4",
+     "start": 1,
+     "num": "$4.0M",
+     "numLabel": "avg US franchised McDonald's, 2025 (10-K, our math)"
+    }
+   ]
+  },
+  {
+   "vo": "[lowered, curious] So who gets the money?",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-counting-cash.mp4",
+     "start": 2
+    }
+   ]
+  },
+  {
+   "vo": "The operator pays just ten thousand dollars to get in.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-chicken-tear.mp4",
+     "start": 2
+    },
+    {
+     "media": "assets/stock/video/cfa-counting-cash.mp4",
+     "start": 1,
+     "num": "$10K",
+     "numLabel": "what the operator pays to get in"
+    }
+   ]
+  },
+  {
+   "vo": "Then Chick-fil-A takes half the profit.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-chicken-sizzle.mp4",
+     "start": 2
+    },
+    {
+     "media": "assets/stock/video/cfa-fried-chicken.mp4",
+     "start": 2,
+     "num": "50%",
+     "numLabel": "of the profit goes to Chick-fil-A"
+    }
+   ]
+  },
+  {
+   "vo": "[calm, sure] You don't buy a Chick-fil-A.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-empty-restaurant.mp4",
+     "start": 2
+    }
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] You get hired to run one.",
+   "shots": [
+    {
+     "media": "assets/stock/video/cfa-fries.mp4",
+     "start": 0.5
+    }
+   ]
+  }
+ ]
+}

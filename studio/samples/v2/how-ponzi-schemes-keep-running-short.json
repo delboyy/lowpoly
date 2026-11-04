@@ -1,0 +1,210 @@
+{
+ "title": "How a Ponzi scheme keeps running (Madoff)",
+ "hook": {
+  "a": "Madoff's statements showed about sixty-five billion dollars. Most never existed.",
+  "b": "Ponzi schemes don't die when returns stop. They die when deposits do.",
+  "onScreen": "$64.8B ON PAPER, $17.5B STOLEN"
+ },
+ "numbers": [
+  {
+   "label": "Balances shown on customer statements (net of negatives)",
+   "value": "$64.8B purportedly owed; $73.1B fictional net investments/gains before netting $8.3B negative accounts",
+   "source": "US Bankruptcy Court SDNY opinion in the Madoff liquidation",
+   "url": "https://www.nysb.uscourts.gov/sites/default/files/opinions/174497_1999_opinion.pdf",
+   "date": "opinion text seen in search result; date to confirm",
+   "status": "verified (high-trust secondary) (court record; fetch full PDF and confirm page before long-form)",
+   "formula": "'About sixty-five billion' = $64.8B rounded. Invented = $64.8B - $17.5B = $47.3B (73.0%). Multiple = $64.8B / $17.5B = 3.70x. Years to reach the multiple at rate g = ln(3.70) / ln(1+g): 13.7 yrs at 10%, 19.3 yrs at 7% (illustration; ignores deposit/withdrawal timing)."
+  },
+  {
+   "label": "Amount stolen from customers",
+   "value": "more than $17.5B",
+   "source": "SIPC press release on the 8th interim distribution",
+   "url": "https://www.sipc.org/news-and-media/news-releases/20161214",
+   "date": "2016-12-14",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Recovered or agreed to recover by trustee",
+   "value": "~$11.486B as of 2016-12-14",
+   "source": "same SIPC release",
+   "url": "https://www.sipc.org/news-and-media/news-releases/20161214",
+   "date": "2016-12-14",
+   "status": "verified (primary) but stale; update from madofftrustee.com",
+   "formula": "Recovered / stolen = $11.486B / $17.5B = 65.6% (as of 2016-12-14)."
+  },
+  {
+   "label": "Trustee appointment date",
+   "value": "2008-12-15",
+   "source": "same SIPC release",
+   "url": "https://www.sipc.org/news-and-media/news-releases/20161214",
+   "date": "2016-12-14",
+   "status": "verified (primary)"
+  }
+ ],
+ "analysis": {
+  "title": "$64.8B on paper vs $17.5B real: what return does that imply?",
+  "finding": "73% of the $64.8B on Madoff's statements was invented. Turning $17.5B into $64.8B at a steady rate would take about 14 years at 10% a year, or ~19 years at 7%."
+ },
+ "template": "world",
+ "id": "how-ponzi-schemes-keep-running-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "disclaimer": "Not financial advice.",
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Madoff's statements showed about sixty-five billion dollars.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 64.8,
+   "sub": "shown on customer statements",
+   "prefix": "$",
+   "suffix": "B",
+   "decimals": 1,
+   "source": "Court opinion · statements"
+  },
+  {
+   "vo": "Most never existed.",
+   "take": "hook",
+   "type": "stamp",
+   "text": "MOST NEVER EXISTED",
+   "tone": "loss"
+  },
+  {
+   "vo": "[matter-of-fact] About seventeen and a half billion dollars",
+   "take": "proof",
+   "type": "title",
+   "text": "About $17.5B"
+  },
+  {
+   "vo": "was actually stolen.",
+   "take": "proof",
+   "type": "bars",
+   "title": "Statements vs stolen",
+   "prefix": "$",
+   "unit": "B",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "On statements",
+     "value": 64.8,
+     "kind": "ghost"
+    },
+    {
+     "label": "Actually stolen",
+     "value": 17.5,
+     "kind": "loss"
+    }
+   ],
+   "source": "SIPC 2016 · stolen"
+  },
+  {
+   "vo": "[matter-of-fact] Every Ponzi runs on one engine:",
+   "take": "proof",
+   "type": "title",
+   "text": "One engine",
+   "emphasis": [
+    "engine"
+   ]
+  },
+  {
+   "vo": "new money paying old investors.",
+   "take": "proof",
+   "type": "object",
+   "illus": "card",
+   "text": "New money pays old investors",
+   "emphasis": [
+    "old"
+   ]
+  },
+  {
+   "vo": "[lowered voice, teasing] So what return would turn",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "The return needed"
+  },
+  {
+   "vo": "seventeen billion into sixty-five?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "$17.5B into $64.8B?",
+   "clip": "ponzi-cash-count-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[excited, sharing a find] At ten percent a year,",
+   "take": "calc",
+   "type": "title",
+   "text": "At 10% a year",
+   "emphasis": [
+    "10%"
+   ]
+  },
+  {
+   "vo": "that takes about fourteen years.",
+   "take": "calc",
+   "type": "sensitivity",
+   "title": "$17.5B, compounding",
+   "series": [
+    {
+     "label": "10% a year",
+     "points": [
+      17.5,
+      28.2,
+      45.4,
+      73.1,
+      117.7
+     ],
+     "tone": "hl",
+     "endLabel": "10%: ~14 yrs"
+    }
+   ],
+   "yFloor": 0,
+   "takeaway": "Illustration only",
+   "source": "Court opinion · statements"
+  },
+  {
+   "vo": "[grave, firm] A Ponzi doesn't collapse",
+   "take": "payoff",
+   "type": "title",
+   "text": "A Ponzi doesn't collapse"
+  },
+  {
+   "vo": "when the returns stop.",
+   "take": "payoff",
+   "type": "title",
+   "text": "when the returns stop",
+   "clip": "ponzi-red-bars-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "It collapses when the new money does.",
+   "take": "payoff",
+   "type": "title",
+   "text": "New money stops",
+   "emphasis": [
+    "stops"
+   ]
+  },
+  {
+   "vo": "[quick, conspiratorial] Fake profit needs real deposits.",
+   "take": "button",
+   "type": "stamp",
+   "text": "FAKE PROFIT",
+   "tone": "loss",
+   "sfx": null
+  }
+ ]
+}

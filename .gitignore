@@ -1,0 +1,31 @@
+# secrets
+.env
+.env.*
+*.pem
+
+# dependencies and environments
+node_modules/
+.venv*/
+venv/
+__pycache__/
+*.pyc
+
+# build output
+website/site/dist/
+.netlify/
+
+# rendered media and QA footage (regenerable, too large for git)
+studio/public/renders/
+studio/public/carousel/
+qa/inbox/
+qa/archive/
+qa/carousel-tests/
+*.mp4
+*.mov
+
+# OS
+.DS_Store
+
+# private outreach data (lead contacts, drafted messages, fact-checks naming merchants)
+agents/acquisition/
+plan/factcheck-acquisition-shopify.md

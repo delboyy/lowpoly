@@ -1,0 +1,22 @@
+{
+  "template": "montage",
+  "id": "mcdonalds-montage",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "captionStyle": "hormozi",
+  "bgm": "bgm-drive-108bpm",
+  "bgmVolume": 0.08,
+  "scenes": [
+    { "vo": "McDonald's sells burgers? Wrong.", "shots": [{ "emoji": "🍔", "text": "McDonald's sells burgers?" }, { "emoji": "❌", "text": "Wrong.", "sfx": "scratch" }] },
+    { "vo": "It's a landlord with a drive-thru.", "shots": [{ "emoji": "🏢", "text": "It's a landlord" }, { "emoji": "🚗", "text": "with a drive-thru" }] },
+    { "vo": "Ninety five percent of restaurants are franchised.", "shots": [{ "emoji": "🍟", "text": "95% franchised" }, { "emoji": "🧑‍🍳", "text": "someone else flips the burgers" }, { "emoji": "📈", "text": "McDonald's collects" }] },
+    { "vo": "That means the person behind the counter is not your boss's boss.", "shots": [{ "emoji": "🧾", "text": "the owner at the counter" }, { "emoji": "👔", "text": "isn't the real boss" }, { "emoji": "🤷", "text": "McDonald's is" }] },
+    { "vo": "In nineteen sixty one, the CFO said burger margins were too thin.", "shots": [{ "emoji": "📜", "text": "1961" }, { "emoji": "🥱", "text": "burger margins: too thin" }] },
+    { "vo": "So they bought the land, and rented it right back to the owners.", "shots": [{ "emoji": "🗺️", "text": "so they bought the land" }, { "emoji": "🔑", "text": "and charged rent" }, { "emoji": "😏", "text": "to their own franchisees" }] },
+    { "vo": "Rent plus a cut of every sale, whether the store is busy or not.", "shots": [{ "emoji": "💵", "text": "rent + a cut of sales" }, { "emoji": "🛎️", "text": "busy day?" }, { "emoji": "😴", "text": "dead day? still paid" }] },
+    { "vo": "Rent alone is roughly ten billion dollars a year.", "shots": [{ "emoji": "💸", "text": "$10 BILLION" }, { "emoji": "🗓️", "text": "every single year" }] },
+    { "vo": "That's why they care more about the corner than the cooking.", "shots": [{ "emoji": "📍", "text": "location, location" }, { "emoji": "🔥", "text": "not the cooking" }] },
+    { "vo": "You think you're buying a Big Mac.", "shots": [{ "emoji": "🍔", "text": "you think you're buying a Big Mac" }, { "emoji": "🤔", "text": "are you?" }] },
+    { "vo": "You're paying the landlord.", "shots": [{ "emoji": "🏠", "text": "you're paying the landlord", "sfx": "boom-meme" }, { "emoji": "🤝", "text": "follow for more" }] }
+  ]
+}

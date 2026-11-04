@@ -1,0 +1,129 @@
+{
+ "template": "footage",
+ "id": "disney-parks-footage-B",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Disney's parks out-earn its movies, TV and Disney+ 2 to 1",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.05
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Disney's parks earn more than twice what its movies, TV shows and Disney Plus make.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-coaster-loop.mp4"
+    },
+    {
+     "media": "assets/stock/video/dis-cinema-couple.mp4"
+    },
+    {
+     "media": "assets/stock/video/dis-fireworks.mp4",
+     "start": 2.4
+    },
+    {
+     "media": "assets/stock/video/dis-coaster-scream.mp4",
+     "num": "2.1\u00d7",
+     "numLabel": "parks vs movies, TV & Disney+ profit, FY2025"
+    }
+   ]
+  },
+  {
+   "vo": "[matter-of-fact] The parks division is parks, cruises and merchandise.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-coaster-loop.mp4",
+     "start": 2
+    },
+    {
+     "media": "assets/stock/video/dis-cruise.mp4"
+    },
+    {
+     "media": "assets/stock/video/dis-fireworks.mp4",
+     "start": 2.2
+    }
+   ]
+  },
+  {
+   "vo": "Last year it made ten billion dollars in operating income.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-cruise.mp4",
+     "start": 1
+    },
+    {
+     "media": "assets/stock/video/dis-coaster-scream.mp4",
+     "start": 1.8,
+     "num": "$10.0B",
+     "numLabel": "parks operating income, FY2025"
+    }
+   ]
+  },
+  {
+   "vo": "[lowered, curious] So how do parks beat Marvel, Pixar and Disney Plus?",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-cinema-couple.mp4",
+     "start": 1.5
+    },
+    {
+     "media": "assets/stock/video/dis-fireworks.mp4",
+     "start": 2.8
+    }
+   ]
+  },
+  {
+   "vo": "[excited, sharing a find] The parks keep about twenty-eight cents of every dollar.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-coaster-loop.mp4",
+     "start": 1
+    },
+    {
+     "media": "assets/stock/video/dis-coaster-scream.mp4",
+     "start": 2.5,
+     "num": "28\u00a2",
+     "numLabel": "kept per $1, parks"
+    }
+   ]
+  },
+  {
+   "vo": "Movies, TV and streaming keep about eleven cents.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-cinema-couple.mp4",
+     "start": 0.2
+    },
+    {
+     "media": "assets/stock/video/dis-cinema-couple.mp4",
+     "start": 2.0,
+     "num": "11\u00a2",
+     "numLabel": "kept per $1, movies, TV & streaming"
+    }
+   ]
+  },
+  {
+   "vo": "[calm, sure] The films sell the characters.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-cinema-couple.mp4",
+     "start": 1
+    },
+    {
+     "media": "assets/stock/video/dis-coaster-loop.mp4",
+     "start": 2
+    }
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] The parks sell the tickets.",
+   "shots": [
+    {
+     "media": "assets/stock/video/dis-fireworks.mp4",
+     "start": 3
+    }
+   ]
+  }
+ ]
+}

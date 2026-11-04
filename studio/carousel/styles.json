@@ -1,0 +1,26 @@
+{
+  "_note": "One fixed prompt template per art direction so a series reads as one brand. {scene} is filled from the story's slide. Never ask for text in the image: all words and numbers are code-rendered overlays.",
+  "_shared": "Vertical 4:5 composition. Keep the main subject in the lower 60% of the frame; the top 40% is a calm, uncluttered backdrop with nothing important in it. Absolutely no text, letters, numbers, words, signage, labels, logos or brand marks anywhere in the image.",
+  "styles": {
+    "clay": {
+      "label": "Clay diorama",
+      "model": "openai/gpt-image-2.5/flare/text-to-image",
+      "prompt": "Claymation miniature diorama photographed in a studio. Handmade plasticine characters and props with soft rounded shapes, visible fingerprints and slight imperfections, friendly simple faces with bead eyes. Warm soft key light, gentle shadows, shallow depth of field. Colour palette: warm cream backdrop (#F4E9D8), soft teal (#2BB3A3) and warm orange (#E8572A) accents, chocolate brown details. Cheerful, cosy, premium. Scene: {scene}."
+    },
+    "flat": {
+      "label": "Flat editorial",
+      "model": "openai/gpt-image-2.5/flare/text-to-image",
+      "prompt": "Flat editorial magazine illustration. Bold simple geometric shapes, clean confident linework, subtle risograph grain, no gradients. Friendly stylised characters with simple faces. Strictly limited palette: warm cream (#F4E9D8) background, deep teal (#1F7F78), bright teal (#2BB3A3), warm orange (#E8572A), mustard yellow (#F2B33D) and dark brown ink (#2A1A12). Witty, bright, modern. Scene: {scene}."
+    },
+    "toy": {
+      "label": "Isometric 3D toy",
+      "model": "openai/gpt-image-2.5/flare/text-to-image",
+      "prompt": "Isometric 3D toy diorama render on a small floating square tile. Glossy rounded vinyl-toy characters and chunky props, soft global illumination, crisp soft shadows, tilt-shift miniature feel. Pastel warm cream background (#F4E9D8) with soft teal (#2BB3A3) and warm orange (#E8572A) accents, a touch of sunny yellow. Cute, polished, premium, playful. Scene: {scene}."
+    },
+    "lowpoly": {
+      "label": "Low-poly world stills",
+      "source": "render",
+      "_note": "Stills rendered from the existing Carts3D world (captions/HookBar/NumPlate off), cropped to 4:5. No fal cost."
+    }
+  }
+}

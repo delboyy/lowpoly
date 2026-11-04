@@ -1,0 +1,36 @@
+post_id,platform,slug,format,publish_utc,topic,hook_style,script_style,visual,slides,variable_tested,views_48h,watch_pct_48h,shares_48h,saves_48h,leak_requests_48h,views_7d,shares_7d,saves_7d,follows_7d,leak_requests_7d,notes
+cmvw4usda00vbrx1cfykf299f,instagram,bl-carts-7in10,short,2026-10-31T16:00Z,stores,A-number,straight,v2,,baseline,,,,,,,,,,,cta=spoken
+cmvw4uwjz00vcrx1c6q3gs93f,youtube,bl-carts-7in10,short,2026-10-31T16:00Z,stores,A-number,straight,v2,,baseline,,,,,,,,,,,cta=spoken
+cmvvat22k0e15pa1crhxgxou8,instagram,carts-7in10,carousel,2026-11-01T09:00Z,stores,A-number,straight,toy,7,format-vs-short,,,,,,,,,,,
+cmvw4v0v600vhrx1cly6trydc,instagram,bl-reply-1hour,short,2026-11-01T16:00Z,general,A-number,straight,v2,,baseline,,,,,,,,,,,cta=spoken
+cmvw4v56h00vuog1cnpqndp0d,youtube,bl-reply-1hour,short,2026-11-01T16:00Z,general,A-number,straight,v2,,baseline,,,,,,,,,,,cta=spoken
+cmvv1nmz104cmpa1cbwoe9rpt,instagram,bl-property-inquiries,short,2026-11-02T16:00Z,real-estate,A-number,straight,v1,,baseline,,,,,,,,,,,cta=pill
+cmvv8mx1z0c2bo91c2tgfo0uc,youtube,bl-property-inquiries,short,2026-11-02T16:00Z,real-estate,A-number,straight,v1,,baseline,,,,,,,,,,,cta=pill
+cmvw4vhu500vrrx1c0cxsnjrd,instagram,bl-noshows-empty-chair,short,2026-11-03T16:00Z,clinics,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=spoken; chair reverse-psychology CTA; voice 1.25x
+cmvw4vhx500vsrx1chs5n0z0h,youtube,bl-noshows-empty-chair,short,2026-11-03T16:00Z,clinics,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=spoken; chair reverse-psychology CTA; voice 1.25x
+cmvw4vlec00vvrx1cl36y2dd1,instagram,bl-pagespeed-spinner,short,2026-11-04T16:00Z,stores,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=pill
+cmvw4vlke00vwrx1cak7q09jd,youtube,bl-pagespeed-spinner,short,2026-11-04T16:00Z,stores,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=pill
+cmvw4vpbw0000me1cambwb09d,instagram,bl-trades-burst-pipe,short,2026-11-05T16:00Z,trades,C-witty,witty-pov,v2,,hook+script,,,,,,,,,,,cta=spoken; 2 changes (Nathan pick)
+cmvw4vpfb0001me1cl0qjlwif,youtube,bl-trades-burst-pipe,short,2026-11-05T16:00Z,trades,C-witty,witty-pov,v2,,hook+script,,,,,,,,,,,cta=spoken; 2 changes (Nathan pick)
+cmvw4vskg0006me1cgm0p99tu,instagram,bl-agent-reply-time,short,2026-11-06T16:00Z,real-estate,B-question,straight,v2,,hook_style,,,,,,,,,,,cta=pill
+cmvw4vsmn0007me1c4acxke9n,youtube,bl-agent-reply-time,short,2026-11-06T16:00Z,real-estate,B-question,straight,v2,,hook_style,,,,,,,,,,,cta=pill
+cmvw4vy0f0008me1cppzjwlf3,instagram,bl-clinic-missed-calls,short,2026-11-07T16:00Z,clinics,C-witty,straight,v2,,hook_style,,,,,,,,,,,cta=spoken
+cmvw4vy390009me1cpwr7jw5w,youtube,bl-clinic-missed-calls,short,2026-11-07T16:00Z,clinics,C-witty,straight,v2,,hook_style,,,,,,,,,,,cta=spoken
+cmvw4w11j0006sc1cnmn08s8k,instagram,bl-reminders-chair,short,2026-11-08T16:00Z,clinics,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=pill; voice 1.28x
+cmvw4w15d0007sc1cks1a7fvc,youtube,bl-reminders-chair,short,2026-11-08T16:00Z,clinics,A-number,witty-villain,v2,,script_style,,,,,,,,,,,cta=pill; voice 1.28x
+cmvw5h7jc005jpk1cfkzlm2qw,instagram,bl-bf-a-plain,short,2026-11-12T16:00Z,stores (trend: Black Friday),A-hook-shared,plain-pro,v2,,script_style,,,,,,,,,,,cta=spoken; BF tone test control; 35.5s
+cmvw5h7l0005kpk1ct1ejgwu7,youtube,bl-bf-a-plain,short,2026-11-12T16:00Z,stores (trend: Black Friday),A-hook-shared,plain-pro,v2,,script_style,,,,,,,,,,,cta=spoken; BF tone test control; 35.5s
+cmvw5haja005mqp1cuufzhshu,instagram,bl-bf-b-witty,short,2026-11-14T16:00Z,stores (trend: Black Friday),A-hook-shared,witty,v2,,script_style,,,,,,,,,,,cta=spoken; BF tone test; 39.0s
+cmvw5ham8005nqp1cg9xkaaez,youtube,bl-bf-b-witty,short,2026-11-14T16:00Z,stores (trend: Black Friday),A-hook-shared,witty,v2,,script_style,,,,,,,,,,,cta=spoken; BF tone test; 39.0s
+cmvw5hdii005spk1crxxh8vib,instagram,bl-bf-c-funny,short,2026-11-16T16:00Z,stores (trend: Black Friday),A-hook-shared,funny,v2,,script_style,,,,,,,,,,,"cta=spoken; BF tone test; 39.5s, voice 1.03x; compare on watch %"
+cmvw5hdkh005tpk1crw9dbdah,youtube,bl-bf-c-funny,short,2026-11-16T16:00Z,stores (trend: Black Friday),A-hook-shared,funny,v2,,script_style,,,,,,,,,,,"cta=spoken; BF tone test; 39.5s, voice 1.03x; compare on watch %"
+cmvwhifb70a7vpk1ccj7x1g4g,instagram,bl-a1-chat-seen,short,2026-11-09T16:00Z,real estate,A-number,plain-pro,chat-mock,,format,,,,,,,,,,,cta=spoken; pilot A1 WhatsApp chat mock; 38.3s
+cmvwhifco0a7wpk1cy8mf5xi6,youtube,bl-a1-chat-seen,short,2026-11-09T16:00Z,real estate,A-number,plain-pro,chat-mock,,format,,,,,,,,,,,cta=spoken; pilot A1 WhatsApp chat mock; 38.3s
+cmvwhihnx0a7zpk1cd1fp7hpy,instagram,bl-a2-missed-call,short,2026-11-10T16:00Z,trades,C-witty,witty,missed-call,,format,,,,,,,,,,,cta=spoken; pilot A2 missed-call roleplay; 39.5s
+cmvwhihrr0a80pk1c6kvewt6b,youtube,bl-a2-missed-call,short,2026-11-10T16:00Z,trades,C-witty,witty,missed-call,,format,,,,,,,,,,,cta=spoken; pilot A2 missed-call roleplay; 39.5s
+cmvwhiljs0a83pk1c8xwxbk3b,instagram,bl-a3-pov-owner,short,2026-11-11T16:00Z,real estate,C-witty,funny,pov3d,,format,,,,,,,,,,,cta=spoken; pilot A3 POV skit; 39.7s
+cmvwhilkw0a84pk1ckoiegx3i,youtube,bl-a3-pov-owner,short,2026-11-11T16:00Z,real estate,C-witty,funny,pov3d,,format,,,,,,,,,,,cta=spoken; pilot A3 POV skit; 39.7s
+cmvwhiov50a86pk1ctfgowks6,instagram,bl-13-chat-clinic,short,2026-11-13T16:00Z,clinics,A-number,plain-pro,chat-mock,,topic,,,,,,,,,,,cta=spoken; chat format on clinics; 37.6s
+cmvwhiowt0a87pk1col1a1cio,youtube,bl-13-chat-clinic,short,2026-11-13T16:00Z,clinics,A-number,plain-pro,chat-mock,,topic,,,,,,,,,,,cta=spoken; chat format on clinics; 37.6s
+cmvwhirab0a8cpk1cyn7tw6g3,instagram,bl-15-call-clinic,short,2026-11-15T16:00Z,clinics,A-number,plain-pro,missed-call,,topic,,,,,,,,,,,"cta=spoken; Peerlogic 38% (2nd use, don't reuse); 37.4s"
+cmvwhircp0a8dpk1c9pskrq93,youtube,bl-15-call-clinic,short,2026-11-15T16:00Z,clinics,A-number,plain-pro,missed-call,,topic,,,,,,,,,,,"cta=spoken; Peerlogic 38% (2nd use, don't reuse); 37.4s"

@@ -1,0 +1,51 @@
+{
+ "template": "reply3d",
+ "id": "bl-reply-1hour-cta",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Reply within an hour: ~7× likelier to qualify the lead",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "vo": "[calm, curious] Reply to a new lead within an hour, and you're nearly seven times more likely to get a real conversation with the buyer than if you wait even an hour longer.",
+   "state": "phone",
+   "num": "~7×",
+   "label": "likelier to qualify the lead",
+   "at": "^seven"
+  },
+  {
+   "vo": "That's from more than a million leads, at forty-two US companies.",
+   "state": "data"
+  },
+  {
+   "vo": "But when researchers tested over two thousand companies, just over a third replied within the hour.",
+   "state": "street",
+   "num": "37%",
+   "label": "replied within the hour",
+   "at": "^third"
+  },
+  {
+   "vo": "[lowered] And almost one in four never replied at all.",
+   "state": "dark",
+   "num": "23%",
+   "label": "never replied",
+   "at": "^one"
+  },
+  {
+   "vo": "And a lead that waits goes cold.",
+   "state": "cold"
+  },
+  {
+   "vo": "[quiet] Want your reply time checked? Comment LEAK, it's free. And if a message is sitting in your inbox right now, remember:",
+   "state": "payoff"
+  }
+ ],
+ "targetSec": [
+  30,
+  40
+ ],
+ "_cta": "Variant B spoken CTA (lead-approved 2026-10-31). Only the last line changed vs samples/v3/reply-leaks.json."
+}

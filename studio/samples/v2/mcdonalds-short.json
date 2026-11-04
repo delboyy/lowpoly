@@ -1,0 +1,160 @@
+{
+ "template": "world",
+ "id": "mcdonalds-v2",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "bgm-tension-92bpm",
+ "bgmVolume": 0.07,
+ "scenes": [
+  {
+   "vo": "McDonald's doesn't make money the way you think.",
+   "type": "object",
+   "text": "Not a burger company",
+   "illus": "burger",
+   "emphasis": [
+    "burger"
+   ],
+   "size": 760
+  },
+  {
+   "vo": "Ninety-five percent of its forty-five thousand restaurants are franchised.",
+   "type": "dots",
+   "share": 0.95,
+   "label": "95% franchised",
+   "fillLabel": "Franchised",
+   "restLabel": "Company-run",
+   "source": "McDonald's FY2025 10-K · 45,356 restaurants"
+  },
+  {
+   "vo": "The franchisee flips the burgers. McDonald's collects the rent.",
+   "type": "montage",
+   "cuts": [
+    {
+     "illus": "burger",
+     "text": "Franchisee flips"
+    },
+    {
+     "illus": "building",
+     "text": "McDonald's owns"
+    },
+    {
+     "illus": "contract",
+     "text": "You pay rent"
+    }
+   ]
+  },
+  {
+   "vo": "Ten point four billion dollars in rent last year. Six billion more in royalties.",
+   "type": "bars",
+   "title": "Franchisee payments, 2025",
+   "unit": "B",
+   "prefix": "$",
+   "items": [
+    {
+     "label": "Rent",
+     "value": 10.4,
+     "kind": "hl"
+    },
+    {
+     "label": "Royalties",
+     "value": 6.0,
+     "kind": "ink"
+    }
+   ],
+   "source": "McDonald's FY2025 10-K · Franchised revenues"
+  },
+  {
+   "vo": "Together, that's sixty-two percent of all its revenue.",
+   "type": "receipt",
+   "title": "LINE ITEM",
+   "subtitle": "MCDONALD'S · FY2025",
+   "lines": [
+    {
+     "label": "Rent",
+     "value": "$10.4B"
+    },
+    {
+     "label": "Royalties",
+     "value": "$6.0B"
+    },
+    {
+     "label": "All revenue",
+     "value": "$26.9B"
+    },
+    {
+     "label": "From franchisees",
+     "value": "61.6%",
+     "hl": true,
+     "bold": true
+    }
+   ],
+   "stamp": "SOURCED",
+   "source": "McDonald's 10-K · 61.6% computed"
+  },
+  {
+   "vo": "But here's what nobody mentions.",
+   "type": "title",
+   "dark": true,
+   "text": "But here's what nobody mentions",
+   "emphasis": [
+    "nobody"
+   ],
+   "sfx": "pixabay-whoosh-short",
+   "illus": "contract"
+  },
+  {
+   "vo": "Franchised restaurants make about ninety percent of McDonald's restaurant profit.",
+   "type": "stat",
+   "value": 90,
+   "suffix": "%",
+   "label": "of restaurant profit comes from franchised restaurants",
+   "source": "McDonald's FY2025 10-K · MD&A"
+  },
+  {
+   "vo": "A franchised dollar earns McDonald's five point seven times more than a company-store dollar.",
+   "type": "bars",
+   "title": "Margin on $1 of sales",
+   "unit": "¢",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "Franchised",
+     "value": 84.2,
+     "kind": "hl",
+     "note": "5.7× the company-store margin"
+    },
+    {
+     "label": "Company-operated",
+     "value": 14.7,
+     "kind": "ink"
+    }
+   ],
+   "source": "McDonald's FY2025 10-K · Line Item calc"
+  },
+  {
+   "vo": "So the burger isn't the business. It's the reason people show up.",
+   "type": "object",
+   "illus": "burger",
+   "text": "The burger isn't the business",
+   "emphasis": [
+    "burger"
+   ]
+  },
+  {
+   "vo": "You're not buying from a burger company. You're paying a landlord.",
+   "type": "stamp",
+   "text": "Landlord",
+   "sub": "You're not buying from a burger company."
+  },
+  {
+   "vo": "McDonald's doesn't make money the way you think.",
+   "type": "title",
+   "text": "McDonald's doesn't make money the way you think",
+   "emphasis": [
+    "money"
+   ],
+   "sfx": null
+  }
+ ]
+}

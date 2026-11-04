@@ -1,0 +1,59 @@
+{
+ "template": "noshows3d",
+ "id": "bl-reminders-chair",
+ "topHook": "Reminder letters: no-shows 18.2% → 17.0%",
+ "captionStyle": "hormozi",
+ "targetSec": [31, 40],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md, #9 rebuild). Do NOT change VO wording or figures without the lead. Reuse the Empty Chair from BL #4.",
+ "tags": {
+  "topic": "clinics",
+  "hook_style": "A-number",
+  "script_style": "villain",
+  "variable_tested": "script_style"
+ },
+ "scenes": [
+  {
+   "vo": "[smug, theatrical] At one big US veterans' hospital, the no-show rate averaged eighteen point two percent in the four years before reminder letters. In the four years after: seventeen. Hi again. Empty chair. Barely noticed.",
+   "state": "chair",
+   "num": "18.2% → 17.0%",
+   "label": "no-show rate, 4 years before vs after reminder letters (one US VA hospital)",
+   "at": "^eighteen",
+   "visual": "The chair from BL #4 turns around, unbothered; an envelope lands next to it"
+  },
+  {
+   "vo": "Same hospital in Houston. Twelve years of records.",
+   "state": "ledger",
+   "visual": "Ledger from BL #4"
+  },
+  {
+   "vo": "[delighted] And when researchers compared the year before and after, month by month, the change wasn't even statistically significant.",
+   "state": "calendars",
+   "visual": "Two calendars side by side, the bars nearly level"
+  },
+  {
+   "vo": "The researchers said reminders only modestly reduced no-shows. I call them a nice try.",
+   "state": "yawn",
+   "visual": "Chair yawns; envelope slides off"
+  },
+  {
+   "vo": "Because a reminder doesn't fill my seat. Somebody else does.",
+   "state": "door",
+   "visual": "A second figure waits at the door"
+  },
+  {
+   "vo": "[nervous] What actually scares me? A one-tap way to cancel or rebook, so someone else gets the slot.",
+   "state": "rebook",
+   "visual": "Phone shows Cancel / Rebook; the waiting figure sits down; the chair panics"
+  },
+  {
+   "vo": "[smug, recovering] Anyway. I'll save you a seat. And remember:",
+   "state": "payoff",
+   "visual": "Back to first frame (loop)"
+  }
+ ]
+}

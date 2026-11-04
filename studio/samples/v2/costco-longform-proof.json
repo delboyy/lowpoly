@@ -1,0 +1,187 @@
+{
+ "template": "longform",
+ "id": "costco-longform-proof",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "gapMs": 380,
+ "captionStyle": "karaoke",
+ "bgm": "bgm-tension-92bpm",
+ "bgmVolume": 0.06,
+ "scenes": [
+  {
+   "vo": "A hot dog and a soda at Costco costs one dollar fifty. It has cost one dollar fifty since 1985.",
+   "type": "receipt",
+   "subtitle": "COSTCO · FOOD COURT",
+   "lines": [
+    {
+     "label": "Hot dog + soda",
+     "value": "$1.50",
+     "hl": true,
+     "bold": true
+    },
+    {
+     "label": "Last price change",
+     "value": "1985"
+    }
+   ],
+   "illus": "hotdog",
+   "stamp": "UNCHANGED",
+   "source": "CNN/ABC7 · Costco CFO, May 2024"
+  },
+  {
+   "vo": "If that price had kept pace with inflation, it would be close to four fifty today.",
+   "type": "bars",
+   "title": "Hot dog + soda",
+   "prefix": "$",
+   "decimals": 2,
+   "items": [
+    {
+     "label": "Costco price",
+     "value": 1.5,
+     "kind": "hl"
+    },
+    {
+     "label": "With inflation",
+     "value": 4.5,
+     "kind": "ghost"
+    }
+   ],
+   "source": "CNN/ABC7 · Costco CFO, May 2024"
+  },
+  {
+   "vo": "So here is the question. Why would a company that watches every penny leave money on the table?",
+   "type": "act",
+   "kicker": "THE QUESTION",
+   "text": "Why won't Costco raise the hot dog?"
+  },
+  {
+   "vo": "Costco opened its first warehouse in Seattle in nineteen eighty three.",
+   "type": "map",
+   "region": "us",
+   "title": "Where it started",
+   "highlight": [
+    "Washington"
+   ],
+   "dots": [
+    {
+     "lon": -122.33,
+     "lat": 47.6,
+     "label": "Seattle, 1983",
+     "size": 16
+    }
+   ]
+  },
+  {
+   "vo": "Last year it sold almost three hundred billion dollars of goods, at a margin around eleven percent.",
+   "type": "receipt",
+   "subtitle": "COSTCO · FY2026",
+   "lines": [
+    {
+     "label": "Net sales",
+     "value": "$297.2B",
+     "bold": true
+    },
+    {
+     "label": "Merchandise margin",
+     "value": "~11%"
+    },
+    {
+     "label": "Operating income",
+     "value": "$11.7B",
+     "hl": true
+    }
+   ],
+   "illus": "cart",
+   "source": "Costco FY2026 10-K · Net sales, operating income"
+  },
+  {
+   "vo": "The hidden line item is the membership fee. Five point nine billion dollars, about half of operating income.",
+   "type": "redact",
+   "label": "MEMBERSHIP FEES",
+   "value": "$5.9B",
+   "sub": "50.6% of operating income",
+   "illus": "card",
+   "source": "Costco FY2026 10-K · Membership fee revenue"
+  },
+  {
+   "vo": "And ninety-two percent of members in the US and Canada renew every year.",
+   "type": "stat",
+   "value": 92.3,
+   "suffix": "%",
+   "decimals": 1,
+   "label": "of US & Canada members renew",
+   "source": "Costco FY2026 10-K · Renewal rate"
+  },
+  {
+   "vo": "Here is a number you will not find in the annual report. Lose two points of renewals, and within five years fee revenue falls by about four hundred sixty million dollars. Lose four points, and it is closer to nine hundred million.",
+   "type": "sensitivity",
+   "title": "If the renewal rate slips",
+   "xLabels": [
+    "Year 1",
+    "Year 5"
+   ],
+   "yFloor": 4300,
+   "series": [
+    {
+     "label": "Today",
+     "tone": "hl",
+     "points": [
+      5907,
+      5907,
+      5907,
+      5907,
+      5907
+     ],
+     "endLabel": "$5.9B"
+    },
+    {
+     "label": "-2 pts",
+     "tone": "ink",
+     "points": [
+      5789,
+      5685,
+      5594,
+      5514,
+      5444
+     ],
+     "endLabel": "-$463M"
+    },
+    {
+     "label": "-4 pts",
+     "tone": "loss",
+     "points": [
+      5671,
+      5468,
+      5294,
+      5145,
+      5017
+     ],
+     "endLabel": "-$890M"
+    },
+    {
+     "label": "-7 pts",
+     "tone": "loss",
+     "points": [
+      5494,
+      5151,
+      4868,
+      4633,
+      4439
+     ],
+     "endLabel": "-$1.5B"
+    }
+   ],
+   "takeaway": "1 POINT OF RENEWAL = $59M A YEAR",
+   "source": "Costco 10-K · Line Item model"
+  },
+  {
+   "vo": "The hot dog isn't a product. It's the reason you keep paying.",
+   "type": "object",
+   "illus": "hotdog",
+   "text": "The reason you keep paying",
+   "emphasis": [
+    "reason"
+   ]
+  }
+ ]
+}

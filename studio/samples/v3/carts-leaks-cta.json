@@ -1,0 +1,48 @@
+{
+ "template": "carts3d",
+ "id": "bl-carts-7in10-cta",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "7 in 10 online carts never check out",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "vo": "[calm, curious] Seven in ten online carts are abandoned before checkout.",
+   "state": "shop",
+   "num": "7 in 10",
+   "label": "online carts abandoned",
+   "at": "^seven"
+  },
+  {
+   "vo": "That's the average across dozens of studies.",
+   "state": "studies"
+  },
+  {
+   "vo": "[lowered] So what scares them off?",
+   "state": "question"
+  },
+  {
+   "vo": "For shoppers who were ready to buy, the number one reason they left: extra costs at checkout. Shipping, taxes, fees.",
+   "state": "receipt",
+   "num": "#1 reason",
+   "label": "for shoppers ready to buy",
+   "at": "^number"
+  },
+  {
+   "vo": "[curious] And nearly one in five left because the site made them create an account.",
+   "state": "account"
+  },
+  {
+   "vo": "[quiet] Show the full price early, let them check out as a guest. Want yours checked? Comment LEAK, it's free. Because right now,",
+   "state": "payoff"
+  }
+ ],
+ "targetSec": [
+  30,
+  40
+ ],
+ "_cta": "Variant B spoken CTA (lead-approved 2026-10-31). Only the last line changed vs samples/v3/carts-leaks.json."
+}

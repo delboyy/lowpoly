@@ -1,0 +1,96 @@
+{
+  "provider": "postiz",
+  "api_base": "https://api.postiz.com/public/v1",
+  "env_key": "POSTIZ_API_KEY",
+  "poll_interval_seconds": 180,
+  "whop_deadline_minutes": 30,
+  "brands": {
+    "lineitem": {
+      "match": [
+        "line item",
+        "lineitem"
+      ],
+      "platforms": [
+        "youtube",
+        "instagram"
+      ],
+      "timezone": "Europe/London",
+      "channel_ids": {},
+      "ai_label": true,
+      "default_slots_utc": [
+        "16:00",
+        "23:30"
+      ],
+      "slot_note": "16:00 UTC = 17:00 UK / 18:00 CET / 12:00 ET; 21:00 UTC = 22:00 UK / 23:00 CET / 17:00 ET (US/EU clock changes 26 Oct / 2 Nov keep these slots usable)",
+      "note_tiktok": "Line Item TikTok RESTARTED 2026-10-22 by Nathan: max 1 post a day, never a repost. Not in default platforms: schedule with --platforms tiktok explicitly."
+    },
+    "cutdesk": {
+      "match": [
+        "cut desk",
+        "cutdesk"
+      ],
+      "platforms": [
+        "tiktok",
+        "youtube"
+      ],
+      "timezone": "America/New_York",
+      "channel_ids": {}
+    }
+  },
+  "youtube": {
+    "visibility": "public",
+    "selfDeclaredMadeForKids": "no"
+  },
+  "tiktok": {
+    "privacy_level": "PUBLIC_TO_EVERYONE",
+    "video_made_with_ai": false,
+    "content_posting_method": "DIRECT_POST"
+  },
+  "tiktok_profiles": {
+    "cutdesk": "https://www.tiktok.com/@cutdeskclips",
+    "lineitem": "https://www.tiktok.com/@lineitemfyi"
+  },
+  "youtube_limits": {
+    "cutdesk": {
+      "max_per_day": 1,
+      "min_gap_minutes": 180,
+      "ramp": "6/day from 2026-10-20 (PM/Nathan). If no 'requests too quickly' error for 7 days, go to 8/day. On any such error, drop back to 4/day for 48 hours.",
+      "campaigns_with_youtube": [
+        "2 Bears 1 Cave (Ep. 344)",
+        "CLASH x HOH",
+        "BILF Podcast"
+      ],
+      "campaigns_without_youtube": [
+        "COD POD",
+        "Demi Lovato",
+        "Kaepernick"
+      ],
+      "priority": "CLASH and BILF first, then 2 Bears; extra YT posts roll to the next day's slots",
+      "note_recovery": "YouTube recovery plan (PM 2026-10-25): 1 post/day until Sun 1 Nov, then the PM decides whether to return to 3/day"
+    }
+  },
+  "spacing": {
+    "min_gap_minutes": 25,
+    "min_gap_by_platform": {
+      "tiktok": 180,
+      "instagram": 90,
+      "youtube": 180
+    },
+    "max_per_day": {
+      "tiktok": 3,
+      "instagram": 8,
+      "youtube": 3
+    },
+    "window_hours": 24,
+    "pause_until": {
+      "tiktok": "2026-10-21T16:00:00Z"
+    },
+    "note": "playbooks/posting-cadence.md (Analyst 2026-10-20): rolling 24h caps. TikTok paused until 21 Oct 16:00 UTC then 2/day (ramp to 4 only on Analyst say-so); YT 3/day >=3h; IG 8/day >=90min (raise stepwise only on Analyst say-so). Hard block, no override."
+  },
+  "paused_platforms": {
+    "cutdesk": [
+      "instagram"
+    ],
+    "note": "PM 2026-10-22: @cutdeskclips IG looks restricted (~0 views since ~17:45 UTC 21 Oct; Demi IG reels unavailable). No Cut Desk IG posts until the PM lifts it (Nathan checks Account Status, then +48h). No Demi on IG ever again."
+  }
+}

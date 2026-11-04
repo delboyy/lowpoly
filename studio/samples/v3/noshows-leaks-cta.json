@@ -1,0 +1,66 @@
+{
+ "template": "noshows3d",
+ "id": "bl-noshows-empty-chair-cta",
+ "topHook": "I'm the empty chair. 18.8%.",
+ "captionStyle": "hormozi",
+ "targetSec": [
+  32,
+  40
+ ],
+ "bgm": "none",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.2
+ },
+ "_note": "Final wording after Red Team (plan/BL-SCRIPTS-2-factcheck.md). Do NOT change VO wording or figures without the lead. Template and state names are the editor's call; 'visual' is the writer's idea.",
+ "tags": {
+  "topic": "clinics",
+  "hook_style": "C-witty",
+  "script_style": "villain",
+  "variable_tested": "script_style"
+ },
+ "scenes": [
+  {
+   "vo": "[smug, theatrical] At one big US veterans' hospital, the average no-show rate was eighteen point eight percent. Hi. I'm the empty chair.",
+   "state": "waiting",
+   "num": "18.8%",
+   "label": "average no-show rate (one US VA hospital, 10 clinics)",
+   "at": "^eighteen",
+   "visual": "Waiting room; one chair turns to camera"
+  },
+  {
+   "vo": "That's nearly one in five appointments. Booked, and then… me.",
+   "state": "calendar",
+   "visual": "Calendar slots; every fifth one becomes a chair"
+  },
+  {
+   "vo": "The numbers come from a VA hospital in Houston, twelve years of records.",
+   "state": "ledger",
+   "visual": "Clipboard / ledger prop"
+  },
+  {
+   "vo": "[delighted] And every time I sit in for a patient, it costs the hospital about a hundred and ninety-six dollars. In 2008 dollars.",
+   "state": "receipt",
+   "num": "~$196",
+   "label": "per no-show (2008 $)",
+   "at": "^hundred",
+   "visual": "Receipt prints under the chair"
+  },
+  {
+   "vo": "The doctor's ready. The room's ready. The coffee's ready. Nobody comes. Delicious.",
+   "state": "clock",
+   "visual": "Clock ticks; steam from a cup"
+  },
+  {
+   "vo": "[nervous] Do you know what I hate? A one-tap way to cancel or rebook, so someone else gets my seat.",
+   "state": "phone",
+   "visual": "Phone buzzes; chair flinches; optional: a second patient sits down"
+  },
+  {
+   "vo": "[nervous] And please, don't comment LEAK. They'll find me. For free. [smug] Anyway. Pull up a seat. Because",
+   "state": "payoff",
+   "visual": "Back to first frame (loop)"
+  }
+ ],
+ "_cta": "Variant B spoken CTA (lead-approved 2026-10-31). Only the last line changed vs samples/v3/noshows-leaks.json."
+}

@@ -1,0 +1,147 @@
+{
+ "title": "Apple's services are a quarter of sales but 42% of gross profit",
+ "hook": {
+  "a": "Apple's services are a quarter of its sales, but over forty percent of its gross profit.",
+  "b": "Apple keeps 75 cents of every services dollar.",
+  "onScreen": "26% OF SALES. 42% OF PROFIT."
+ },
+ "numbers": [
+  {
+   "label": "FY2025 net sales",
+   "value": "Services $109,158M; Products $307,003M; Total $416,161M; iPhone $209,586M; Mac $33,708M; iPad $28,023M",
+   "source": "Apple FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+   "date": "filed 2025-10-31",
+   "status": "verified (primary)",
+   "formula": "Services share = 109,158 / 416,161 = 26.2%"
+  },
+  {
+   "label": "FY2025 gross margin",
+   "value": "Services $82,314M (75.4%); Products $112,887M (36.8%); Total $195,201M",
+   "source": "Apple FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+   "date": "filed 2025-10-31",
+   "status": "verified (primary)",
+   "formula": "Services share of gross margin = 82,314 / 195,201 = 42.2%. Mac + iPad sales = 33,708 + 28,023 = 61,731 < 82,314."
+  }
+ ],
+ "template": "world",
+ "id": "apple-services-gross-profit-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Apple's services are a quarter of its sales,",
+   "take": "hook",
+   "type": "bignum",
+   "value": 26,
+   "suffix": "%",
+   "decimals": 0,
+   "sub": "of Apple's sales are services, FY2025",
+   "source": "Apple FY2025 10-K · FY2025 net sales"
+  },
+  {
+   "vo": "but over forty percent of its gross profit.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 42,
+   "suffix": "%",
+   "decimals": 0,
+   "sub": "of Apple's gross profit, FY2025",
+   "source": "Apple FY2025 10-K · FY2025 gross margin"
+  },
+  {
+   "vo": "[matter-of-fact] Services means the App Store, iCloud, Apple Music, and the ads.",
+   "take": "proof",
+   "type": "object",
+   "illus": "phone",
+   "text": "App Store, iCloud, Music, ads",
+   "emphasis": [
+    "App Store"
+   ]
+  },
+  {
+   "vo": "[lowered, curious] So why does a quarter of sales punch so far above its weight?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Why so big?",
+   "emphasis": [
+    "big"
+   ]
+  },
+  {
+   "vo": "Look at what Apple keeps from each dollar.",
+   "take": "proof",
+   "type": "title",
+   "text": "What Apple keeps per dollar",
+   "emphasis": [
+    "keeps"
+   ]
+  },
+  {
+   "vo": "[steady] On hardware, about thirty-seven cents.",
+   "take": "numbers",
+   "type": "bars",
+   "title": "Gross margin per $1 of sales",
+   "prefix": "",
+   "decimals": 0,
+   "items": [
+    {
+     "label": "Hardware",
+     "value": 37,
+     "kind": "ink"
+    },
+    {
+     "label": "Services",
+     "value": 75,
+     "kind": "hl"
+    }
+   ],
+   "unit": "¢",
+   "source": "Apple FY2025 10-K · FY2025 gross margin"
+  },
+  {
+   "vo": "On services, about seventy-five.",
+   "take": "numbers",
+   "type": "bignum",
+   "value": 75,
+   "suffix": "¢",
+   "decimals": 0,
+   "sub": "kept from each services dollar",
+   "source": "Apple FY2025 10-K · FY2025 gross margin"
+  },
+  {
+   "vo": "[calm, sure] The phone in your pocket is the shop.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "phone",
+   "text": "The phone is the shop",
+   "emphasis": [
+    "shop"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] Services are the till.",
+   "take": "button",
+   "type": "object",
+   "illus": "card",
+   "text": "Services are the till",
+   "emphasis": [
+    "till"
+   ],
+   "sfx": null
+  }
+ ]
+}

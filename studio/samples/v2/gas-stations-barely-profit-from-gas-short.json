@@ -1,0 +1,221 @@
+{
+ "title": "Why gas stations barely profit from gas (and why they can't quit it)",
+ "hook": {
+  "a": "Stations earn about thirteen cents a gallon on gas.",
+  "b": "The card network takes almost as much as the gas station keeps.",
+  "onScreen": "13¢ A GALLON"
+ },
+ "numbers": [
+  {
+   "label": "Drivers who think stations make $2+/gal",
+   "value": "45%",
+   "source": "NACS, Who Makes Money Selling Gas? (Jeff Lenard)",
+   "url": "https://www.convenience.org/stay-current/conveniencecorner/who-makes-money-selling-gas",
+   "date": "updated Feb 2025",
+   "status": "verified (trade body)"
+  },
+  {
+   "label": "Average gross margin on a gallon",
+   "value": "~35¢ in NACS's worked example (OPIS weekly 35.7¢, 2025-01-30)",
+   "source": "same NACS page",
+   "url": "https://www.convenience.org/stay-current/conveniencecorner/who-makes-money-selling-gas",
+   "date": "updated Feb 2025",
+   "status": "verified (trade body). NACS says it used 2020's average; 2025 gross margins averaged over 40¢ (NACS Magazine, June 2026)",
+   "formula": "Waterfall starts at 35.7¢ (OPIS weekly average, 2025-01-30); NACS rounds to 35¢. Other costs shown as one bar = 6¢ delivery + 6¢ station + 2¢ equipment + 1¢ shrink = 15¢ (computed from NACS items)."
+  },
+  {
+   "label": "Card fees per gallon",
+   "value": "8.4¢ (2023 data)",
+   "source": "same NACS page",
+   "url": "https://www.convenience.org/stay-current/conveniencecorner/who-makes-money-selling-gas",
+   "date": "updated Feb 2025",
+   "status": "verified (trade body)",
+   "formula": "Card fees 8.4¢ is 2023 data."
+  },
+  {
+   "label": "Net margin after costs, NACS example",
+   "value": "about 13¢ (its itemised costs add to 23.4¢, leaving 11.6¢)",
+   "source": "same NACS page",
+   "url": "https://www.convenience.org/stay-current/conveniencecorner/who-makes-money-selling-gas",
+   "date": "updated Feb 2025",
+   "status": "verified (trade body); an illustration, NACS publishes no 2025 net per gallon; the 13¢ mixes a 2020 gross with 2023 card fees",
+   "formula": "Net = 35¢ gross - (6¢ delivery + 8.4¢ card fees + 6¢ store + 2¢ equipment + 1¢ shrink = 23.4¢) = 11.6¢; NACS states ~13¢ (its costs total '22¢'). Card fees / gross = 8.4 / 35.7 = 23.5%. Typical station: 1.5M gal x 11.6-13¢ = $174K-$195K a year before tax."
+  },
+  {
+   "label": "Typical in-store transaction after ALL expenses",
+   "value": "+1¢ in 2024, -7¢ in 2025 (avg basket $7.69); NACS: 'fuel margins were the reason stores were profitable in 2025'",
+   "source": "NACS Magazine, 5 Key Metrics Defining the Convenience Industry's Health",
+   "url": "https://www.nacsmagazine.com/issues/june-2026/5-key-metrics-defining-the-convenience-industrys-health",
+   "date": "June 2026",
+   "status": "verified (trade body; self-reported sample of 35,000+ stores; NACS lobbies on card fees)"
+  }
+ ],
+ "analysis": {
+  "title": "Where 35.7 cents a gallon goes, and who pays the bills",
+  "finding": "Of a ~35¢ gross margin, card fees take 8.4¢ (23.5%), leaving about 12-13¢ in NACS's example. A typical 1.5M-gallon station illustration is $174K-$195K a year. Inside, the average 2025 trip lost 7¢ after every cost, and NACS says fuel margins are why stores were profitable."
+ },
+ "template": "world",
+ "id": "gas-stations-barely-profit-from-gas-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.07
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Stations earn about thirteen cents",
+   "take": "hook",
+   "type": "object",
+   "illus": "pump",
+   "text": "13¢ a gallon",
+   "emphasis": [
+    "13¢"
+   ]
+  },
+  {
+   "vo": "a gallon on gas.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 13,
+   "sub": "NACS's worked example, per gallon",
+   "suffix": "¢",
+   "decimals": 0,
+   "source": "NACS · net margin"
+  },
+  {
+   "vo": "[steady] The trade group NACS puts",
+   "take": "proof",
+   "type": "object",
+   "illus": "pump",
+   "text": "The trade group NACS",
+   "emphasis": [
+    "NACS"
+   ]
+  },
+  {
+   "vo": "the gross markup near thirty-five cents.",
+   "take": "proof",
+   "type": "bignum",
+   "value": 35,
+   "sub": "average gross margin per gallon",
+   "suffix": "¢",
+   "decimals": 0,
+   "source": "NACS · gross margin"
+  },
+  {
+   "vo": "[lowered voice, teasing] So where does it all go?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Where does it all go?"
+  },
+  {
+   "vo": "[excited, sharing a find] Card fees alone take eight point four.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 8.4,
+   "sub": "card fees, per gallon",
+   "suffix": "¢",
+   "decimals": 1,
+   "source": "NACS · card fees"
+  },
+  {
+   "vo": "The station's own costs take the rest.",
+   "take": "calc",
+   "type": "chart",
+   "kind": "waterfall",
+   "steps": [
+    {
+     "label": "Gross",
+     "total": 35.7
+    },
+    {
+     "label": "Card fees",
+     "delta": -8.4
+    }
+   ],
+   "suffix": "¢",
+   "source": "NACS · net margin"
+  },
+  {
+   "vo": "[surprised, building] That leaves about thirteen cents a gallon.",
+   "take": "calc",
+   "type": "title",
+   "text": "About 13¢ a gallon",
+   "emphasis": [
+    "13¢"
+   ],
+   "clip": "gas-canopy-night-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "It's NACS's example, and margins ran higher in twenty twenty-five.",
+   "take": "calc",
+   "type": "stamp",
+   "text": "NACS EXAMPLE",
+   "tone": "loss",
+   "sub": "2025 margins ran higher"
+  },
+  {
+   "vo": "[low, a little incredulous] And the store inside?",
+   "take": "calc",
+   "type": "title",
+   "text": "And the store inside?",
+   "emphasis": [
+    "inside"
+   ],
+   "clip": "gas-nozzle-taillight-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "NACS says the average trip lost seven cents last year, after every cost.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 7,
+   "sub": "avg inside trip, after all costs, 2025",
+   "prefix": "-",
+   "suffix": "¢",
+   "decimals": 0,
+   "source": "NACS Magazine · inside trip"
+  },
+  {
+   "vo": "[calm, sure] Gas barely pays.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Gas barely pays",
+   "emphasis": [
+    "barely"
+   ],
+   "clip": "gas-nozzle-white-car-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "But it's what pays the bills.",
+   "take": "payoff",
+   "type": "title",
+   "text": "It pays the bills",
+   "emphasis": [
+    "bills"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's why stations can't quit the pump.",
+   "take": "button",
+   "type": "object",
+   "illus": "pump",
+   "text": "Can't quit the pump",
+   "emphasis": [
+    "quit"
+   ],
+   "sfx": null
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "template": "delta3d",
+ "id": "delta-amex-3d-pilot",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Delta's biggest payer isn't a passenger",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.15
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] American Express paid Delta eight point two billion dollars last year.",
+   "state": "card",
+   "num": "$8.2B",
+   "label": "paid by Amex to Delta, 2025",
+   "at": "^eight"
+  },
+  {
+   "vo": "That's more than Delta's entire pre-tax profit.",
+   "state": "bars",
+   "num": "$8.2B",
+   "label": "Amex payments",
+   "numB": "$6.2B",
+   "labelB": "Delta pre-tax profit"
+  },
+  {
+   "vo": "[lowered, curious] So what is Amex actually buying?",
+   "state": "question"
+  },
+  {
+   "vo": "Miles. Every swipe on a Delta card earns SkyMiles, and Amex pays Delta for them.",
+   "state": "miles"
+  },
+  {
+   "vo": "That's about thirteen percent of all Delta's revenue.",
+   "state": "ring",
+   "num": "13%",
+   "label": "of Delta's revenue, 2025",
+   "pct": 0.13
+  },
+  {
+   "vo": "And Delta wants ten billion a year.",
+   "state": "target",
+   "num": "$10B",
+   "label": "Delta's goal from Amex",
+   "at": "^ten"
+  },
+  {
+   "vo": "[calm, sure] The seat is what you see.",
+   "state": "pass"
+  },
+  {
+   "vo": "[quiet, knowing] The card is what pays.",
+   "state": "cardEnd"
+  }
+ ]
+}

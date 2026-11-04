@@ -1,0 +1,88 @@
+{
+ "template": "map3d",
+ "id": "bigmac-map-3d",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "Same Big Mac. Look at the price.",
+ "unitNote": "Price of a Big Mac in USD \u00b7 Economist Big Mac Index, July 2026",
+ "stops": [
+  {
+   "id": "360",
+   "name": "Indonesia",
+   "value": 2.38,
+   "text": "$2.38"
+  },
+  {
+   "id": "392",
+   "name": "Japan",
+   "value": 3.08,
+   "text": "$3.08"
+  },
+  {
+   "id": "784",
+   "name": "UAE",
+   "value": 5.17,
+   "text": "$5.17"
+  },
+  {
+   "id": "840",
+   "name": "USA",
+   "value": 6.22,
+   "text": "$6.22"
+  },
+  {
+   "id": "826",
+   "name": "Britain",
+   "value": 7.4,
+   "text": "$7.40"
+  },
+  {
+   "id": "756",
+   "name": "Switzerland",
+   "value": 9.04,
+   "text": "$9.04"
+  }
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Same Big Mac. Very different price.",
+   "wide": true
+  },
+  {
+   "vo": "In Indonesia, it costs two dollars thirty-eight.",
+   "stop": 0
+  },
+  {
+   "vo": "In Japan, just three dollars eight.",
+   "stop": 1
+  },
+  {
+   "vo": "In the UAE, five dollars seventeen.",
+   "stop": 2
+  },
+  {
+   "vo": "In the US, six twenty-two.",
+   "stop": 3
+  },
+  {
+   "vo": "In Britain, seven forty.",
+   "stop": 4
+  },
+  {
+   "vo": "[surprised] And in Switzerland, nine dollars and four cents.",
+   "stop": 5
+  },
+  {
+   "vo": "[calm, sure] Almost four times Indonesia. Where is yours?",
+   "wide": true
+  }
+ ],
+ "hookVs": [
+  0,
+  5
+ ]
+}

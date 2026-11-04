@@ -1,0 +1,126 @@
+{
+ "title": "Disney's parks division earns twice what its movies, TV and Disney+ do",
+ "hook": {
+  "a": "Disney's parks earn more than twice what its movies, TV shows and Disney Plus make.",
+  "b": "Disney is a theme park company with a film studio attached.",
+  "onScreen": "PARKS: 2X MOVIES + TV"
+ },
+ "numbers": [
+  {
+   "label": "FY2025 segment operating income",
+   "value": "Experiences $9,995M; Entertainment $4,674M; Sports $2,882M; total $17,551M",
+   "source": "Disney FY2025 Q4 earnings release (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm",
+   "date": "2025-11-13",
+   "status": "verified (primary)",
+   "formula": "9,995 / 4,674 = 2.14x; 9,995 / 17,551 = 57%"
+  },
+  {
+   "label": "FY2025 segment revenue",
+   "value": "Experiences $36,156M; Entertainment $42,466M; Sports $17,672M",
+   "source": "Disney FY2025 Q4 earnings release (8-K)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000154/fy2025_q4xprxex991.htm",
+   "date": "2025-11-13",
+   "status": "verified (primary)",
+   "formula": "Margins: Experiences 9,995/36,156 = 27.6%; Entertainment 4,674/42,466 = 11.0%"
+  }
+ ],
+ "template": "world",
+ "id": "disney-parks-vs-movies-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Disney's parks earn more than twice what its movies, TV shows and Disney Plus make.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 2.1,
+   "suffix": "×",
+   "decimals": 1,
+   "sub": "parks' operating income vs movies, TV & Disney+, FY2025",
+   "source": "Disney FY2025 Q4 earnings release · FY2025 segment operating income"
+  },
+  {
+   "vo": "[matter-of-fact] The parks division is parks, cruises and merchandise.",
+   "take": "proof",
+   "type": "object",
+   "illus": "store",
+   "text": "Parks, cruises, merch",
+   "emphasis": [
+    "Parks"
+   ]
+  },
+  {
+   "vo": "Last year it made ten billion dollars in operating income.",
+   "take": "proof",
+   "type": "bignum",
+   "value": 10,
+   "prefix": "$",
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "Experiences operating income, FY2025",
+   "source": "Disney FY2025 Q4 earnings release · FY2025 segment operating income"
+  },
+  {
+   "vo": "[lowered, curious] So how do parks beat Marvel, Pixar and Disney Plus?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "How do parks win?",
+   "emphasis": [
+    "parks"
+   ]
+  },
+  {
+   "vo": "[excited, sharing a find] The parks keep about twenty-eight cents of every dollar.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 28,
+   "suffix": "¢",
+   "decimals": 0,
+   "sub": "operating income per $1, parks",
+   "source": "Disney FY2025 Q4 earnings release · FY2025 segment revenue"
+  },
+  {
+   "vo": "Movies, TV and streaming keep about eleven cents.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 11,
+   "suffix": "¢",
+   "decimals": 0,
+   "sub": "operating income per $1, entertainment",
+   "source": "Disney FY2025 Q4 earnings release · FY2025 segment revenue"
+  },
+  {
+   "vo": "[calm, sure] The films sell the characters.",
+   "take": "payoff",
+   "type": "title",
+   "text": "The films sell the characters",
+   "emphasis": [
+    "characters"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] The parks sell the tickets.",
+   "take": "button",
+   "type": "object",
+   "illus": "card",
+   "text": "The parks sell the tickets",
+   "emphasis": [
+    "tickets"
+   ],
+   "sfx": null
+  }
+ ]
+}

@@ -1,0 +1,456 @@
+{
+ "title": "Why Costco never raises the $1.50 hot dog",
+ "numbers": [
+  {
+   "label": "Hot dog + soda combo price",
+   "value": "$1.50 unchanged since 1985; ~$4.50 if inflation-adjusted",
+   "source": "CNN via ABC7: CFO Gary Millerchip on earnings call, 'the $1.50 hot dog price is safe'",
+   "url": "https://abc7.com/post/costcos-150-hot-dog-price-safe/14895838/",
+   "date": "2024-05-31",
+   "status": "verified (high-trust secondary). Check it is still $1.50 on posting day."
+  },
+  {
+   "label": "Net sales FY2026",
+   "value": "$297,247M",
+   "source": "Costco FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Membership fees FY2026",
+   "value": "$5,907M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Operating income FY2026 and membership share",
+   "value": "$11,685M; fees = 50.6% of it (computed)",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary); ratio computed from primary figures"
+  },
+  {
+   "label": "Renewal rate",
+   "value": "92.3% US & Canada, 89.8% worldwide",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "date": "filed 2026-10-07",
+   "status": "verified (primary)"
+  }
+ ],
+ "template": "world",
+ "id": "costco-hot-dog-and-membership-tiktok",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "default",
+ "bgmVolume": 0.07,
+ "cut": "tiktok",
+ "targetSec": [
+  62,
+  75
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.08
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Costco makes half its profit",
+   "take": "hook",
+   "type": "bignum",
+   "value": 50.6,
+   "suffix": "%",
+   "decimals": 1,
+   "sub": "of operating income is membership fees",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "before you buy anything.",
+   "take": "hook",
+   "type": "lib",
+   "object": "membership",
+   "props": {
+    "label": "COSTCO",
+    "tier": "GOLD STAR"
+   },
+   "text": "Before you buy anything",
+   "emphasis": [
+    "anything"
+   ]
+  },
+  {
+   "vo": "[matter-of-fact] Not from the shelves.",
+   "take": "proof",
+   "type": "object",
+   "illus": "cart",
+   "text": "Not the shelves",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "From the membership card:",
+   "take": "proof",
+   "type": "stamp",
+   "text": "MEMBERSHIP CARD",
+   "tone": "gain"
+  },
+  {
+   "vo": "five point nine billion dollars a year.",
+   "take": "proof",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 5.9,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "membership fees, FY2026",
+   "source": "Costco 10-K FY26 · fees"
+  },
+  {
+   "vo": "[steady] The shelves bring in almost",
+   "take": "contrast",
+   "type": "object",
+   "illus": "cart",
+   "text": "The shelves",
+   "emphasis": [
+    "shelves"
+   ]
+  },
+  {
+   "vo": "three hundred billion in sales,",
+   "take": "contrast",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 297,
+   "suffix": "B",
+   "decimals": 0,
+   "sub": "net sales, FY2026",
+   "source": "Costco 10-K FY26 · sales"
+  },
+  {
+   "vo": "but at a thin margin.",
+   "take": "contrast",
+   "type": "title",
+   "text": "A thin margin",
+   "emphasis": [
+    "thin"
+   ],
+   "clip": "costco-warehouse-racks-01"
+  },
+  {
+   "vo": "[lowered voice, teasing] So what is a one fifty hot dog",
+   "take": "rehook",
+   "type": "lib",
+   "object": "hotdogcombo",
+   "text": "$1.50"
+  },
+  {
+   "vo": "actually for?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "What's it for?",
+   "emphasis": [
+    "for"
+   ],
+   "clip": "costco-container-port-01"
+  },
+  {
+   "vo": "[steady] It's been a dollar fifty since 1985.",
+   "take": "stake",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 1.5,
+   "decimals": 2,
+   "sub": "hot dog + soda, since 1985",
+   "source": "CNN/ABC7 · May 2024"
+  },
+  {
+   "vo": "Inflation says about four fifty.",
+   "take": "stake",
+   "type": "bars",
+   "title": "Hot dog + soda",
+   "prefix": "$",
+   "decimals": 2,
+   "items": [
+    {
+     "label": "Costco price",
+     "value": 1.5,
+     "kind": "hl"
+    },
+    {
+     "label": "If it had kept pace",
+     "value": 4.5,
+     "kind": "ghost"
+    }
+   ],
+   "source": "CNN/ABC7 · May 2024"
+  },
+  {
+   "vo": "[excited, sharing a find] Here's the math. Every point of renewal rate",
+   "take": "calc",
+   "type": "ring",
+   "share": 0.898,
+   "sub": "renewal rate, worldwide",
+   "source": "Costco 10-K FY26 · renewal"
+  },
+  {
+   "vo": "is worth fifty-nine million dollars a year.",
+   "take": "calc",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 59,
+   "suffix": "M",
+   "sub": "a year per renewal point",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "[emphatic] Lose four points for good,",
+   "take": "calc",
+   "type": "title",
+   "text": "Lose four points for good",
+   "emphasis": [
+    "four"
+   ]
+  },
+  {
+   "vo": "and fees end year five",
+   "take": "calc",
+   "type": "sensitivity",
+   "title": "Fees if renewal slips ($B)",
+   "series": [
+    {
+     "label": "Today (89.8%)",
+     "points": [
+      5.91,
+      5.91,
+      5.91,
+      5.91,
+      5.91
+     ],
+     "tone": "hl",
+     "endLabel": "Today: $5.9B"
+    },
+    {
+     "label": "-2 pts",
+     "points": [
+      5.79,
+      5.69,
+      5.59,
+      5.51,
+      5.44
+     ],
+     "tone": "ink",
+     "endLabel": "-2 pts: -$0.5B"
+    },
+    {
+     "label": "-4 pts",
+     "points": [
+      5.67,
+      5.47,
+      5.29,
+      5.15,
+      5.02
+     ],
+     "tone": "loss",
+     "endLabel": "-4 pts: -$0.9B"
+    },
+    {
+     "label": "-7 pts",
+     "points": [
+      5.49,
+      5.15,
+      4.87,
+      4.63,
+      4.44
+     ],
+     "tone": "loss",
+     "endLabel": "-7 pts: -$1.5B"
+    }
+   ],
+   "xLabels": [
+    "Y1",
+    "Y2",
+    "Y3",
+    "Y4",
+    "Y5"
+   ],
+   "yFloor": 4,
+   "takeaway": "Flat new sign-ups assumed",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "almost nine hundred million lower.",
+   "take": "calc",
+   "type": "bignum",
+   "prefix": "-$",
+   "value": 0.9,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "fees by year five, at -4 points",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "[matter-of-fact] I built it simply.",
+   "take": "calc",
+   "type": "title",
+   "text": "How I built it",
+   "emphasis": [
+    "built"
+   ],
+   "clip": "costco-carts-01"
+  },
+  {
+   "vo": "Take membership fees,",
+   "take": "calc",
+   "type": "receipt",
+   "subtitle": "THE MODEL",
+   "lines": [
+    {
+     "label": "Membership fees",
+     "value": "$5.9B"
+    },
+    {
+     "label": "Renewal rate today",
+     "value": "89.8%"
+    },
+    {
+     "label": "New members",
+     "value": "flat (assumed)"
+    }
+   ],
+   "source": "Costco 10-K FY26 · renewal"
+  },
+  {
+   "vo": "assume the same number of new members each year,",
+   "take": "calc",
+   "type": "title",
+   "text": "Same new members each year",
+   "emphasis": [
+    "Same"
+   ]
+  },
+  {
+   "vo": "and let renewals slip.",
+   "take": "calc",
+   "type": "title",
+   "text": "Let renewals slip",
+   "emphasis": [
+    "slip"
+   ]
+  },
+  {
+   "vo": "[emphatic] Make it seven points",
+   "take": "calc",
+   "type": "title",
+   "text": "Make it seven points",
+   "emphasis": [
+    "seven"
+   ]
+  },
+  {
+   "vo": "and it's one and a half billion lower.",
+   "take": "calc",
+   "type": "bignum",
+   "prefix": "-$",
+   "value": 1.5,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "fees by year five, at -7 points",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "That's nearly thirteen percent of operating income.",
+   "take": "calc",
+   "type": "ring",
+   "share": 0.126,
+   "tone": "loss",
+   "sub": "of operating income",
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "I assumed fees per member stay flat,",
+   "take": "calc",
+   "type": "title",
+   "text": "Fees per member: flat",
+   "emphasis": [
+    "flat"
+   ]
+  },
+  {
+   "vo": "and ignored fee increases and upgrades.",
+   "take": "calc",
+   "type": "stamp",
+   "text": "NOT A FORECAST",
+   "tone": "loss"
+  },
+  {
+   "vo": "[plain, even] The numbers come from Costco's own annual report.",
+   "take": "source",
+   "type": "doc",
+   "title": "Costco FY2026 annual report",
+   "lines": [
+    "Membership fees: $5,907M",
+    "Operating income: $11,685M",
+    "Renewal: 92.3% US & Canada, 89.8% worldwide"
+   ],
+   "highlight": 0,
+   "footer": "Model: Line Item"
+  },
+  {
+   "vo": "The model is mine.",
+   "take": "source",
+   "type": "stamp",
+   "text": "MODEL: MINE",
+   "tone": "gain"
+  },
+  {
+   "vo": "[calm, sure] The hot dog isn't the product.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "hotdog",
+   "text": "Not the product",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "It's the reason you renew.",
+   "take": "payoff",
+   "type": "lib",
+   "object": "membership",
+   "props": {
+    "label": "COSTCO",
+    "tier": "GOLD STAR"
+   },
+   "text": "The reason you renew",
+   "emphasis": [
+    "renew"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's how Costco makes half its profit",
+   "take": "button",
+   "type": "bignum",
+   "value": 50.6,
+   "suffix": "%",
+   "decimals": 1,
+   "sub": "of operating income is membership fees",
+   "sfx": null,
+   "source": "Costco 10-K FY26 · computed"
+  },
+  {
+   "vo": "before you buy anything.",
+   "take": "button",
+   "type": "ring",
+   "share": 0.506,
+   "sub": "membership fees, share of operating income",
+   "source": "Costco 10-K FY26 · computed"
+  }
+ ]
+}

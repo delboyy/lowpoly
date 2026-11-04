@@ -1,0 +1,203 @@
+{
+ "title": "How McDonald's really makes money",
+ "hook": {
+  "a": "Ninety-five percent of McDonald's aren't run by McDonald's.",
+  "b": "McDonald's collected ten point four billion dollars in rent last year.",
+  "onScreen": "95% AREN'T RUN BY McDONALD'S"
+ },
+ "numbers": [
+  {
+   "label": "Restaurants at year-end 2025",
+   "value": "45,356, about 95% franchised",
+   "source": "McDonald's FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Rent revenue from franchised restaurants, 2025",
+   "value": "$10,442M",
+   "source": "McDonald's FY2025 10-K (revenues from franchised restaurants note)",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Royalties, 2025",
+   "value": "$6,018M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Share of restaurant margin dollars from franchised restaurants",
+   "value": "approximately 90%",
+   "source": "same 10-K (MD&A)",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Total revenue 2025 / franchised revenue",
+   "value": "$26,885M total; $16,548M from franchised restaurants (61.6%, computed)",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm",
+   "date": "filed 2026-02-24",
+   "status": "verified (primary); the 61.6% is computed from primary figures",
+   "formula": "61.6% = $16,548M franchised revenue / $26,885M total. Franchised margin 84.2% = $13,930M / $16,548M. Company-operated margin 14.7% = $1,422M / $9,690M. Ratio 5.7x = 84.2 / 14.7. Franchised margin vs operating income: $13,930M / $12,393M = 112%. Per-restaurant figures use ~43,088 franchised restaurants (95% x 45,356, approximate)."
+  }
+ ],
+ "analysis": {
+  "title": "Per dollar booked, franchising keeps 5.7x the margin of company stores",
+  "finding": "Margin per $1 of revenue McDonald's books: 84.2¢ from franchised restaurants (rent, royalties, fees) vs 14.7¢ from company-operated sales, a 5.7x gap per dollar booked. Franchised margin alone ($13.9B) is 112% of total operating income ($12.4B)."
+ },
+ "template": "world",
+ "id": "how-mcdonalds-really-makes-money-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.96
+ },
+ "scenes": [
+  {
+   "vo": "[punchy, matter-of-fact] Ninety-five percent of McDonald's",
+   "take": "hook",
+   "type": "ring",
+   "share": 0.95,
+   "sub": "of restaurants are franchised",
+   "source": "McDonald's 10-K 2025 · stores"
+  },
+  {
+   "vo": "aren't run by McDonald's.",
+   "take": "hook",
+   "type": "object",
+   "illus": "burger",
+   "text": "Not run by McDonald's",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "[dry] The owner flips the burgers.",
+   "take": "proof",
+   "type": "object",
+   "illus": "burger",
+   "text": "The owner flips the burgers",
+   "emphasis": [
+    "owner"
+   ]
+  },
+  {
+   "vo": "McDonald's collects ten point four billion dollars in rent.",
+   "take": "proof",
+   "type": "bignum",
+   "prefix": "$",
+   "value": 10.4,
+   "suffix": "B",
+   "decimals": 1,
+   "sub": "rent from franchisees, 2025",
+   "source": "McDonald's 10-K 2025 · rent"
+  },
+  {
+   "vo": "[lowered voice, teasing] So what's a dollar from a franchisee",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "A franchisee dollar"
+  },
+  {
+   "vo": "worth to McDonald's?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Worth how much?",
+   "clip": "mcd-patty-grill-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "[excited, sharing a find] A dollar of franchise revenue:",
+   "take": "calc",
+   "type": "title",
+   "text": "A franchise dollar",
+   "emphasis": [
+    "franchise"
+   ]
+  },
+  {
+   "vo": "eighty-four cents of restaurant margin.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 84.2,
+   "suffix": "¢",
+   "decimals": 1,
+   "sub": "margin per $1 of franchise revenue",
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "[surprised, building] Per dollar of revenue,",
+   "take": "calc",
+   "type": "title",
+   "text": "Per dollar of revenue",
+   "emphasis": [
+    "revenue"
+   ]
+  },
+  {
+   "vo": "that's five point seven times the margin of a company-owned dollar.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 5.7,
+   "suffix": "x",
+   "decimals": 1,
+   "sub": "the margin of a company-owned dollar",
+   "source": "McDonald's 10-K 2025 · computed"
+  },
+  {
+   "vo": "[calm, sure] The burger isn't the business.",
+   "take": "payoff",
+   "type": "title",
+   "text": "The burger isn't the business",
+   "emphasis": [
+    "isn't"
+   ]
+  },
+  {
+   "vo": "It's the reason people show up.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "store",
+   "text": "People show up",
+   "emphasis": [
+    "show up"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's the deal behind a chain where",
+   "take": "button",
+   "type": "ring",
+   "share": 0.95,
+   "sub": "of restaurants are franchised",
+   "sfx": null,
+   "source": "McDonald's 10-K 2025 · stores"
+  },
+  {
+   "vo": "ninety-five percent aren't run by McDonald's.",
+   "take": "button",
+   "type": "object",
+   "illus": "burger",
+   "text": "Not run by McDonald's",
+   "emphasis": [
+    "Not"
+   ]
+  }
+ ]
+}

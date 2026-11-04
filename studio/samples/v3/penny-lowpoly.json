@@ -1,0 +1,57 @@
+{
+ "template": "penny3d",
+ "id": "penny-lowpoly",
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "topHook": "America lost money on every penny it made",
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.0
+ },
+ "scenes": [
+  {
+   "vo": "[calm, curious] Every penny America made cost almost four cents.",
+   "state": "hero",
+   "num": "3.7\u00a2",
+   "label": "to make one penny (US Mint, 2024)",
+   "at": "^four"
+  },
+  {
+   "vo": "Zinc inside. A thin skin of copper. Pressed, packed and shipped.",
+   "state": "layers"
+  },
+  {
+   "vo": "And the Mint made more than three billion of them in a year.",
+   "state": "heap",
+   "num": "3B+",
+   "label": "pennies shipped in one year",
+   "at": "^three"
+  },
+  {
+   "vo": "Every single one lost money.",
+   "state": "loss"
+  },
+  {
+   "vo": "[lowered] So the government did something it hadn't done in two hundred thirty-two years.",
+   "state": "years",
+   "num": "232",
+   "label": "years of pennies (1793\u20132025)",
+   "at": "^two"
+  },
+  {
+   "vo": "Last November, in Philadelphia, it pressed the final penny.",
+   "state": "press"
+  },
+  {
+   "vo": "It says that saves fifty-six million dollars.",
+   "state": "saved",
+   "num": "$56M",
+   "label": "saved, says the US Treasury",
+   "at": "^fifty"
+  },
+  {
+   "vo": "[quiet, knowing] Your old pennies still work. There just won't be any new ones.",
+   "state": "roll"
+  }
+ ]
+}

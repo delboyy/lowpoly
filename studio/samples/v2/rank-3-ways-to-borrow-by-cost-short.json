@@ -1,0 +1,221 @@
+{
+ "title": "Rank 3 ways to borrow by what they cost",
+ "hook": {
+  "a": "Three ways to borrow. One costs thirty times another.",
+  "b": "A payday loan costs thirty times a personal loan.",
+  "onScreen": "RANKED: COST TO BORROW"
+ },
+ "numbers": [
+  {
+   "label": "Payday loan APR",
+   "value": "391% for $15 per $100, two weeks",
+   "source": "CFPB, 'CFPB Examines Payday Lending' / white paper",
+   "url": "https://www.consumerfinance.gov/about-us/newsroom/consumer-financial-protection-bureau-examines-payday-lending/",
+   "date": "2013 data",
+   "status": "verified (primary) but OLD: check CFPB's latest, and state caps vary"
+  },
+  {
+   "label": "Credit card APR, accounts assessed interest",
+   "value": "22.15% (Q2 2026); all accounts 20.94%",
+   "source": "Federal Reserve G.19 Consumer Credit",
+   "url": "https://www.federalreserve.gov/releases/g19/current/",
+   "date": "released 2026-10-07",
+   "status": "verified (primary)",
+   "formula": "Cost to carry $1,000 for a year at simple interest: 11.86% -> $118.60; 22.15% -> $221.50. Payday: $15 per $100 per 2 weeks = $150 per $1,000 per rollover; 26 rollovers = $3,900; fees pass the $1,000 after 1,000 / 150 = 6.7 rollovers (~13.3 weeks); $3,900 / $118.6 = ~33x. Illustration: ignores amortisation and compounding."
+  },
+  {
+   "label": "Personal loan, 24-month, commercial banks",
+   "value": "11.86% (Q2 2026); 11.90% (Aug 2026)",
+   "source": "Federal Reserve G.19",
+   "url": "https://www.federalreserve.gov/releases/g19/current/",
+   "date": "released 2026-10-07",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Typical payday loan size / fee",
+   "value": "$350 loan, median fee $15 per $100, due in two weeks",
+   "source": "CFPB (via search summary of CFPB examination)",
+   "url": "https://www.consumerfinance.gov/about-us/newsroom/consumer-financial-protection-bureau-examines-payday-lending/",
+   "date": "2013",
+   "status": "verified (high-trust secondary); page not fully read"
+  },
+  {
+   "label": "Overdraft/NSF fees paid in 2023 (context for long-form)",
+   "value": "$5.8B, down $6.1B from 2019",
+   "source": "CFPB data spotlight",
+   "url": "https://www.consumerfinance.gov/data-research/research-reports/data-spotlight-overdraft-nsf-revenue-in-2023-down-more-than-50-versus-pre-pandemic-levels-saving-consumers-over-6-billion-annually/",
+   "date": "2024",
+   "status": "verified (primary)"
+  }
+ ],
+ "analysis": {
+  "title": "What $1,000 costs to carry for a year",
+  "finding": "At the Fed's average rates, carrying $1,000 for a year costs ~$119 on a personal loan and ~$222 on a card that carries a balance. A payday loan rolled every two weeks costs $150 per rollover and passes the original $1,000 after ~7 rollovers (about 13 weeks)."
+ },
+ "template": "world",
+ "id": "rank-3-ways-to-borrow-by-cost-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "disclaimer": "Not financial advice.",
+ "fish": {
+  "model": "drama-3",
+  "speed": 0.95
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Three ways to borrow.",
+   "take": "hook",
+   "type": "title",
+   "kicker": "RANKED BY COST, WORST FIRST",
+   "text": "Cost to borrow",
+   "emphasis": [
+    "Cost"
+   ]
+  },
+  {
+   "vo": "One costs thirty times another.",
+   "take": "hook",
+   "type": "title",
+   "text": "One costs 30x another",
+   "emphasis": [
+    "30x"
+   ],
+   "clip": "borrow-dollar-bundles-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[matter-of-fact] Number three: a payday loan.",
+   "take": "proof",
+   "type": "object",
+   "illus": "contract",
+   "text": "#3 Payday loan",
+   "emphasis": [
+    "#3"
+   ]
+  },
+  {
+   "vo": "That's a three hundred ninety-one percent annual rate.",
+   "take": "proof",
+   "type": "bignum",
+   "value": 391,
+   "sub": "APR on a payday loan",
+   "suffix": "%",
+   "decimals": 0,
+   "source": "CFPB · payday"
+  },
+  {
+   "vo": "[steady] Number two: a credit card.",
+   "take": "proof",
+   "type": "object",
+   "illus": "card",
+   "text": "#2 Credit card",
+   "emphasis": [
+    "#2"
+   ]
+  },
+  {
+   "vo": "The Fed says about twenty-two percent on balances you carry.",
+   "take": "proof",
+   "type": "bignum",
+   "value": 22.15,
+   "sub": "average card APR, accounts with a balance",
+   "suffix": "%",
+   "decimals": 2,
+   "source": "Fed G.19 · cards"
+  },
+  {
+   "vo": "[lowered voice, teasing] So which one's the cheapest?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Which one's the cheapest?"
+  },
+  {
+   "vo": "[steady] Number one: a personal loan,",
+   "take": "proof",
+   "type": "object",
+   "illus": "building",
+   "text": "#1 Personal loan",
+   "emphasis": [
+    "#1"
+   ]
+  },
+  {
+   "vo": "about twelve percent.",
+   "take": "proof",
+   "type": "bignum",
+   "value": 11.86,
+   "sub": "average 24-month bank personal loan APR",
+   "suffix": "%",
+   "decimals": 2,
+   "source": "Fed G.19 · loans"
+  },
+  {
+   "vo": "[excited, sharing a find] Put the cheapest next to the worst.",
+   "take": "calc",
+   "type": "title",
+   "text": "Cheapest vs worst",
+   "emphasis": [
+    "worst"
+   ],
+   "clip": "borrow-form-pen-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "Same money, two prices.",
+   "take": "calc",
+   "type": "bars",
+   "title": "APR",
+   "unit": "%",
+   "decimals": 0,
+   "items": [
+    {
+     "label": "Personal loan",
+     "value": 11.9,
+     "kind": "gain"
+    },
+    {
+     "label": "Payday loan",
+     "value": 391,
+     "kind": "loss"
+    }
+   ],
+   "source": "CFPB · payday"
+  },
+  {
+   "vo": "[calm, sure] Same money.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Same money",
+   "clip": "borrow-coin-wood-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "The price changes by more than thirty times.",
+   "take": "payoff",
+   "type": "title",
+   "text": "30 times the cost",
+   "emphasis": [
+    "30"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's what a payday loan costs.",
+   "take": "button",
+   "type": "object",
+   "illus": "contract",
+   "text": "#3 Payday loan",
+   "emphasis": [
+    "#3"
+   ],
+   "sfx": null
+  }
+ ]
+}

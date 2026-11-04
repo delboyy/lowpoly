@@ -1,0 +1,16 @@
+{
+  "template": "stat",
+  "id": "mcdonalds-stat",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "captionStyle": "hormozi",
+  "bgm": "bgm-drive-108bpm",
+  "scenes": [
+    { "type": "text", "vo": "How does McDonald's really make money? Not from burgers.", "text": "How McDonald's really makes money", "emphasis": ["money"] },
+    { "type": "number", "vo": "About ninety five percent of its restaurants are run by franchisees, not by McDonald's.", "value": 95, "suffix": "%", "label": "of restaurants are franchised", "sub": "approx., company filings" },
+    { "type": "bars", "vo": "That leaves only a sliver of restaurants that McDonald's runs itself.", "title": "Who runs the restaurants", "unit": "%", "highlight": 0, "items": [{ "label": "Franchisees", "value": 95 }, { "label": "McDonald's", "value": 5 }] },
+    { "type": "number", "vo": "Those franchisees pay McDonald's rent, plus a cut of sales. The rent alone is roughly ten billion dollars a year.", "value": 10, "prefix": "$", "suffix": "B", "label": "collected in rent each year", "sub": "approx., company filings" },
+    { "type": "number", "vo": "It all started in nineteen sixty one, when the company set up a separate arm to buy and lease land.", "value": 1961, "group": false, "label": "the year it became a landlord" },
+    { "type": "text", "vo": "The burger is the reason you show up. The land is the business.", "text": "The land is the business", "emphasis": ["land"] }
+  ]
+}

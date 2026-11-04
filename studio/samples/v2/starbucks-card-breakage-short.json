@@ -1,0 +1,228 @@
+{
+ "title": "Starbucks books unspent-card revenue equal to ~8% of operating income",
+ "hook": {
+  "a": "Starbucks' unspent-card revenue now equals about eight percent of its operating income.",
+  "b": "Starbucks profits when its cards go unspent.",
+  "onScreen": "UNSPENT CARDS = 8% OF INCOME"
+ },
+ "numbers": [
+  {
+   "label": "Breakage revenue FY2025",
+   "value": "$200.4M company-operated + $22.0M licensed = $222.4M",
+   "source": "Starbucks FY2025 10-K (stored value cards note)",
+   "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+   "date": "filed 2025-11-14",
+   "status": "verified (primary); sum is computed from primary figures",
+   "formula": "$222.4M = $200.4M company-operated + $22.0M licensed breakage (FY2025)."
+  },
+  {
+   "label": "Card terms",
+   "value": "no expiration date; no service fees that decrement balances",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+   "date": "filed 2025-11-14",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Total stores",
+   "value": "40,990 (21,514 company-operated, 19,476 licensed)",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+   "date": "filed 2025-11-14",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Total net revenues FY2025",
+   "value": "$37,184.4M",
+   "source": "same 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+   "date": "filed 2025-11-14",
+   "status": "verified (primary)",
+   "formula": "0.6% = $222.4M / $37,184.4M. Breakage / operating income: $222.4M / $2,936.6M = ~7.6% (FY2025; operating margin 7.9% x $37,184.4M, from the 10-K); $207.6M / ~$5.4B = ~3.8% (FY2024), using the 10-K's rounded operating income. Per store: $222.4M / 40,990 = ~$5,400."
+  },
+  {
+   "label": "Stored value card liability and current deferred revenue",
+   "value": "$1,840.6M (FY2025)",
+   "source": "same 10-K balance sheet",
+   "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+   "date": "filed 2025-11-14",
+   "status": "FLAG: combined line, mixes stored value and deferred revenue. Not used in the script; find the stored-value-only note before long-form."
+  }
+ ],
+ "analysis": {
+  "title": "How big is Starbucks' breakage, really?",
+  "finding": "Breakage was $222M in FY2025: only 0.6% of revenue but ~7.6% of operating income, up from ~3.8% a year earlier because operating income fell from ~$5.4B to ~$2.9B. It works out to ~$5.4K per store."
+ },
+ "template": "world",
+ "id": "starbucks-card-breakage-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] Starbucks' unspent-card revenue",
+   "take": "hook",
+   "type": "object",
+   "illus": "card",
+   "text": "Unspent-card revenue",
+   "emphasis": [
+    "Unspent"
+   ]
+  },
+  {
+   "vo": "now equals about eight percent of its operating income.",
+   "take": "hook",
+   "type": "bignum",
+   "value": 7.6,
+   "sub": "breakage as % of operating income, FY2025",
+   "suffix": "%",
+   "decimals": 1,
+   "source": "Starbucks 10-K FY25 · breakage"
+  },
+  {
+   "vo": "[lowered, curious] Its annual report says",
+   "take": "proof",
+   "type": "doc",
+   "title": "Starbucks annual report",
+   "lines": [
+    "Cards: no expiration",
+    "No service fees",
+    "Some balances not expected to be redeemed"
+   ],
+   "highlight": 2,
+   "footer": "FY2025 10-K"
+  },
+  {
+   "vo": "some of that money is never spent.",
+   "take": "proof",
+   "type": "title",
+   "text": "Some is never spent",
+   "emphasis": [
+    "never"
+   ],
+   "clip": "sbux-espresso-pour-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[lowered voice, teasing] So where does it go?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "Where does it go?"
+  },
+  {
+   "vo": "[matter-of-fact] It books it as revenue.",
+   "take": "proof",
+   "type": "title",
+   "text": "It books it as revenue",
+   "emphasis": [
+    "revenue"
+   ],
+   "clip": "sbux-cafe-cup-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "The line is called breakage.",
+   "take": "proof",
+   "type": "title",
+   "kicker": "THE LINE IS CALLED",
+   "text": "Breakage",
+   "emphasis": [
+    "Breakage"
+   ]
+  },
+  {
+   "vo": "[steady, emphatic] Last year: two hundred twenty-two million dollars.",
+   "take": "numbers",
+   "type": "bignum",
+   "value": 222,
+   "sub": "breakage revenue, FY2025",
+   "prefix": "$",
+   "suffix": "M",
+   "decimals": 0,
+   "source": "Starbucks 10-K FY25 · breakage"
+  },
+  {
+   "vo": "[excited, sharing a find] That's only six tenths of one percent of revenue.",
+   "take": "calc",
+   "type": "title",
+   "text": "Only 0.6% of revenue",
+   "emphasis": [
+    "0.6%"
+   ]
+  },
+  {
+   "vo": "[surprised, building] But profit fell,",
+   "take": "calc",
+   "type": "title",
+   "text": "But profit fell",
+   "emphasis": [
+    "fell"
+   ],
+   "clip": "sbux-cup-steam-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "so breakage doubled its share, from under four percent to nearly eight.",
+   "take": "calc",
+   "type": "bars",
+   "title": "Breakage vs profit",
+   "suffix": "%",
+   "decimals": 1,
+   "items": [
+    {
+     "label": "FY2024",
+     "value": 3.8,
+     "kind": "ink"
+    },
+    {
+     "label": "FY2025",
+     "value": 7.6,
+     "kind": "hl"
+    }
+   ],
+   "source": "Starbucks 10-K FY25 · breakage"
+  },
+  {
+   "vo": "[calm, sure] For Starbucks, a prepaid balance",
+   "take": "payoff",
+   "type": "object",
+   "illus": "phone",
+   "text": "A prepaid balance",
+   "emphasis": [
+    "prepaid"
+   ]
+  },
+  {
+   "vo": "is a revenue line.",
+   "take": "payoff",
+   "type": "object",
+   "illus": "card",
+   "text": "A revenue line",
+   "emphasis": [
+    "revenue"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] Unspent cards, quietly paying the bills.",
+   "take": "button",
+   "type": "object",
+   "illus": "card",
+   "text": "Unspent cards",
+   "emphasis": [
+    "Unspent"
+   ],
+   "sfx": null
+  }
+ ]
+}

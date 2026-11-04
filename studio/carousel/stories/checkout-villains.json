@@ -1,0 +1,61 @@
+{
+  "_note": "Slide wording is LOCKED: copied verbatim from the approved script (typographic quotes and splitting a headline 'Leak 1: X' into kicker + head are layout only). Caption/sources are read from the approved file at handoff.",
+  "id": "checkout-villains",
+  "approved": "../plan/scripts/2026-11-03-carousel-checkout-villains.approved.md",
+  "slides": [
+    {
+      "kind": "hook",
+      "quote": "Don't mind us. We just work here.",
+      "head": "Meet the 4 villains hiding in your checkout.",
+      "body": "Number 4 is faster than you think. That's the problem.",
+      "scene": "four cute cartoon villain toys standing side by side behind a small shop checkout counter, smirking: a cute translucent white ghost whose body is an empty orange shopping cart; a sneaky grinning orange price-tag monster trailing a very long blank paper receipt; a grumpy teal brick-wall creature with a big golden padlock for a mouth; a round sunny-yellow creature shaped like a loading wheel of dots, with dizzy eyes and little sneakers"
+    },
+    {
+      "kind": "beat",
+      "kicker": "The Cart Ghost",
+      "quote": "They fill me up. Then they vanish. Every time.",
+      "head": "**7 in 10** online carts are abandoned before checkout.",
+      "source": "Baymard Institute, average of 50 studies, 70.22% (updated Sep 2025)",
+      "scene": "a cute translucent white ghost whose body is an empty orange shopping cart, floating away from a checkout counter and fading out, a few wrapped parcels left behind on the floor, spooky but cute"
+    },
+    {
+      "kind": "beat",
+      "kicker": "The Surprise Fee",
+      "quote": "Oh, you thought *that* was the price?",
+      "head": "For shoppers ready to buy, the top reason they left: extra costs at checkout. Shipping, taxes, fees.",
+      "source": "Baymard checkout survey, US shoppers (excluding “just browsing”)",
+      "scene": "a sneaky grinning orange price-tag monster trailing a very long blank paper receipt, jumping out from behind a checkout counter and startling a shopper with a full cart, coins spilling"
+    },
+    {
+      "kind": "beat",
+      "kicker": "The Account Wall",
+      "quote": "Before you buy, make a password. Twelve characters. One symbol. One small sacrifice.",
+      "head": "**Nearly 1 in 5** shoppers ready to buy have left a cart because the site made them create an account.",
+      "source": "Baymard, 18% of US shoppers who weren't just browsing",
+      "scene": "a grumpy teal brick-wall creature with a big golden padlock for a mouth, blocking the path to a checkout counter while an annoyed shopper with a full cart stands in front of it Compose it so every character is small and sits entirely in the bottom 45% of the frame, with heads well below the middle."
+    },
+    {
+      "kind": "beat",
+      "kicker": "The Spinner",
+      "quote": "Take your time. I'll just keep spinning.",
+      "head": "When mobile sites were **0.1 s** faster, retail conversion rates were **8.4%** higher.",
+      "source": "Deloitte study for Google, 2020, 37 brands, 30 days",
+      "scene": "a round sunny-yellow creature shaped like a loading wheel of dots, with dizzy eyes and little sneakers, spinning on top of a giant smartphone lying flat, while a bored shopper sits waiting next to it checking a wristwatch"
+    },
+    {
+      "kind": "fix",
+      "kicker": "How to beat them",
+      "head": "Show the full price early. Let people check out as a guest. Make pages lighter: smaller images, fewer apps.",
+      "note": "Advice, not study findings",
+      "scene": "a cheerful shop owner sweeping four small villain toys out of the shop door with a big broom: a cute translucent white ghost whose body is an empty orange shopping cart; a sneaky grinning orange price-tag monster trailing a very long blank paper receipt; a grumpy teal brick-wall creature with a big golden padlock for a mouth; a round sunny-yellow creature shaped like a loading wheel of dots, with dizzy eyes and little sneakers; bright and triumphant"
+    },
+    {
+      "kind": "cta",
+      "head": "Want to know which villains live in your store?",
+      "cta": "Comment “LEAK”",
+      "body": "(or DM us) for a free check.",
+      "handle": "@fixtheleak_",
+      "scene": "the four small villain toys peeking mischievously from behind a cosy shop checkout counter with a laptop, while a smiling shop owner with a magnifying glass spots them: a cute translucent white ghost whose body is an empty orange shopping cart; a sneaky grinning orange price-tag monster trailing a very long blank paper receipt; a grumpy teal brick-wall creature with a big golden padlock for a mouth; a round sunny-yellow creature shaped like a loading wheel of dots, with dizzy eyes and little sneakers Compose it so every character is small and sits entirely in the bottom 45% of the frame, with heads well below the middle."
+    }
+  ]
+}

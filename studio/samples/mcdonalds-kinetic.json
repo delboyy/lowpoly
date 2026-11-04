@@ -1,0 +1,17 @@
+{
+  "template": "kinetic",
+  "id": "mcdonalds-kinetic",
+  "voice": "am_michael",
+  "speed": 1.05,
+  "captionStyle": "karaoke",
+  "bgm": "bgm-tension-92bpm",
+  "scenes": [
+    { "vo": "Everyone thinks McDonald's sells burgers.", "text": "Everyone thinks McDonald's sells burgers", "emphasis": ["burgers"] },
+    { "vo": "It doesn't. McDonald's is one of the biggest real estate companies on the planet.", "text": "It's a real estate empire", "emphasis": ["real", "estate"] },
+    { "vo": "In nineteen sixty one, its CFO, Harry Sonneborn, told Ray Kroc that burger margins were too thin. So they bought land instead.", "text": "Burger margins were too thin", "emphasis": ["thin"] },
+    { "vo": "Franchisees pay McDonald's rent, on top of royalties. About ninety five percent of restaurants are franchised.", "text": "95% of restaurants are franchised", "emphasis": ["95%"] },
+    { "vo": "So the franchisee flips the burgers, and McDonald's is their landlord.", "text": "The franchisee is the tenant", "emphasis": ["tenant"] },
+    { "vo": "Rent alone brings in roughly ten billion dollars a year, and it arrives whether or not you buy a Big Mac.", "text": "$10 billion in rent. Every year.", "emphasis": ["$10", "billion"] },
+    { "vo": "The burger is just the reason you walk through the door. The land is the business.", "text": "The burger is the bait", "emphasis": ["bait"] }
+  ]
+}

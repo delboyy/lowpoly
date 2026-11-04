@@ -1,0 +1,14 @@
+{
+  "template": "world", "id": "kit-test", "voice": "am_michael", "speed": 1.15, "captionStyle": "hormozi", "bgm": "default",
+  "scenes": [
+    { "vo": "Half of Costco's profit isn't groceries.", "take": "a", "type": "lib", "object": "membership", "props": { "label": "COSTCO", "tier": "GOLD STAR" }, "text": "Half its profit", "emphasis": ["profit"], "bg": "ledger" },
+    { "vo": "It's a fee you pay to walk in.", "take": "a", "type": "bignum", "value": 5.9, "prefix": "$", "suffix": "B", "decimals": 1, "sub": "membership fees, FY2026", "kicker": "The hidden line", "source": "Costco 10-K · Fees" },
+    { "vo": "Ninety-two percent renew every year.", "take": "a", "type": "ring", "share": 0.923, "sub": "renew", "tone": "gain", "bg": "roll" },
+    { "vo": "A burger earns the franchisor pennies.", "take": "b", "type": "split", "title": "Where $1 goes", "parts": [{ "label": "Food", "cents": 40, "tone": "muted" }, { "label": "Labor", "cents": 30, "tone": "ink" }, { "label": "Rent", "cents": 20, "tone": "loss" }, { "label": "Profit", "cents": 10, "tone": "gain" }], "hl": 3 },
+    { "vo": "The rent flows up to headquarters.", "take": "b", "type": "flow", "label": "RENT", "back": "BURGERS", "cut": "stamp", "cutText": "PAID" },
+    { "vo": "Rank them by what they really cost.", "take": "b", "type": "rank", "title": "True cost", "items": [{ "label": "Card", "value": 24, "sub": "APR" }, { "label": "Loan", "value": 12 }, { "label": "Bank", "value": 7 }], "best": 2, "unit": "%" },
+    { "vo": "The van runs a thousand routes a day.", "type": "route", "title": "Routes", "stops": [{ "lon": -122.3, "lat": 47.6, "label": "Seattle" }, { "lon": -87.6, "lat": 41.9, "label": "Chicago" }, { "lon": -74, "lat": 40.7, "label": "New York" }], "cut": "redact" },
+    { "vo": "Soda. Cash. Tag.", "type": "montage", "cuts": [{ "glyph": "soda", "text": "Soda" }, { "glyph": "cash", "text": "Cash" }, { "glyph": "tag", "text": "Tag" }], "bg": "coins" },
+    { "vo": "A hot dog combo that never changes.", "type": "lib", "object": "hotdogcombo", "text": "Never changes", "bg": "warehouse" }
+  ]
+}

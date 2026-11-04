@@ -1,0 +1,69 @@
+{
+  "_note": "Words and figures copied from studio/samples/v3/carts-leaks.json and qa/inbox/bl-01-carts/bl-carts-7in10.sources.txt. Do not change a number or claim here without the Lowpoly lead. caption/sources are drafts from the approved Short; the lead owns the final versions.",
+  "id": "carts",
+  "videoProps": "../qa/inbox/bl-01-carts/bl-carts-7in10.props.json",
+  "lowpoly": {
+    "comp": "Carts3D",
+    "props": "../qa/carousel-tests/lowpoly/clean.props.json",
+    "cropY": 300
+  },
+  "slides": [
+    {
+      "kind": "hook",
+      "num": "7 in 10",
+      "head": "online carts never check out",
+      "source": "Baymard Institute, average of 50 studies, 2025",
+      "scene": "a shopping cart piled high with wrapped parcels left alone on an empty street outside a small cosy shop, the shopper walking away in the background",
+      "lowpolyFrame": 75
+    },
+    {
+      "kind": "beat",
+      "head": "That's the average across dozens of studies.",
+      "source": "Baymard Institute, average of 50 studies, 2025",
+      "scene": "a tall wobbly stack of research folders and clipboards showing simple bar charts without any writing, a tiny researcher with a magnifying glass on top",
+      "lowpolyFrame": 165
+    },
+    {
+      "kind": "beat",
+      "head": "So what scares them off?",
+      "scene": "a nervous shopper with a full shopping cart hesitating in front of a checkout counter, peeking around it",
+      "lowpolyFrame": 240
+    },
+    {
+      "kind": "beat",
+      "num": "#1 reason",
+      "head": "for shoppers ready to buy: extra costs at checkout.",
+      "body": "Shipping, taxes, fees.",
+      "source": "Baymard Institute, 2025",
+      "scene": "a shocked shopper at a checkout counter as an extremely long blank paper receipt unrolls across the floor, small parcels and coins around",
+      "lowpolyFrame": 420
+    },
+    {
+      "kind": "beat",
+      "num": "Nearly 1 in 5",
+      "head": "left because the site made them create an account.",
+      "source": "Baymard Institute, 2025",
+      "scene": "a shopper with a full cart stopped by a giant blank form with empty fields and a big padlock, looking annoyed",
+      "lowpolyFrame": 600
+    },
+    {
+      "kind": "fix",
+      "kicker": "The fix",
+      "head": "Show the full price early.",
+      "body": "Let them check out as a guest.",
+      "scene": "a happy shopper rolling a full cart through a wide open shop door while a smiling shop owner waves, bright and welcoming",
+      "lowpolyFrame": 750
+    },
+    {
+      "kind": "cta",
+      "head": "Where is your business leaking?",
+      "cta": "DM LEAK",
+      "body": "for a free check",
+      "handle": "@fixtheleak_",
+      "scene": "a cheerful shop owner kneeling under a shop counter fixing a small leaking pipe with a wrench, a single teal water drop falling, a gold coin nearby",
+      "lowpolyFrame": 750
+    }
+  ],
+  "caption": "7 in 10 online carts are abandoned. For shoppers ready to buy, the #1 reason is extra costs at checkout (Baymard).\n\nShow the full price early and let people check out as a guest.\n\nWant to know where your store leaks? DM \"LEAK\" for a free check.\n\n#ecommerce #shopify #smallbusiness #onlinestore #businesstips",
+  "sources": "7 in 10: Baymard Institute, \"Cart & Checkout Abandonment Rate Statistics\", average of 50 studies = 70.22% (updated Sep 2025). https://baymard.com/lists/cart-abandonment-rate\n#1 reason (excluding the 42% \"just browsing\"): extra costs too high (shipping, tax, fees) 40%. Same page.\n\"Nearly one in five\" = \"The site wanted me to create an account\" 18% (4th reason). Same page, checked 2026-10-30.\nRed Team fact-check: plan/BL-SCRIPTS-1-factcheck.md.\nArt: AI-generated illustration (fal, GPT Image 2.5); all text and figures are code-rendered."
+}

@@ -1,0 +1,55 @@
+{
+ "_note": "PLACEHOLDER copy and a placeholder AED figure for a format test. Real script and numbers come via the lead after Red Team.",
+ "durationSec": 18,
+ "test": true,
+ "hook": "23:14. Pipe burst. Who picks up?",
+ "caller": {
+  "name": "Ahmed",
+  "sub": "Mobile \u00b7 Dubai \u00b7 new customer",
+  "initials": "A"
+ },
+ "ring": [
+  0,
+  5.4
+ ],
+ "notifs": [
+  {
+   "at": 5.5,
+   "title": "Missed call",
+   "body": "Ahmed",
+   "time": "23:14"
+  },
+  {
+   "at": 6.9,
+   "title": "Missed call",
+   "body": "Ahmed (2)",
+   "time": "23:16"
+  },
+  {
+   "at": 8.1,
+   "title": "Ahmed",
+   "body": "hello?? water everywhere",
+   "time": "23:17"
+  },
+  {
+   "at": 9.3,
+   "title": "Ahmed",
+   "body": "never mind, found someone",
+   "time": "23:31"
+  }
+ ],
+ "counter": {
+  "at": 10.0,
+  "dur": 1.6,
+  "to": 1234,
+  "prefix": "AED",
+  "label": "PLACEHOLDER \u00b7 job gone"
+ },
+ "split": {
+  "at": 12.4,
+  "without": "Nobody calls back till 9am.",
+  "withText": "Hi Ahmed, sorry we missed you! Calling you back within 10 min. Emergency? Reply 1.",
+  "sent": "Sent automatically \u00b7 23:14",
+  "reply": "1. Please, water everywhere"
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "title": "The AI that saves UPS a fortune: ORION",
+ "hook": {
+  "a": "UPS built a quarter-billion-dollar program to reorder its stops.",
+  "b": "UPS expected three hundred million dollars a year from reordering stops.",
+  "onScreen": "$250M TO REORDER STOPS"
+ },
+ "numbers": [
+  {
+   "label": "Drivers using ORION at full deployment",
+   "value": "55,000; avg 160 customers/day",
+   "source": "INFORMS Franz Edelman 2016 case page",
+   "url": "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS-On-Road-Integrated-Optimization-and-Navigation-ORION-Project",
+   "date": "2016",
+   "status": "verified (primary)"
+  },
+  {
+   "label": "Project cost at full deployment",
+   "value": "$250M",
+   "source": "INFORMS page",
+   "url": "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS-On-Road-Integrated-Optimization-and-Navigation-ORION-Project",
+   "date": "2016",
+   "status": "verified (primary) (an estimate)"
+  },
+  {
+   "label": "Expected annual savings at full deployment",
+   "value": "$300-$400M",
+   "source": "INFORMS page",
+   "url": "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS-On-Road-Integrated-Optimization-and-Navigation-ORION-Project",
+   "date": "2016",
+   "status": "verified (primary) (an expectation, not an audited total)",
+   "formula": "Payback = $250M / ($300-400M a year) x 12 = 7.5-10 months. Per mile saved = $300-400M / 100M miles = $3-4. Fuel per mile = 10M gal / 100M miles = 0.1 gal; at an ASSUMED $3.50/gal = ~35¢ a mile (~9-12% of the savings per mile). All expectations, not audited."
+  },
+  {
+   "label": "Expected fuel/CO2 reduction",
+   "value": "10M gallons; 100,000 metric tons CO2 a year",
+   "source": "INFORMS page",
+   "url": "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/UPS-On-Road-Integrated-Optimization-and-Navigation-ORION-Project",
+   "date": "2016",
+   "status": "verified (primary) (an estimate)"
+  },
+  {
+   "label": "Miles reduced",
+   "value": "100M miles a year",
+   "source": "UPS 2015 release via 3BL Media",
+   "url": "https://app.3blmedia.com/news/ups-accelerates-use-routing-optimization-software-reduce-100-million-miles-driven",
+   "date": "2015",
+   "status": "verified (high-trust secondary); not used in script"
+  }
+ ],
+ "analysis": {
+  "title": "What did one saved mile really save UPS?",
+  "finding": "UPS expected $300-400M a year from ~100M fewer miles: $3-4 per mile saved, far above the fuel cost of a mile (about 10 mpg means ~0.1 gallon per mile). The build pays back in 7.5-10 months."
+ },
+ "template": "world",
+ "id": "ups-orion-route-ai-short",
+ "voice": "am_michael",
+ "speed": 1.05,
+ "captionStyle": "hormozi",
+ "bgm": "none",
+ "cut": "short",
+ "targetSec": [
+  28,
+  38
+ ],
+ "fish": {
+  "model": "drama-3",
+  "speed": 1.11
+ },
+ "scenes": [
+  {
+   "vo": "[flat, confident] UPS built a quarter-billion-dollar program",
+   "take": "hook",
+   "type": "bignum",
+   "value": 250,
+   "sub": "estimated cost of ORION",
+   "prefix": "$",
+   "suffix": "M",
+   "decimals": 0,
+   "source": "INFORMS 2016 · cost"
+  },
+  {
+   "vo": "to reorder its stops.",
+   "take": "hook",
+   "type": "route",
+   "stops": [
+    {
+     "lon": -118.2,
+     "lat": 34,
+     "label": "LA"
+    },
+    {
+     "lon": -104.9,
+     "lat": 39.7,
+     "label": "Denver"
+    },
+    {
+     "lon": -87.6,
+     "lat": 41.9,
+     "label": "Chicago"
+    },
+    {
+     "lon": -74,
+     "lat": 40.7,
+     "label": "NYC"
+    }
+   ],
+   "title": "Reordered stops"
+  },
+  {
+   "vo": "[matter-of-fact] It's called ORION.",
+   "take": "proof",
+   "type": "title",
+   "text": "It's called ORION",
+   "emphasis": [
+    "ORION"
+   ]
+  },
+  {
+   "vo": "Every morning it orders each driver's stops.",
+   "take": "proof",
+   "type": "lib",
+   "object": "van",
+   "text": "Stops, in order"
+  },
+  {
+   "vo": "[lowered voice, teasing] So did a better order of stops",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "A better order of stops"
+  },
+  {
+   "vo": "actually pay off?",
+   "take": "rehook",
+   "type": "title",
+   "dark": true,
+   "text": "actually pay off?",
+   "clip": "ups-truck-logs-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "[steady, emphatic] UPS expected to save more than three hundred million dollars",
+   "take": "numbers",
+   "type": "title",
+   "text": "$300M+ a year, expected",
+   "emphasis": [
+    "$300M+"
+   ]
+  },
+  {
+   "vo": "a year.",
+   "take": "numbers",
+   "type": "bars",
+   "title": "Cost vs yearly savings",
+   "prefix": "$",
+   "unit": "M",
+   "decimals": 0,
+   "items": [
+    {
+     "label": "Build cost",
+     "value": 250,
+     "kind": "ink"
+    },
+    {
+     "label": "Expected savings (at least)",
+     "value": 300,
+     "kind": "gain"
+    }
+   ],
+   "source": "INFORMS 2016 · savings"
+  },
+  {
+   "vo": "[surprised, building] That's a payback of under a year.",
+   "take": "calc",
+   "type": "title",
+   "text": "Payback: under a year",
+   "emphasis": [
+    "under a year"
+   ]
+  },
+  {
+   "vo": "[excited, sharing a find] Here's the odd part.",
+   "take": "calc",
+   "type": "title",
+   "text": "Here's the odd part",
+   "emphasis": [
+    "odd"
+   ],
+   "clip": "ups-highway-aerial-01",
+   "clipTreatment": "thermal"
+  },
+  {
+   "vo": "That's more than three dollars saved for every mile avoided.",
+   "take": "calc",
+   "type": "bignum",
+   "value": 3,
+   "sub": "saved per mile avoided, expected",
+   "prefix": "$",
+   "suffix": "+",
+   "decimals": 0,
+   "source": "INFORMS/UPS · computed"
+  },
+  {
+   "vo": "[steady] Fuel is a small slice of that,",
+   "take": "calc",
+   "type": "title",
+   "text": "Fuel: a small slice",
+   "emphasis": [
+    "small"
+   ],
+   "clip": "ups-desert-road-01",
+   "clipTreatment": "ink"
+  },
+  {
+   "vo": "at an assumed diesel price.",
+   "take": "calc",
+   "type": "stamp",
+   "text": "ASSUMED PRICE",
+   "tone": "loss",
+   "sub": "fuel price is my assumption"
+  },
+  {
+   "vo": "[calm, sure] The saving wasn't faster trucks.",
+   "take": "payoff",
+   "type": "title",
+   "text": "Not faster trucks",
+   "emphasis": [
+    "Not"
+   ]
+  },
+  {
+   "vo": "It was a better order of stops.",
+   "take": "payoff",
+   "type": "title",
+   "text": "A better order of stops",
+   "emphasis": [
+    "order"
+   ]
+  },
+  {
+   "vo": "[quiet, knowing] That's what a quarter-billion-dollar",
+   "take": "button",
+   "type": "object",
+   "illus": "truck",
+   "text": "A quarter billion",
+   "emphasis": [
+    "billion"
+   ],
+   "sfx": null
+  },
+  {
+   "vo": "sort order buys.",
+   "take": "button",
+   "type": "lib",
+   "object": "van",
+   "text": "Sort order"
+  }
+ ]
+}

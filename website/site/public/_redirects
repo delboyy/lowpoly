@@ -1,0 +1,5 @@
+# Short links for bios and captions (query strings such as utm_* are kept)
+/leak    /leak-check/  301
+/check   /leak-check/  301
+/fix     /fixes/       301
+https://www.sacredscaling.com/*  https://sacredscaling.com/:splat  301!
