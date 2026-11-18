@@ -1,5 +1,7 @@
 # Business Leaks Studio
 
+> **Status: stopped (November 2026).** The channels ran daily Shorts from 31 Oct to 16 Nov 2026. The project was then shelved because it hadn't made meaningful progress towards customers. The code is kept here as a reference.
+
 A small team of AI agents that makes faceless, low-poly 3D explainer videos and Instagram carousels about where small businesses quietly lose money: unanswered inquiries, missed calls, no-shows, abandoned carts and slow websites.
 
 Each piece is built around one real, sourced number, gets fact-checked before it ships, and loops seamlessly (the last frame matches the first). The content feeds a simple funnel: viewers comment or DM "LEAK", get a free one-page leak check, and can then buy a fix.
